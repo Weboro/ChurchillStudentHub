@@ -12,7 +12,7 @@ const UsefulLinkSection = () => {
         <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
           <h2 className="font-bold text-[36px] text-[#2C2B4B]">Useful Links</h2>
           <div>
-            <Search />
+            {/* <Search /> */}
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-[34px] lg:gap-[34px]">
