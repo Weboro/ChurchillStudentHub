@@ -8,7 +8,7 @@ const NewsSection = () => {
   return (
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[44px]">
-        <div className="bg-[#F3E4E4] px-[44px] pt-[44px] rounded-[24px]">
+        <div className="bg-[#F3E4E4] px-[44px] pt-[44px] lg:pb-0 pb-[44px] rounded-[24px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[32px]">
             <div className="hidden lg:block">
               <Image
