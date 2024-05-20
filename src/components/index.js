@@ -1,5 +1,4 @@
 import Button from "./button";
-import Search from "./Search";
 import ApplyConsiderationForm from "./forms/ApplyConsiderationForm";
 import ApplyPaymentForm from "./forms/ApplyPaymentForm";
 import CourseChangeForm from "./forms/CourseChangeForm";
@@ -23,7 +22,6 @@ import NewsSection from "./sections/commonSections/NewsSection";
 
 export {
   Button,
-  Search,
   ApplyConsiderationForm,
   ApplyPaymentForm,
   CourseChangeForm,
