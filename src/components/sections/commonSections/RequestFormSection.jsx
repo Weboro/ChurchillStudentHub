@@ -3,7 +3,7 @@ import React from "react";
 import { navItems } from "@/constDatas/navItems";
 import RequestFormCard from "@/components/cards/RequestFormCard";
 import Button from "@/components/button";
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowDown, FaSearch } from "react-icons/fa";
 
 const RequestFormSection = () => {
   const requestLists = navItems[3]?.Catagories;
@@ -16,8 +16,25 @@ const RequestFormSection = () => {
               Request Form
             </h2>
             <div>
-              {/* <Search /> */}
+              <div className="relative">
+                <span className="absolute right-3 top-3 text-[20px] flex items-center justify-center text-black/65">
+                  <FaSearch />
+                </span>
+                <input
+                  type="text"
+                  placeholder="Search for links"
+                  // id="search"
+                  // value={search}
+                  // onChange={(e) => {
+                  //   setSearch(e.target.value);
+                  // }}
+                  className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pr-8 pl-3 py-3 rounded-full"
+                />
+              </div>
             </div>
+            {/* <div> */}
+            {/* <Search /> */}
+            {/* </div> */}
           </div>
         </div>
         <div className="rounded-[32px]">
