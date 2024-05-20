@@ -30,7 +30,7 @@ const NewsSection = () => {
                     icon={<FaArrowRight />}
                     styleA={"flex items-center gap-1"}
                     style={
-                      "border border-black rounded-full px-4 py-3 bg-[#E59623] hover:text-black hover:bg-[#424242]/25 transition delay-150"
+                      "border border-[#606060] rounded-full px-4 py-3 bg-[#E59623] hover:text-black hover:bg-[#424242]/25 transition delay-150"
                     }
                   />
                 </Link>

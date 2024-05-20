@@ -5,7 +5,7 @@ const ReportForm = ({ params }) => {
   const { slug } = params;  
 
   return (
-    <main>
+    <main className="min-h-[80vh]">
      <ReportFormSection slug={slug}/>
     </main>
   );

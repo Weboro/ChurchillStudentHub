@@ -4,6 +4,7 @@ import { usefulLinksData } from "@/constDatas/usefulLinksData";
 // import Search from "@/components/Search";
 import Button from "@/components/button";
 import { FaArrowRight, FaSearch } from "react-icons/fa";
+import Link from "next/link";
 
 const UsefulLinkSection = () => {
   return (
@@ -44,14 +45,16 @@ const UsefulLinkSection = () => {
         </div>
         <div>
           <div className="flex justify-center">
-            <Button
-              btnName={"Load More Links"}
-              icon={<FaArrowRight />}
-              styleA={"flex items-center gap-1"}
-              style={
-                "border border-black rounded-full px-4 py-3 hover:bg-[#424242]/25 transition delay-150"
-              }
-            />
+            <Link href={'/useful-links'}>
+              <Button
+                btnName={"Load More Links"}
+                icon={<FaArrowRight />}
+                styleA={"flex items-center gap-1"}
+                style={
+                  "border border-[#606060] rounded-full px-4 py-3 hover:bg-[#424242]/25 transition delay-150"
+                }
+              />
+            </Link>
           </div>
         </div>
       </div>

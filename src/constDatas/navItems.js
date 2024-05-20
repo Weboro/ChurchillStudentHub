@@ -52,26 +52,46 @@ export const navItems = [
         menuTitle: "Student Code of Conduct",
         slug: "student-code-of-conduct",
         link: "",
+        CatagoriesItem: {
+          description:
+            "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
+        },
       },
       {
         menuTitle: "Credit Policy",
         slug: "credit-policy",
         link: "",
+        CatagoriesItem: {
+          description:
+            "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
+        },
       },
       {
         menuTitle: "Assesment Policy",
         slug: "assesment-policy",
         link: "",
+        CatagoriesItem: {
+          description:
+            "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
+        },
       },
       {
         menuTitle: "Sexual Assault and Sexual",
         slug: "sexual-assault-and-sexual",
         link: "",
+        CatagoriesItem: {
+          description:
+            "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
+        },
       },
       {
         menuTitle: "Harrasment Policy",
         slug: "harrasment-policy",
         link: "",
+        CatagoriesItem: {
+          description:
+            "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
+        },
       },
     ],
   },
@@ -95,47 +115,47 @@ export const navItems = [
   {
     title: "Request Form",
     link: "",
-    slug: "contact-us",
+    slug: "report-form",
     Catagories: [
       {
-        icon:<RiExchangeDollarFill />,
+        icon: <RiExchangeDollarFill />,
         menuTitle: "- Refund Request",
-        subTitle:"Access your timetable, results, trimester invoices.",
+        subTitle: "Access your timetable, results, trimester invoices.",
         slug: "refund-request",
         link: "",
       },
       {
-        icon:<RiRefund2Fill />,
+        icon: <RiRefund2Fill />,
         menuTitle: "-Apply For Special Consideration",
-        subTitle:"Access your timetable, results, trimester invoices.",
+        subTitle: "Access your timetable, results, trimester invoices.",
         slug: "apply-for-special-consideration",
         link: "",
       },
       {
-        icon:<PiCourtBasketballBold />,
+        icon: <PiCourtBasketballBold />,
         menuTitle: "- Course Change",
-        subTitle:"Access your timetable, results, trimester invoices.",
+        subTitle: "Access your timetable, results, trimester invoices.",
         slug: "course-change",
         link: "",
       },
       {
-        icon:<RiExchangeDollarFill />,
+        icon: <RiExchangeDollarFill />,
         menuTitle: "-Apply For Payment Plan",
-        subTitle:"Access your timetable, results, trimester invoices.",
+        subTitle: "Access your timetable, results, trimester invoices.",
         slug: "apply-for-payment-plan",
         link: "",
       },
       {
-        icon:<PiGenderIntersexBold />,
+        icon: <PiGenderIntersexBold />,
         menuTitle: "- Sexual Harrasment Report",
-        subTitle:"Access your timetable, results, trimester invoices.",
+        subTitle: "Access your timetable, results, trimester invoices.",
         slug: "sexual-harrasment-report",
         link: "",
       },
       {
-        icon:<TbCreditCardRefund />,
+        icon: <TbCreditCardRefund />,
         menuTitle: "- Credit Transfer",
-        subTitle:"Access your timetable, results, trimester invoices.",
+        subTitle: "Access your timetable, results, trimester invoices.",
         slug: "credit-transfer",
         link: "",
       },

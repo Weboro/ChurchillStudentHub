@@ -3,9 +3,10 @@ import React from "react";
 import { navItems } from "@/constDatas/navItems";
 import RequestFormCard from "@/components/cards/RequestFormCard";
 import Button from "@/components/button";
-import { FaArrowDown, FaSearch } from "react-icons/fa";
+import { FaArrowRight, FaSearch } from "react-icons/fa";
+import Link from "next/link";
 
-const RequestFormSection = () => {
+const RequestFormSection = ({ isButtonActive }) => {
   const requestLists = navItems[3]?.Catagories;
   return (
     <div className="container mx-auto px-5">
@@ -40,16 +41,20 @@ const RequestFormSection = () => {
         <div className="rounded-[32px]">
           <RequestFormCard requestLists={requestLists} />
         </div>
-        <div className="flex justify-center">
-          <Button
-            btnName={"Load More Links"}
-            icon={<FaArrowDown />}
-            styleA={"flex items-center gap-1"}
-            style={
-              "border border-black rounded-full px-4 py-3 hover:bg-[#424242]/25 transition delay-150"
-            }
-          />
-        </div>
+        {isButtonActive && (
+          <div className="flex justify-center">
+            <Link href={"/request-form"}>
+              <Button
+                btnName={"Load More Links"}
+                icon={<FaArrowRight />}
+                styleA={"flex items-center gap-1"}
+                style={
+                  "border border-[#606060] rounded-full px-4 py-3 hover:bg-[#424242]/25 transition delay-150"
+                }
+              />
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

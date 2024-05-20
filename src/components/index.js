@@ -19,6 +19,7 @@ import UpcomingKeyDatesSection from "./sections/homeSections/UpcomingKeyDatesSec
 import RequestFormSection from "./sections/commonSections/RequestFormSection";
 import ReportFormSection from "./sections/ReportFormSections/ReportFormSection";
 import NewsSection from "./sections/commonSections/NewsSection";
+import PoliciesDetails from "./sections/policiesSections/PoliciesDetails";
 
 export {
   Button,
@@ -42,4 +43,5 @@ export {
   ReportFormSection,
   UpcomingKeyDatesSection,
   NewsSection,
+  PoliciesDetails,
 };

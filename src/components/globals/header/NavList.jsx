@@ -53,7 +53,15 @@ const NavList = ({
                         {item?.Catagories?.slice(0, 6)?.map(
                           (catagoryItem, index) => (
                             <Link
-                              href={``}
+                              href={`
+                               ${
+                                 (item?.slug === "how-to-guide" &&
+                                   `/how-to-guide/${''}`) ||
+                                 (item?.slug === "policies" &&
+                                   `/policies/${catagoryItem?.slug}`) ||
+                                 (item?.slug === "report-form" &&
+                                   `/report-form/${catagoryItem?.slug}`)
+                               } `}
                               className=""
                               key={index}
                               onClick={() => {
