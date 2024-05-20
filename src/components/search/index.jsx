@@ -11,7 +11,7 @@ const Search = () => {
         <input
           type="text"
           placeholder="Search for links"
-          id="search"
+          // id="search"
           // value={search}
           // onChange={(e) => {
           //   setSearch(e.target.value);

@@ -1,5 +1,5 @@
-import Search from "@/components/Search";
 import React from "react";
+import Search from "@/components/Search";
 import { navItems } from "@/constDatas/navItems";
 import RequestFormCard from "@/components/cards/RequestFormCard";
 import Button from "@/components/button";
@@ -16,7 +16,7 @@ const RequestFormSection = () => {
               Request Form
             </h2>
             <div>
-              {/* <Search /> */}
+              <Search />
             </div>
           </div>
         </div>
