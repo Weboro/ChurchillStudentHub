@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { navItems } from "@/constDatas/navItems";
 import {Spiner} from "@/components";
 
-const PoliciesDetails = ({ slug }) => {
+const GuideDetails = ({ slug }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const PoliciesDetails = ({ slug }) => {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    const info = navItems[2]?.Catagories?.find((item) => item?.slug === slug);
+    const info = navItems[1]?.Catagories?.find((item) => item?.slug === slug);
     setData(info?.CatagoriesItem);
   }, [slug]);
   return (
@@ -54,4 +54,4 @@ const PoliciesDetails = ({ slug }) => {
   );
 };
 
-export default PoliciesDetails;
+export default GuideDetails;

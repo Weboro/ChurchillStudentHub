@@ -11,7 +11,7 @@ const Spiner = () => {
           className=""
         /> */}
         <Image
-              src={"/assets/logo.png"}
+              src={"/assets/logo.svg"}
               width={400}
               height={400}
               alt="spinner"

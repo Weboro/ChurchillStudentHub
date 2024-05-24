@@ -30,7 +30,7 @@ const GuideCard = ({ guideLists, title, isSearchActive }) => {
       <div>
         <ul className="flex flex-col gap-3">
           {guideLists?.slice(0, 4)?.map((item, index) => (
-            <Link href={""} key={index}>
+            <Link href={`/how-to-guide/${item?.slug}`} key={index}>
               <li className="px-4 py-3 hover:text-[#E59623] bg-white rounded-[12px] flex justify-between gap-2 items-center">
                 {item?.menuTitle}
                 <span>

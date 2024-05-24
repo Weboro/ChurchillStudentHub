@@ -2,6 +2,15 @@ import { GuideCard, NewsSection, TopBannerCard } from "@/components";
 import React from "react";
 import { navItems } from "@/constDatas/navItems";
 
+export const metadata = {
+  title: 'Abhinay',
+  // description: 'abcd',
+  // metadataBase: new URL('https://sdsd.com.np'),
+  // keywords: ['Next.js', 'React', 'JavaScript'],
+  // openGraph: {
+  //   images: '/og-image.png',
+  // },
+}
 const HowToGuidePage = () => {
   const guideLists = navItems[1]?.Catagories;
   return (

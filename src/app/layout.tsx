@@ -4,13 +4,13 @@ import { Footer, Header } from "@/components";
 
 export const metadata: Metadata = {
   // title: {
-  // default:'ADS Electrical',
-  // template:'%s - Professional Affordable Reliable Electrical Services In Sydney | Local Sydney Electrician'
+  // default:'fsf',
+  // template:'%s - sdfsd | sdfs'
   // },
   title:
-    "ADS Electrical | Professional Affordable Reliable Electrical Services In Sydney | Local Sydney Electrician",
+    "sdf | sdf | sfd",
   description:
-    "Need a reliable electrician in Sydney? ADS Electrical provides high-quality electrical solutions for homes & businesses - 18+ Years Experience. Get A Fixed Priced Quote Today!",
+    "sdfsd",
 };
 
 export default function RootLayout({

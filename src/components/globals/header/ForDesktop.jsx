@@ -11,11 +11,11 @@ const DesktopNav = () => {
         <div className="">
           <Link href="/">
             <Image
-              src={"/assets/logo.png"}
+              src={"/assets/logo.svg"}
               width={400}
               height={400}
               alt="Main Logo"
-              className="object-contain w-[200px] h-auto"
+              className="object-contain w-[400px] h-auto"
               priority
             />
           </Link>

@@ -3,6 +3,15 @@ import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { usefulLinksData } from "@/constDatas/usefulLinksData";
 
+export const metadata = {
+  title: 'Abhinay',
+  // description: 'abcd',
+  // metadataBase: new URL('https://sdsd.com.np'),
+  // keywords: ['Next.js', 'React', 'JavaScript'],
+  // openGraph: {
+  //   images: '/og-image.png',
+  // },
+}
 const UsefuLinks = () => {
   return (
     <main className="min-h-[80vh]">

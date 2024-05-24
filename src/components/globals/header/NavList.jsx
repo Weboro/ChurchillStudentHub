@@ -56,7 +56,7 @@ const NavList = ({
                               href={`
                                ${
                                  (item?.slug === "how-to-guide" &&
-                                   `/how-to-guide/${''}`) ||
+                                   `/how-to-guide/${catagoryItem?.slug}`) ||
                                  (item?.slug === "policies" &&
                                    `/policies/${catagoryItem?.slug}`) ||
                                  (item?.slug === "report-form" &&

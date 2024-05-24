@@ -1,10 +1,10 @@
 import React from "react";
-import { PoliciesDetails } from "@/components";
+import { GuideDetails } from "@/components";
 import { navItems } from "@/constDatas/navItems";
 
 // export async function generateMetadata({ params }){
 //   const { slug } = params; 
-//    const info = navItems[2]?.Catagories?.find((item) => item?.slug === slug);
+//    const info = navItems[1]?.Catagories?.find((item) => item?.slug === slug);
 
 //   return {
 //     title: info?.metaTitle,
@@ -17,13 +17,13 @@ import { navItems } from "@/constDatas/navItems";
 //     // },
 //   }; 
 // }
-const Policies = ({ params }) => {
+const IndivisualGuide = ({ params }) => {
   const { slug } = params;
   return (
     <main className="min-h-[80vh]">
-      <PoliciesDetails slug={slug} />
+      <GuideDetails slug={slug} />
     </main>
   );
 };
 
-export default Policies;
+export default IndivisualGuide;

@@ -17,7 +17,7 @@ const MobileNav = () => {
           <div className="py-2">
             <Link href={"/"}>
               <Image
-                src={"/assets/logo.png"}
+                src={"/assets/logo.svg"}
                 width={400}
                 height={400}
                 alt="Main Logo"
@@ -51,7 +51,7 @@ const MobileNav = () => {
               className="flex justify-between gap-8 items-center"
             >
               <Image
-                src={"/assets/logo.png"}
+                src={"/assets/logo.svg"}
                 width={400}
                 height={400}
                 alt="Main Logo"

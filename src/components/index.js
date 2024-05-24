@@ -1,4 +1,5 @@
 import Button from "./button";
+import Spiner from "./spiner";
 import ApplyConsiderationForm from "./forms/ApplyConsiderationForm";
 import ApplyPaymentForm from "./forms/ApplyPaymentForm";
 import CourseChangeForm from "./forms/CourseChangeForm";
@@ -20,9 +21,11 @@ import RequestFormSection from "./sections/commonSections/RequestFormSection";
 import ReportFormSection from "./sections/ReportFormSections/ReportFormSection";
 import NewsSection from "./sections/commonSections/NewsSection";
 import PoliciesDetails from "./sections/policiesSections/PoliciesDetails";
+import GuideDetails from "./sections/guideSections/GuideDetails";
 
 export {
   Button,
+  Spiner,
   ApplyConsiderationForm,
   ApplyPaymentForm,
   CourseChangeForm,
@@ -44,4 +47,5 @@ export {
   UpcomingKeyDatesSection,
   NewsSection,
   PoliciesDetails,
+  GuideDetails,
 };
