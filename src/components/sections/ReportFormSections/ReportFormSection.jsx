@@ -40,7 +40,7 @@ const ReportFormSection = ({ slug }) => {
           <div className="flex flex-col gap-[32px] lg:gap-[64px]">
             <div>
               <TopBannerCard
-                image={`/assets/hero-image.png`}
+                image={`${data?.image}`}
                 titleSpan={"Refund"}
                 title={"Form"}
                 subTitle={`Student Hub > Request Form > ${data?.menuTitle}`}

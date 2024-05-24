@@ -163,6 +163,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "refund-request",
         link: "",
+        image:'/assets/hero-image.png',
       },
       {
         icon: <RiRefund2Fill />,
@@ -170,6 +171,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "apply-for-special-consideration",
         link: "",
+        image:'/assets/hero-image.png',
       },
       {
         icon: <PiCourtBasketballBold />,
@@ -177,6 +179,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "course-change",
         link: "",
+        image:'/assets/hero-image.png',
       },
       {
         icon: <RiExchangeDollarFill />,
@@ -184,6 +187,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "apply-for-payment-plan",
         link: "",
+        image:'/assets/hero-image.png',
       },
       {
         icon: <PiGenderIntersexBold />,
@@ -191,6 +195,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "sexual-harrasment-report",
         link: "",
+        image:'/assets/hero-image.png',
       },
       {
         icon: <TbCreditCardRefund />,
@@ -198,6 +203,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "credit-transfer",
         link: "",
+        image:'/assets/hero-image.png',
       },
     ],
   },
