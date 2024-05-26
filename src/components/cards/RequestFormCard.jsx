@@ -3,23 +3,22 @@ import { FaArrowRight, FaIdCard } from "react-icons/fa";
 import Link from "next/link";
 import Button from "../button";
 
-const RequestFormCard = ({ requestLists }) => {
+const RequestFormCard = ({ icon, menuTitle, subTitle, slug }) => {
   return (
     <div>
-      <ul className="flex flex-col gap-5">
-        {requestLists?.map((item, index) => (
-          <div key={index}>
+      <ul>
+          <div>
             <li className="px-4 py-3 bg-[#E9E9E9] rounded-[24px] flex justify-between gap-3 items-center">
               <div className="flex gap-3 items-center">
                 <div className="bg-white rounded-full p-2">
-                  <span className="text-[24px]">{item?.icon}</span>
+                  <span className="text-[24px]">{icon}</span>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="font-bold">{item?.menuTitle}</span>
-                  <span>{item?.subTitle}</span>
+                  <span className="font-bold">{menuTitle}</span>
+                  <span>{subTitle}</span>
                 </div>
               </div>
-              <Link href={`/report-form/${item?.slug}`}>
+              <Link href={`/request-form/${slug}`}>
                 <Button
                   btnName={"Apply"}
                   icon={<FaArrowRight />}
@@ -31,7 +30,6 @@ const RequestFormCard = ({ requestLists }) => {
               </Link>
             </li>
           </div>
-        ))}
       </ul>
     </div>
   );

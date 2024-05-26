@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../button";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const HelpCard = ({title,description,image}) => {
   return (
@@ -9,7 +10,7 @@ const HelpCard = ({title,description,image}) => {
       <h2 className="font-bold text-[36px] text-[#2C2B4B]">{title}</h2>
       <p>{description}</p>
       <div>
-        <div className="">
+        <Link href={"/how-to-guide"} className="">
           <Button
             btnName={"Load More Links"}
             icon={<FaArrowRight />}
@@ -18,7 +19,7 @@ const HelpCard = ({title,description,image}) => {
               "border border-[#606060] rounded-full px-4 py-3 bg-[#E59623] hover:bg-[#424242]/25 transition delay-150"
             }
           />
-        </div>
+        </Link>
       </div>
       <div className="hidden lg:block">
         <div className="flex justify-end">

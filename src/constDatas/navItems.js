@@ -155,7 +155,7 @@ export const navItems = [
   {
     title: "Request Form",
     link: "",
-    slug: "report-form",
+    slug: "request-form",
     Catagories: [
       {
         icon: <RiExchangeDollarFill />,

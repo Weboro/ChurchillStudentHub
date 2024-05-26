@@ -3,7 +3,7 @@ import HelpCard from "@/components/cards/HelpCard";
 import React from "react";
 import { navItems } from "@/constDatas/navItems";
 import Button from "@/components/button";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaSearch } from "react-icons/fa";
 import Link from "next/link";
 
 const HelpSection = () => {
@@ -22,18 +22,31 @@ const HelpSection = () => {
           />
         </div>
         <div className="bg-[#F3E4E4] rounded-[32px] flex flex-col">
-          <GuideCard guideLists={guideLists} title={"How to Guide?"} />
-          <div>
-            <div className="flex justify-center">
-            <Link href={'/how-to-guide'}>
-              <Button
-                btnName={"Load More Links"}
-                icon={<FaArrowRight />}
-                styleA={"flex items-center gap-1"}
-                style={
-                  "border border-[#606060] rounded-full px-4 py-3 bg-[#E59623] hover:bg-[#424242]/25 transition delay-150"
-                }
+          <div className=" px-8 py-[32px] flex flex-col gap-5">
+            <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
+              <h2 className="font-bold text-[36px] text-[#2C2B4B]">
+                How to Guide?
+              </h2>         
+            </div>
+            {guideLists?.slice(0,4)?.map((item, index) => (
+              <GuideCard
+                key={index}
+                menuTitle={item?.menuTitle}
+                slug={item?.slug}
               />
+            ))}
+          </div>
+          <div className="pb-[32px]">
+            <div className="flex justify-center">
+              <Link href={"/how-to-guide"}>
+                <Button
+                  btnName={"Load More Links"}
+                  icon={<FaArrowRight />}
+                  styleA={"flex items-center gap-1"}
+                  style={
+                    "border border-[#606060] rounded-full px-4 py-3 bg-[#E59623] hover:bg-[#424242]/25 transition delay-150"
+                  }
+                />
               </Link>
             </div>
           </div>

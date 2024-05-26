@@ -13,7 +13,7 @@ const UsefulLinkSection = () => {
         <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
           <h2 className="font-bold text-[36px] text-[#2C2B4B]">Useful Links</h2>
           <div>
-            <div className="relative">
+            {/* <div className="relative">
               <span className="absolute right-3 top-3 text-[20px] flex items-center justify-center text-black/65">
                 <FaSearch />
               </span>
@@ -27,7 +27,7 @@ const UsefulLinkSection = () => {
                 // }}
                 className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pr-8 pl-3 py-3 rounded-full"
               />
-            </div>
+            </div> */}
           </div>
           {/* <div> */}
           {/* <Search /> */}

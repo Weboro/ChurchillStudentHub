@@ -17,7 +17,7 @@ const RequestFormSection = ({ isButtonActive }) => {
               Request Form
             </h2>
             <div>
-              <div className="relative">
+              {/* <div className="relative">
                 <span className="absolute right-3 top-3 text-[20px] flex items-center justify-center text-black/65">
                   <FaSearch />
                 </span>
@@ -31,7 +31,7 @@ const RequestFormSection = ({ isButtonActive }) => {
                   // }}
                   className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pr-8 pl-3 py-3 rounded-full"
                 />
-              </div>
+              </div> */}
             </div>
             {/* <div> */}
             {/* <Search /> */}
@@ -39,7 +39,17 @@ const RequestFormSection = ({ isButtonActive }) => {
           </div>
         </div>
         <div className="rounded-[32px]">
-          <RequestFormCard requestLists={requestLists} />
+          <div className="flex flex-col gap-5">
+            {requestLists?.map((item, index) => (
+              <RequestFormCard
+                key={index}
+                icon={item?.icon}
+                menuTitle={item?.menuTitle}
+                slug={item?.slug}
+                subTitle={item?.subTitle}
+              />
+            ))}
+          </div>
         </div>
         {isButtonActive && (
           <div className="flex justify-center">
