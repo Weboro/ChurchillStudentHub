@@ -24,7 +24,7 @@ const NewsSection = () => {
                 <h3 className="font-bold text-[36px] text-[#2C2B4B]">
                   Get Updated with latest news.
                 </h3>
-                <Link href={`/newslatter-form`} className="w-max">
+                <Link href={`https://zfrmz.com.au/DtG2T10jdX7f8egPhVzt`} target="_blank" className="w-max">
                   <Button
                     btnName={"Subscribe to our Newsletter"}
                     icon={<FaArrowRight />}

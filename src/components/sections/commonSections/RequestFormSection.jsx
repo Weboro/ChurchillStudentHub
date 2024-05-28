@@ -45,8 +45,10 @@ const RequestFormSection = ({ isButtonActive }) => {
                 key={index}
                 icon={item?.icon}
                 menuTitle={item?.menuTitle}
-                slug={item?.slug}
+                link={item?.link}
                 subTitle={item?.subTitle}
+                btnTitle={'Apply'}
+                target={"_blank"}
               />
             ))}
           </div>

@@ -87,7 +87,14 @@ const NavList = ({
                         )}
                         {item?.Catagories?.length > 6 && (
                           <Link
-                            href={``}
+                            href={`${
+                              (item?.slug === "how-to-guide" &&
+                                `/how-to-guide`) ||
+                              (item?.slug === "policies" &&
+                                `/policies`) ||
+                              (item?.slug === "request-form" &&
+                                `/request-form`)
+                            } `}
                             onClick={() => {
                               handleOnclick();
                             }}

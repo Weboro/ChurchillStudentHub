@@ -30,7 +30,7 @@ const UpcomingKeyDatesSection = () => {
         </div>
         <div>
           <div className="flex justify-center">
-            <Link href={"/upcoming-events"} className="w-max">
+            <Link href={"/upcoming-key-dates"} className="w-max">
               <Button
                 btnName={"Load More"}
                 icon={<FaArrowRight />}

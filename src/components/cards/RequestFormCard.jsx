@@ -3,7 +3,7 @@ import { FaArrowRight, FaIdCard } from "react-icons/fa";
 import Link from "next/link";
 import Button from "../button";
 
-const RequestFormCard = ({ icon, menuTitle, subTitle, slug }) => {
+const RequestFormCard = ({ icon, menuTitle, subTitle, link, slug, btnTitle, target }) => {
   return (
     <div>
       <ul>
@@ -18,9 +18,9 @@ const RequestFormCard = ({ icon, menuTitle, subTitle, slug }) => {
                   <span>{subTitle}</span>
                 </div>
               </div>
-              <Link href={`/request-form/${slug}`}>
+              <Link href={`${link ? link : slug}`} target={target}>
                 <Button
-                  btnName={"Apply"}
+                  btnName={btnTitle}
                   icon={<FaArrowRight />}
                   styleA={"flex items-center gap-1"}
                   style={

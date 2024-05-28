@@ -11,8 +11,8 @@ export const metadata = {
   //   images: '/og-image.png',
   // },
 };
-const RequestFormPage = () => {
-  const requestLists = navItems[3]?.Catagories;
+const PoliciesList = () => {
+  const requestLists = navItems[2]?.Catagories;
 
   return (
     <main className="min-h-[80vh]">
@@ -21,15 +21,13 @@ const RequestFormPage = () => {
           <TopBannerCard
             image={`/assets/hero-image.png`}
             titleSpan={""}
-            title={"How to Guide."}
-            subTitle={`Student Hub > Request Form > How to Guide`}
+            title={"Policies and Procedures"}
+            subTitle={`Student Hub > Request Form > Policies and Procedures`}
           />
         </div>
         <div className="container mx-auto px-5">
           <div className="flex flex-col gap-[44px]">
-            <h2 className="font-bold text-[36px] text-[#2C2B4B]">
-              Request Form
-            </h2>
+            <h2 className="font-bold text-[36px] text-[#2C2B4B]">Policies</h2>
             <div className="">
               <div className="flex flex-col gap-5">
                 {requestLists?.map((item, index) => (
@@ -37,10 +35,9 @@ const RequestFormPage = () => {
                     key={index}
                     icon={item?.icon}
                     menuTitle={item?.menuTitle}
-                    link={item?.link}
+                    slug={`/policies/${item?.slug}`}
                     subTitle={item?.subTitle}
-                    btnTitle={"Apply"}
-                    target={'_blank'}
+                    btnTitle={"View"}
                   />
                 ))}
               </div>
@@ -55,4 +52,4 @@ const RequestFormPage = () => {
   );
 };
 
-export default RequestFormPage;
+export default PoliciesList;
