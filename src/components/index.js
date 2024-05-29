@@ -25,6 +25,7 @@ import NewsSection from "./sections/commonSections/NewsSection";
 import PoliciesDetails from "./sections/policiesSections/PoliciesDetails";
 import GuideDetails from "./sections/guideSections/GuideDetails";
 import UpcomingEventsSection from "./sections/upcomingEventsSections/UpcomingEventsSection";
+import FilterComponent from "./sections/upcomingEventsSections/FilterComponent";
 
 export {
   Button,
@@ -54,4 +55,5 @@ export {
   PoliciesDetails,
   GuideDetails,
   UpcomingEventsSection,
+  FilterComponent,
 };
