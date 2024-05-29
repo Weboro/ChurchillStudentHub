@@ -2,31 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+.transparent-background {
+  background: #00000000 !important;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body { 
-  overflow-x: hidden; 
+body {
+  overflow-x: hidden;
   background: #fff;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
+}
 
- }
- 
- @keyframes sidebarAnimate {
-  0%
-   {
+@keyframes sidebarAnimate {
+  0% {
     transform: translateX(100%);
   }
-  25%
-   {
+  25% {
     transform: translateX(75%);
   }
-  50%
-   {
+  50% {
     transform: translateX(50%);
   }
   75% {
@@ -38,24 +38,24 @@ body {
 }
 
 @keyframes loginAnimation {
-  0% { 
+  0% {
     top: 0px;
-    transform: translate(-50%,-50%);
-   }   
-100% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
     top: 50%;
-    transform: translate(-50%,-50%);
- }
+    transform: translate(-50%, -50%);
+  }
 }
 .slick-dots {
-  bottom: -40px !important; 
+  bottom: -40px !important;
 }
 
-.slick-dots li button:before {  
-  font-size: 11px !important;  
-  color: #FFBB4D !important;
+.slick-dots li button:before {
+  font-size: 11px !important;
+  color: #ffbb4d !important;
   width: 31px !important;
-  height: 31px !important;   
+  height: 31px !important;
 }
 
 .spinner_main {
@@ -107,7 +107,7 @@ body {
   right: 25px;
   display: none;
   padding: 15px;
-  background-color: #FFBB4D;
+  background-color: #ffbb4d;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -125,17 +125,23 @@ body {
 }
 /* Add unique styles or animations not covered by Tailwind here */
 @keyframes first {
-  0% {width: 0%; }
-  50% {width: 80%; }
-  100% {width: 50%; }
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 50%;
+  }
 }
 
-.list-decor li { 
+.list-decor li {
   list-style: none;
-  background-image: url('/assets/thunder-list-style.png');
+  background-image: url("/assets/thunder-list-style.png");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 15px 25px; 
+  background-size: 15px 25px;
   padding-left: 30px;
 }
 
@@ -144,84 +150,86 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
-.dynamicTextDesign h2{
+.dynamicTextDesign h2 {
   font-size: 30px;
   font-weight: bold;
-  color:#091f40;
+  color: #091f40;
   padding-bottom: 10px;
 }
-.dynamicTextDesign h3{
+.dynamicTextDesign h3 {
   font-size: 20px;
   font-weight: bold;
-  color:#091f40;
+  color: #091f40;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-.dynamicTextDesign ul{
+.dynamicTextDesign ul {
   list-style-type: disc;
   margin-bottom: 20px;
-
 }
 
-.dynamicTextDesign li{
+.dynamicTextDesign li {
   margin-left: 30px;
   margin-bottom: 10px;
 }
-.dynamicTextDesign a{
+.dynamicTextDesign a {
   color: #8d5900;
   text-decoration: underline;
 }
 
-.m-5{
-  margin:1rem;
+.m-5 {
+  margin: 1rem;
 }
 
-input,textarea{
-  background: #F5F5F5!important;
+input,
+textarea {
+  background: #f5f5f5 !important;
   /* color:#D4D4D4!important; */
 }
 
-.shadow-cus{
+.shadow-cus {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .table-of-contents {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .table-of-contents ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .table-of-contents li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }

@@ -10,15 +10,15 @@ const UpcomingKeyDatesSection = () => {
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[44px]">
         <div className="text-center">
-          <h2 className="font-bold text-[36px] text-[#2C2B4B]">
+          <h2 className="font-bold text-[36px] text-custom-text-black">
             Upcoming Key Dates
           </h2>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="grid md:grid-cols-2 gap-5">
           {UpcomingKeyData?.slice(0, 4)?.map((item, index) => (
             <EventsCard
               day={item?.day}
-              image={item?.image}
+              // image={item?.image}
               month={item?.month}
               subTitle={item?.subTitle}
               time={item?.time}

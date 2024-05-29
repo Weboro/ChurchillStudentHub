@@ -182,12 +182,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#E59623] pt-[64px]">
+      <div className="bg-custom-orange pt-[64px]">
         <div className="container mx-auto px-5">
           <div className="flex flex-col lg:flex-row  justify-between gap-5 pb-[54px]">
             <div className="lg:w-[60%] flex flex-col lg:flex-row gap-4 lg:items-center">
               <div className="flex gap-1">
-              <Image
+                <Image
                   src={"/assets/flag-a.png"}
                   width={400}
                   height={400}
@@ -195,7 +195,7 @@ const Footer = () => {
                   className="object-contain w-[50px] h-auto"
                   priority
                 />
-                 <Image
+                <Image
                   src={"/assets/flag-b.png"}
                   width={400}
                   height={400}
@@ -221,7 +221,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr/>
+          <hr />
           <p className="text-center container mx-auto px-5 font-semibold text-[15px] py-4">
             Copyright © 2024 Mpika Holdings Pty Ltd t/as Churchill Institute of
             Higher Education. 

@@ -69,7 +69,7 @@ const ApplyConsiderationForm = () => {
             icon={<FaArrowRight />}
             styleA={"flex items-center gap-1"}
             style={
-              "border border-black rounded-full px-4 py-3 bg-[#E59623] hover:bg-[#424242]/25 transition delay-150"
+              "border border-black rounded-full px-4 py-3 bg-custom-orange hover:bg-[#424242]/25 transition delay-150"
             }
           />
         </div>

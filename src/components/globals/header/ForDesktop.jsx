@@ -22,7 +22,9 @@ const DesktopNav = () => {
         </div>
         <div className="">
           <NavList
-            style={"flex gap-5 text-[16px] font-inter font-bold text-[#2C2B4B]"}
+            style={
+              "flex gap-5 text-[16px] font-inter font-bold text-custom-text-black"
+            }
             isDropdownActive={true}
             handleOnclick={() => ""}
             handleOnclickA={() => ""}

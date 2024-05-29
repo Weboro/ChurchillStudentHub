@@ -12,7 +12,7 @@ const HelpSection = () => {
   return (
     <div className="container mx-auto px-5">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-[32px]">
-        <div className="bg-[#F3E4E4] rounded-[32px]">
+        <div className="bg-custom-pink rounded-[32px]">
           <HelpCard
             image={"/assets/help.png"}
             title={"Need Help?"}
@@ -21,14 +21,14 @@ const HelpSection = () => {
             }
           />
         </div>
-        <div className="bg-[#F3E4E4] rounded-[32px] flex flex-col">
+        <div className="bg-custom-pink rounded-[32px] flex flex-col">
           <div className=" px-8 py-[32px] flex flex-col gap-5">
             <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
-              <h2 className="font-bold text-[36px] text-[#2C2B4B]">
+              <h2 className="font-bold text-[36px] text-custom-text-black">
                 How to Guide?
-              </h2>         
+              </h2>
             </div>
-            {guideLists?.slice(0,4)?.map((item, index) => (
+            {guideLists?.slice(0, 4)?.map((item, index) => (
               <GuideCard
                 key={index}
                 menuTitle={item?.menuTitle}
@@ -44,7 +44,7 @@ const HelpSection = () => {
                   icon={<FaArrowRight />}
                   styleA={"flex items-center gap-1"}
                   style={
-                    "border border-[#606060] rounded-full px-4 py-3 bg-[#E59623] hover:bg-[#424242]/25 transition delay-150"
+                    "border border-[#606060] rounded-full px-4 py-3 bg-custom-orange hover:bg-[#424242]/25 transition delay-150"
                   }
                 />
               </Link>

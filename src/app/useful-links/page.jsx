@@ -27,7 +27,7 @@ const UsefuLinks = () => {
         <div className="container mx-auto px-5">
           <div className="flex flex-col gap-[32px] lg:gap-[64px]">
             <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
-              <h2 className="font-bold text-[36px] text-[#2C2B4B]">
+              <h2 className="font-bold text-[36px] text-custom-text-black">
                 Useful Links
               </h2>
               {/* <div className="">

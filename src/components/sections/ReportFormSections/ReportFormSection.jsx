@@ -50,7 +50,7 @@ const ReportFormSection = ({ slug }) => {
             <div className="container mx-auto px-5">
               <div className="flex flex-col gap-[44px]">
                 <div className="text-center">
-                  <h2 className="font-bold text-[36px] text-[#2C2B4B]">
+                  <h2 className="font-bold text-[36px] text-custom-text-black">
                     {data?.menuTitle}
                   </h2>
                 </div>

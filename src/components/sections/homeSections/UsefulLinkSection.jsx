@@ -11,7 +11,9 @@ const UsefulLinkSection = () => {
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[44px]">
         <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
-          <h2 className="font-bold text-[36px] text-[#2C2B4B]">Useful Links</h2>
+          <h2 className="font-bold text-[36px] text-custom-text-black">
+            Useful Links
+          </h2>
           <div>
             {/* <div className="relative">
               <span className="absolute right-3 top-3 text-[20px] flex items-center justify-center text-black/65">
@@ -45,7 +47,7 @@ const UsefulLinkSection = () => {
         </div>
         <div>
           <div className="flex justify-center">
-            <Link href={'/useful-links'}>
+            <Link href={"/useful-links"}>
               <Button
                 btnName={"Load More Links"}
                 icon={<FaArrowRight />}

@@ -27,7 +27,7 @@ const RequestFormPage = () => {
         </div>
         <div className="container mx-auto px-5">
           <div className="flex flex-col gap-[44px]">
-            <h2 className="font-bold text-[36px] text-[#2C2B4B]">
+            <h2 className="font-bold text-[36px] text-custom-text-black">
               Request Form
             </h2>
             <div className="">
@@ -40,7 +40,7 @@ const RequestFormPage = () => {
                     link={item?.link}
                     subTitle={item?.subTitle}
                     btnTitle={"Apply"}
-                    target={'_blank'}
+                    target={"_blank"}
                   />
                 ))}
               </div>

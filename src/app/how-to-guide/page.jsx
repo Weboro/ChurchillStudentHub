@@ -25,22 +25,20 @@ const HowToGuidePage = () => {
           />
         </div>
         <div className="flex flex-col gap-[32px] lg:gap-[64px]">
-          <div className="bg-[#F3E4E4] pb-5">
+          <div className="bg-custom-pink pb-5">
             <div className="flex flex-col container mx-auto px-5">
-            <div className=" px-8 py-[32px] flex flex-col gap-5">
-            <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
-              <h2 className="font-bold text-[36px] text-[#2C2B4B]">
-                How to Guide?
-              </h2>         
-            </div>
-            {guideLists?.map((item, index) => (
-              <GuideCard
-                key={index}
-                menuTitle={item?.menuTitle}
-                slug={item?.slug}
-              />
-            ))}
-          </div>
+              <div className=" px-8 py-[32px] flex flex-col gap-5">
+                <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
+                  <h2 className="font-bold text-[36px] text-">How to Guide?</h2>
+                </div>
+                {guideLists?.map((item, index) => (
+                  <GuideCard
+                    key={index}
+                    menuTitle={item?.menuTitle}
+                    slug={item?.slug}
+                  />
+                ))}
+              </div>
             </div>
           </div>
           <div>

@@ -13,7 +13,7 @@ const RequestFormSection = ({ isButtonActive }) => {
       <div className="flex flex-col gap-[44px]">
         <div>
           <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
-            <h2 className="font-bold text-[36px] text-[#2C2B4B]">
+            <h2 className="font-bold text-[36px] text-custom-text-black">
               Request Form
             </h2>
             <div>
@@ -47,7 +47,7 @@ const RequestFormSection = ({ isButtonActive }) => {
                 menuTitle={item?.menuTitle}
                 link={item?.link}
                 subTitle={item?.subTitle}
-                btnTitle={'Apply'}
+                btnTitle={"Apply"}
                 target={"_blank"}
               />
             ))}
