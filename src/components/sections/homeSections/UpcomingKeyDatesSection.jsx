@@ -6,6 +6,20 @@ import Link from "next/link";
 import EventsCard from "@/components/cards/EventsCard";
 
 const UpcomingKeyDatesSection = () => {
+  const events = [];
+
+  Object.keys(UpcomingKeyData)
+    .sort((a, b) => b - a)
+    .forEach((year) => {
+      Object.keys(UpcomingKeyData[year]).forEach((month) => {
+        const monthData = UpcomingKeyData[year][month] || [];
+        monthData.forEach((event) => {
+          events.push({ ...event, year });
+        });
+      });
+    });
+  const keyEvents = events.slice(0, 6);
+
   return (
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[44px]">
@@ -15,16 +29,15 @@ const UpcomingKeyDatesSection = () => {
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
-          {UpcomingKeyData?.slice(0, 4)?.map((item, index) => (
+          {keyEvents.map((event) => (
             <EventsCard
-              day={item?.day}
-              // image={item?.image}
-              month={item?.month}
-              subTitle={item?.subTitle}
-              time={item?.time}
-              title={item?.title}
-              date={item?.date}
-              key={index}
+              key={event.id}
+              title={event.title}
+              subTitle={event.subTitle}
+              day={event.day}
+              date={event.date}
+              year={event.year}
+              displayMonth={event.displayMonth}
             />
           ))}
         </div>

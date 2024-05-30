@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import { UpcomingKeyData } from "@/constDatas/UpcomingKeyData";
 import {
-  EventsCard,
   NewsSection,
   TopBannerCard,
   FilterComponent,
+  AccordionItem,
 } from "@/components";
 
 const UpcomingEventsSection = () => {
@@ -24,24 +24,31 @@ const UpcomingEventsSection = () => {
       </div>
       <div className="container mx-auto px-5">
         <div className="flex flex-col lg:flex-row gap-4">
-          <FilterComponent
-            searchQuery={searchQuery}
-            onSearchQuery={handlseSearchQuery}
-          />
+          <FilterComponent searchQuery={""} onSearchQuery={() => {}} />
 
           <div className="flex-1 flex flex-col gap-5">
-            {UpcomingKeyData?.map((item, index) => (
-              <EventsCard
-                day={item?.day}
-                month={item?.month}
-                subTitle={item?.subTitle}
-                time={item?.time}
-                title={item?.title}
-                date={item?.date}
-                key={index}
-                query={query}
-              />
-            ))}
+            {Object.keys(UpcomingKeyData)
+              .sort((a, b) => b - a)
+              .map((year) => (
+                <div key={year}>
+                  <h2
+                    className="text-2xl font-extrabold w-fit relative 
+                  before:absolute before:bottom-[-5px] before:left-0 before:w-2/3 before:h-1 before:bg-custom-orange before:transition-all"
+                  >
+                    {year}
+                  </h2>
+
+                  {Object.keys(UpcomingKeyData[year])
+                    .sort((a, b) => b - a)
+                    .map((month) => (
+                      <AccordionItem
+                        key={month}
+                        month={month}
+                        events={UpcomingKeyData[year][month]}
+                      />
+                    ))}
+                </div>
+              ))}
           </div>
         </div>
       </div>

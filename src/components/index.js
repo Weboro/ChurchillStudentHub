@@ -26,6 +26,7 @@ import PoliciesDetails from "./sections/policiesSections/PoliciesDetails";
 import GuideDetails from "./sections/guideSections/GuideDetails";
 import UpcomingEventsSection from "./sections/upcomingEventsSections/UpcomingEventsSection";
 import FilterComponent from "./sections/upcomingEventsSections/FilterComponent";
+import AccordionItem from "./sections/upcomingEventsSections/AccordionItem";
 
 export {
   Button,
@@ -56,4 +57,5 @@ export {
   GuideDetails,
   UpcomingEventsSection,
   FilterComponent,
+  AccordionItem,
 };

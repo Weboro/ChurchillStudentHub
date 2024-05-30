@@ -39,7 +39,15 @@
 
 import React from "react";
 
-const EventsCard = ({ title, subTitle, day, month, time, date, query }) => {
+const EventsCard = ({
+  title,
+  subTitle,
+  day,
+  date,
+  displayMonth,
+  query,
+  year,
+}) => {
   const shouldDisplay =
     !query || title.toLowerCase().includes(query.toLowerCase());
 
@@ -51,7 +59,7 @@ const EventsCard = ({ title, subTitle, day, month, time, date, query }) => {
             <div className="flex flex-col text-center text-white bg-custom-orange rounded-[12px] p-2 font-bold h-full justify-center">
               <p>{day}</p>
               <p className="text-[32px] leading-[28px]">{date}</p>
-              <p>{month}</p>
+              <p>{displayMonth}</p>
             </div>
           </div>
 
