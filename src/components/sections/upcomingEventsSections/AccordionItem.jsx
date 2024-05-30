@@ -12,18 +12,22 @@ const AccordionItem = ({ month, events }) => {
         <section className="mt-4 lg:ml-2">
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className="w-full flex justify-between bg-custom-orange shadow-md rounded-[14px] px-4 py-2 "
+            className={`w-full flex justify-between rounded-[14px] px-4 py-2  transition-all ${
+              isOpen
+                ? "bg-custom-orange text-white shadow-sm"
+                : "bg-custom-pink text-black"
+            }`}
           >
-            <p className="font-extrabold text-white lg:text-xl">{month}</p>
+            <p className="font-extrabold lg:text-xl select-none">{month}</p>
 
             <div className="flex items-center gap-4">
-              <p className="text-sm rounded-xl w-[5rem] bg-white px-2 flex gap-1 items-center justify-center">
+              <p className="text-sm rounded-xl w-[65px] bg-white text-black px-2 flex gap-1 items-center justify-center">
                 <span>{events.length}</span>
                 <span>dates</span>
               </p>
               <span
                 className={`${
-                  isOpen ? " rotate-45" : ""
+                  isOpen ? " rotate-45 text-white" : "text-black"
                 } transition-all text-white`}
               >
                 <FaPlus />
