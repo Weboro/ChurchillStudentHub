@@ -10,6 +10,7 @@ export const metadata = {
   //   images: '/og-image.png',
   // },
 };
+
 const UpcomingEvents = () => {
   return (
     <main className="min-h-[80vh]">

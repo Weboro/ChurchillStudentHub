@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import { UpcomingKeyData } from "@/constDatas/UpcomingKeyData";
 import {
   NewsSection,
@@ -15,8 +14,9 @@ import {
 // };
 
 const UpcomingEventsSection = () => {
-  const [searchFilters, setSearchFilters] = useState(filters);
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [searchFilters, setSearchFilters] = useState(filters);
+  // const [searchQuery, setSearchQuery] = useState("");
+  // const query = searchQuery.trim().toLowerCase();
 
   return (
     <div className="flex flex-col gap-[32px] lg:gap-[64px]">
@@ -31,13 +31,13 @@ const UpcomingEventsSection = () => {
       <div className="container mx-auto px-5">
         <div className="flex flex-col lg:flex-row gap-4">
           <FilterComponent
-            searchFilters={searchFilters}
-            setSearchFilters={setSearchFilters}
+          // searchFilters={searchFilters}
+          // setSearchFilters={setSearchFilters}
           />
 
           <div className="flex-1 flex flex-col gap-5">
             {Object.keys(UpcomingKeyData)
-              .sort((a, b) => b - a)
+              .sort((a, b) => b - a) // sorting by year descending order so latest year comes in front
               .map((year) => (
                 <div key={year}>
                   <h2
@@ -51,8 +51,8 @@ const UpcomingEventsSection = () => {
                       key={month}
                       month={month}
                       events={UpcomingKeyData[year][month]}
-                      searchFilters={searchFilters}
-                      setSearchFilters={setSearchFilters}
+                      // searchFilters={searchFilters}
+                      // setSearchFilters={setSearchFilters}
                     />
                   ))}
                 </div>

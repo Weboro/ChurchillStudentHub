@@ -2,7 +2,8 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 
-export const FilterComponent = ({ searchQuery, onSearchQuery }) => {
+// { searchQuery, onSearchQuery }
+export const FilterComponent = () => {
   const filterOptions = {
     audience: ["Staff", "Student", "Undergraduate", "Postgraduate"],
     category: [
@@ -26,9 +27,9 @@ export const FilterComponent = ({ searchQuery, onSearchQuery }) => {
       <div className="flex bg-neutral-100 items-center my-4 rounded-md overflow-hidden">
         <input
           type="text"
-          value={searchQuery}
+          // value={searchQuery}
           placeholder="Search by Title"
-          onChange={(e) => onSearchQuery(e.target.value)}
+          // onChange={(e) => onSearchQuery(e.target.value)}
           className="w-full flex-1 px-2 py-2 transparent-background outline-none"
         />
         <div className="w-10 h-full grid place-items-center">
