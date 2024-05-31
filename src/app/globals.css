@@ -281,6 +281,10 @@ tr:nth-child(even) {
   margin: 5px 0;
 }
 
+.policy-page ul li {
+  list-style-type: disc;
+}
+
 .policy-page .table-of-contents {
   margin-bottom: 20px;
 }

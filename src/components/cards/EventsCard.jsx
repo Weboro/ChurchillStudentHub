@@ -34,7 +34,6 @@
 //     </div>
 //   );
 // };
-
 // export default EventsCard;
 
 import React from "react";
@@ -45,8 +44,8 @@ const EventsCard = ({
   day,
   date,
   displayMonth,
-  query,
   year,
+  query,
 }) => {
   const shouldDisplay =
     !query || title.toLowerCase().includes(query.toLowerCase());

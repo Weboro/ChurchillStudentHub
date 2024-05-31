@@ -27,8 +27,8 @@ const AccordionItem = ({ month, events }) => {
               </p>
               <span
                 className={`${
-                  isOpen ? " rotate-45 text-white" : "text-black"
-                } transition-all text-white`}
+                  isOpen ? "text-white rotate-45" : ""
+                } transition-all `}
               >
                 <FaPlus />
               </span>
