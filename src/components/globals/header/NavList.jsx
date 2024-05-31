@@ -91,7 +91,7 @@ const NavList = ({
                                 `/how-to-guide`) ||
                               (item?.slug === "policies" && `/policies`) ||
                               (item?.slug === "request-form" && `/request-form`)
-                            } `}
+                            }`}
                             onClick={() => {
                               handleOnclick();
                             }}

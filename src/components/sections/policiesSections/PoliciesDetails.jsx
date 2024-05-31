@@ -2,7 +2,7 @@
 import TopBannerCard from "@/components/cards/TopBannerCard";
 import React, { useEffect, useState } from "react";
 import { navItems } from "@/constDatas/navItems";
-import {Spiner} from "@/components";
+import { Spiner } from "@/components";
 
 const PoliciesDetails = ({ slug }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,6 +21,7 @@ const PoliciesDetails = ({ slug }) => {
     const info = navItems[2]?.Catagories?.find((item) => item?.slug === slug);
     setData(info?.CatagoriesItem);
   }, [slug]);
+
   return (
     <div>
       {isLoading ? (
@@ -41,9 +42,9 @@ const PoliciesDetails = ({ slug }) => {
             <div>
               <div className="flex flex-col gap-[32px] lg:gap-[64px]">
                 <div className="container mx-auto px-5">
-                  <p
+                  <div
                     dangerouslySetInnerHTML={{ __html: data?.description }}
-                  ></p>
+                  />
                 </div>
               </div>
             </div>

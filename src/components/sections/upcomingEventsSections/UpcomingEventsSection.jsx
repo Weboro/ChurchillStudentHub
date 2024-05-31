@@ -8,9 +8,15 @@ import {
   AccordionItem,
 } from "@/components";
 
+// const filters = {
+//   query,
+//   audiences: [],
+//   categories: [],
+// };
+
 const UpcomingEventsSection = () => {
-  const [searchQuery, handlseSearchQuery] = useState("");
-  const query = searchQuery.trim();
+  const [searchFilters, setSearchFilters] = useState(filters);
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div className="flex flex-col gap-[32px] lg:gap-[64px]">
@@ -24,7 +30,10 @@ const UpcomingEventsSection = () => {
       </div>
       <div className="container mx-auto px-5">
         <div className="flex flex-col lg:flex-row gap-4">
-          <FilterComponent searchQuery={""} onSearchQuery={() => {}} />
+          <FilterComponent
+            searchFilters={searchFilters}
+            setSearchFilters={setSearchFilters}
+          />
 
           <div className="flex-1 flex flex-col gap-5">
             {Object.keys(UpcomingKeyData)
@@ -37,16 +46,15 @@ const UpcomingEventsSection = () => {
                   >
                     {year}
                   </h2>
-
-                  {Object.keys(UpcomingKeyData[year])
-                    .sort((a, b) => b - a)
-                    .map((month) => (
-                      <AccordionItem
-                        key={month}
-                        month={month}
-                        events={UpcomingKeyData[year][month]}
-                      />
-                    ))}
+                  {Object.keys(UpcomingKeyData[year]).map((month) => (
+                    <AccordionItem
+                      key={month}
+                      month={month}
+                      events={UpcomingKeyData[year][month]}
+                      searchFilters={searchFilters}
+                      setSearchFilters={setSearchFilters}
+                    />
+                  ))}
                 </div>
               ))}
           </div>

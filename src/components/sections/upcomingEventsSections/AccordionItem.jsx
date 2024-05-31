@@ -21,7 +21,7 @@ const AccordionItem = ({ month, events }) => {
             <p className="font-extrabold lg:text-xl select-none">{month}</p>
 
             <div className="flex items-center gap-4">
-              <p className="text-sm rounded-xl w-[65px] bg-white text-black px-2 flex gap-1 items-center justify-center">
+              <p className="text-sm rounded-xl w-[65px] bg-white text-black px-2 flex gap-1 items-center justify-center select-none">
                 <span>{events.length}</span>
                 <span>dates</span>
               </p>

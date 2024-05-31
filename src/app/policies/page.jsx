@@ -25,6 +25,7 @@ const PoliciesList = () => {
             subTitle={`Student Hub > Request Form > Policies and Procedures`}
           />
         </div>
+
         <div className="container mx-auto px-5">
           <div className="flex flex-col gap-[44px]">
             <h2 className="font-bold text-[36px] text-custom-text-black">
@@ -46,6 +47,7 @@ const PoliciesList = () => {
             </div>
           </div>
         </div>
+
         <div>
           <NewsSection />
         </div>
