@@ -4,7 +4,7 @@ import { EventsCard } from "@/components";
 import { FaPlus } from "react-icons/fa";
 
 const AccordionItem = ({ month, events }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(events[0]?.id == 1 ? true : false);
 
   return (
     <>
