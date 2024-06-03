@@ -41,6 +41,7 @@ const UsefulLinkSection = () => {
               icon={`${item?.icon}`}
               subTitle={item?.subTitle}
               title={item?.title}
+              url={item?.url}
               key={index}
             />
           ))}

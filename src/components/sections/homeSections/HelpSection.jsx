@@ -15,9 +15,9 @@ const HelpSection = () => {
         <div className="bg-custom-pink rounded-[32px]">
           <HelpCard
             image={"/assets/help.png"}
-            title={"Need Help?"}
+            title={"Have a question? We're here to help."}
             description={
-              "If you would like to become an authorised representative of UNSW Sydney, please submit an Expression of Interest. Expression of interests will be assessed by the relevant Regional Recruitment Manager."
+              "Got questions or need more information? Don't hesitate to reach out! Click the button below to fill out our enquiry form, and we'll get back to you promptly. Your journey at Churchill matters to us!"
             }
           />
         </div>

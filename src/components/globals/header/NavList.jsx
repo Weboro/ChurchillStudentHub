@@ -70,7 +70,8 @@ const NavList = ({
                                  (item?.slug === "policies" &&
                                    `/policies/${catagoryItem?.slug}`) ||
                                  (item?.slug === "request-form" &&
-                                   `/request-form/${catagoryItem?.slug}`)
+                                   //  `/request-form/${catagoryItem?.slug}`)
+                                   `${catagoryItem?.link}`)
                                } `}
                               className=""
                               key={index}

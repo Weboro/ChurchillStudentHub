@@ -2,6 +2,7 @@ import { NewsSection, TopBannerCard, UsefulLinksCard } from "@/components";
 import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { usefulLinksData } from "@/constDatas/usefulLinksData";
+import Link from "next/link";
 
 export const metadata = {
   title: "Abhinay",
@@ -54,6 +55,7 @@ const UsefuLinks = () => {
                   icon={`${item?.icon}`}
                   subTitle={item?.subTitle}
                   title={item?.title}
+                  url={`${item?.url}`}
                   key={index}
                 />
               ))}

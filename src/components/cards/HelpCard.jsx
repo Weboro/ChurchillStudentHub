@@ -10,9 +10,14 @@ const HelpCard = ({ title, description, image }) => {
       <h2 className="font-bold text-[36px] text-custom-text-black">{title}</h2>
       <p>{description}</p>
       <div>
-        <Link href={"/how-to-guide"} className="">
+        <Link
+          target="blank"
+          href={
+            "https://forms.zohopublic.com.au/CIHE/form/StudentHubEnquiry/formperma/XilFJje5kQ-h7f4saQYbSV4kJ-kAMiG7p1QNfWEvDXs"
+          }
+        >
           <Button
-            btnName={"Load More Links"}
+            btnName={"Fill Enquiry Form"}
             icon={<FaArrowRight />}
             styleA={"flex items-center gap-1"}
             style={
