@@ -40,7 +40,18 @@ const NavList = ({
 
           return (
             <div key={index}>
-              {hasSubcategories ? (
+              {/* {!hasSubcategories && ( */}
+              <Link href={`${item?.slug}`}>
+                <li
+                  className={`flex gap-1 items-center hover:text-[#eb9320] ${
+                    isActive && "text-[#eb9320]"
+                  }  cursor-pointer pb-5`}
+                >
+                  <p>{item?.title}</p>
+                </li>
+              </Link>
+              {/* // )} */}
+              {/* {hasSubcategories ? (
                 <li
                   className={`group relative`}
                   onClick={() => {
@@ -116,7 +127,7 @@ const NavList = ({
                     <p>{item?.title}</p>
                   </li>
                 </Link>
-              )}
+              )} */}
             </div>
           );
         })}

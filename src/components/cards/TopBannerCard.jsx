@@ -4,7 +4,7 @@ const TopBannerCard = ({ image, title, subTitle, titleSpan }) => {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(rgb(7 7 7 / 64%), rgb(7 7 7 / 64%) 100%), url(${image})`,
+        backgroundImage: `linear-gradient(rgb(7 7 7 / 55%), rgb(7 7 7 / 55%) 100%), url(${image})`,
         backgroundRepeat: "no-repeat",
         objectFit: "cover",
         width: "100%",
@@ -18,7 +18,9 @@ const TopBannerCard = ({ image, title, subTitle, titleSpan }) => {
           <h2 className="text-[32px] font-bold text-white">
             <span className="text-[#eb9320]">{titleSpan}</span> {title}
           </h2>
-          <p className="font-semibold text-white">{subTitle}</p>
+          <p className="font-semibold text-white text-center mx-auto">
+            {subTitle}
+          </p>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ export const navItems = [
   {
     title: "How to guide",
     slug: "how-to-guide",
-    link: "",
+    link: "/how-to-guide",
     Catagories: [
       {
         menuTitle:
@@ -22,7 +22,7 @@ export const navItems = [
         CatagoriesItem: {
           title:
             "How to install Office 365 Apps in Personal laptop using student Account?",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description: ` <h1>For MacBook</h1>
           <h2>1. Visit Office 365 Portal:</h2>
           <ul>
@@ -44,7 +44,6 @@ export const navItems = [
               <li>Open any Office app.</li>
               <li>Sign in with your student account to activate Office 365.</li>
           </ul>
-      
           <h2>Creating a USI (Unique Student Identifier) ID</h2>
           <h3>1. Visit the USI Website:</h3>
           <ul>
@@ -98,7 +97,7 @@ export const navItems = [
         CatagoriesItem: {
           title:
             "How to install Office 365 Apps in macbook using student Account?",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description: ` <h1>For MacBook</h1>
           <h2>1. Visit Office 365 Portal:</h2>
           <ul>
@@ -172,7 +171,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "How to Create USI (Unique Student Identifier) ID ?",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description: ` <h1>For MacBook</h1>
           <h2>1. Visit Office 365 Portal:</h2>
           <ul>
@@ -246,7 +245,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "How to Login to Canvas and Basic functions?",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description: ` <h1>For MacBook</h1>
           <h2>1. Visit Office 365 Portal:</h2>
           <ul>
@@ -320,7 +319,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "More Guides",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description: ` <h1>For MacBook</h1>
           <h2>1. Visit Office 365 Portal:</h2>
           <ul>
@@ -403,7 +402,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Academic Integrity Policy and Procedure",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -416,7 +415,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Course Progression and Graduation Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -429,7 +428,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Advanced Standing Policy and Procedure",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -442,7 +441,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Assessment Moderation Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -455,7 +454,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Refund Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description: `<div class="policy-page">
           <h1>Academic Integrity Policy and Procedure</h1>
           <h2>Churchill Institute of Higher Education</h2>
@@ -839,7 +838,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Conduct of CodeStudent",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -852,7 +851,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Student Grievance Management Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -865,7 +864,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Student Consultation Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -878,7 +877,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Critical Incident and Emergency Management Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -891,7 +890,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Deferral Suspension and Cancellation Policy and Procedure",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -904,7 +903,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "International Student Transfer Policy and Procedure",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -917,7 +916,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Course Discontinuation and Teach Out Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -930,7 +929,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "New Student Orientation Policy",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -943,7 +942,7 @@ export const navItems = [
         link: "",
         CatagoriesItem: {
           title: "Policy Assessment",
-          image: "/assets/hero-image.png",
+          image: "/assets/heroimage-2.jpeg",
           description:
             "Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct Student Code of Conduct ",
         },
@@ -978,7 +977,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "refund-request",
         link: "https://zfrmz.com.au/RXpN4XUu8RZhAhUoWzI3",
-        image: "/assets/hero-image.png",
+        image: "/assets/heroimage-2.jpeg",
       },
       {
         icon: <RiRefund2Fill />,
@@ -986,7 +985,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "absence-approve",
         link: "https://zfrmz.com.au/HpBjIJRs3cplcqIb4Ny1",
-        image: "/assets/hero-image.png",
+        image: "/assets/heroimage-2.jpeg",
       },
       {
         icon: <PiCourtBasketballBold />,
@@ -994,7 +993,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "student-payment-schedule",
         link: "https://zfrmz.com.au/CaS3QBzTw3l18bsh3jPG",
-        image: "/assets/hero-image.png",
+        image: "/assets/heroimage-2.jpeg",
       },
       {
         icon: <RiExchangeDollarFill />,
@@ -1002,7 +1001,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "change-of-course",
         link: "https://zfrmz.com.au/X9AZvkNqzDFBpBES0ivh",
-        image: "/assets/hero-image.png",
+        image: "/assets/heroimage-2.jpeg",
       },
       {
         icon: <RiExchangeDollarFill />,
@@ -1010,7 +1009,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "deferral",
         link: "https://zfrmz.com.au/h2AYLoMcDAZLXZ7OoUle",
-        image: "/assets/hero-image.png",
+        image: "/assets/heroimage-2.jpeg",
       },
       {
         icon: <PiGenderIntersexBold />,
@@ -1018,7 +1017,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "sexual-harrasment-report",
         link: "https://zfrmz.com.au/Vj5JjMTkc8KLrYOdkEpq",
-        image: "/assets/hero-image.png",
+        image: "/assets/heroimage-2.jpeg",
       },
       {
         icon: <TbCreditCardRefund />,
@@ -1026,7 +1025,7 @@ export const navItems = [
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "application-for-credit",
         link: "https://zfrmz.com.au/Yv1WJqg1kclkGVXSRyKU",
-        image: "/assets/hero-image.png",
+        image: "/assets/heroimage-2.jpeg",
       },
     ],
   },

@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Footer, Header } from "@/components";
+import { FloaterComponent, Footer, Header } from "@/components";
 
 export const metadata: Metadata = {
   // title: {
   // default:'fsf',
   // template:'%s - sdfsd | sdfs'
   // },
-  title:
-    "sdf | sdf | sfd",
-  description:
-    "sdfsd",
+  title: "sdf | sdf | sfd",
+  description: "sdfsd",
 };
 
 export default function RootLayout({
@@ -23,10 +21,7 @@ export default function RootLayout({
   }
   return (
     <html lang="en">
-
       <head>
-     
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -64,15 +59,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
           rel="stylesheet"
         />
-      
       </head>
       <body>
-         
+        <FloaterComponent />
+
         <Header />
         {children}
         <Footer />
       </body>
-      
     </html>
   );
 }

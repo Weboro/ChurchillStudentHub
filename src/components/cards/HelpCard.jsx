@@ -20,9 +20,7 @@ const HelpCard = ({ title, description, image }) => {
             btnName={"Fill Enquiry Form"}
             icon={<FaArrowRight />}
             styleA={"flex items-center gap-1"}
-            style={
-              "border border-[#606060] rounded-full px-4 py-3 bg-custom-orange hover:bg-[#424242]/25 transition delay-150"
-            }
+            isPrimary={true}
           />
         </Link>
       </div>

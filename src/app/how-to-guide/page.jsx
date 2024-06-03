@@ -18,7 +18,7 @@ const HowToGuidePage = () => {
       <div className="">
         <div>
           <TopBannerCard
-            image={`/assets/hero-image.png`}
+            image={`/assets/heroImage-2.jpeg`}
             titleSpan={""}
             title={"How to Guide."}
             subTitle={`Student Hub > Request Form > How to Guide`}

@@ -19,6 +19,17 @@ body {
   font-optical-sizing: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ul,
+li {
+  @apply text-[#2c2b4b];
+}
 @keyframes sidebarAnimate {
   0% {
     transform: translateX(100%);
@@ -257,10 +268,14 @@ tr:nth-child(even) {
 .rich-text-container h4,
 .rich-text-container h5,
 .rich-text-container h6 {
-  margin-top: 16px;
+  margin-top: 42px;
+  /* margin-top: 16px; */
   margin-bottom: 8px;
   line-height: 24px;
-  color: #e59623;
+  color: #2c2b4b;
+}
+.rich-text-container img {
+  margin-inline: auto;
 }
 
 .rich-text-container h1 {
@@ -270,28 +285,29 @@ tr:nth-child(even) {
 }
 
 .rich-text-container h2 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.rich-text-container h3 {
   font-size: 28px;
   font-weight: 700;
 }
 
-.rich-text-container h4 {
+.rich-text-container h3 {
   font-size: 24px;
   font-weight: 700;
 }
 
-.rich-text-container h5 {
+.rich-text-container h4 {
   font-size: 20px;
+  font-weight: 700;
+}
+
+.rich-text-container h5 {
+  font-size: 18px;
   font-weight: 700;
 }
 
 .rich-text-container p {
   margin-top: 8px;
   margin-bottom: 16px;
+  font-size: 16px;
   line-height: 24px;
 }
 
@@ -306,8 +322,8 @@ tr:nth-child(even) {
 }
 .rich-text-container ul > li,
 .rich-text-container ol > li {
-  padding-left: 12.8px;
-  margin-left: 16px !important;
+  padding-left: 8px;
+  margin-left: 32px !important;
 }
 
 .rich-text-container table {

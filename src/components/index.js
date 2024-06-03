@@ -27,6 +27,7 @@ import GuideDetails from "./sections/guideSections/GuideDetails";
 import UpcomingEventsSection from "./sections/upcomingEventsSections/UpcomingEventsSection";
 import FilterComponent from "./sections/upcomingEventsSections/FilterComponent";
 import AccordionItem from "./sections/upcomingEventsSections/AccordionItem";
+import FloaterComponent from "./floater/Floater";
 
 export {
   Button,
@@ -58,4 +59,5 @@ export {
   UpcomingEventsSection,
   FilterComponent,
   AccordionItem,
+  FloaterComponent,
 };

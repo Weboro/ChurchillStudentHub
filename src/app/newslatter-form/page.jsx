@@ -2,21 +2,22 @@ import { NewsLatterForm, TopBannerCard } from "@/components";
 import React from "react";
 
 export const metadata = {
-  title: 'Abhinay',
+  title: "Abhinay",
   // description: 'abcd',
   // metadataBase: new URL('https://sdsd.com.np'),
   // keywords: ['Next.js', 'React', 'JavaScript'],
   // openGraph: {
   //   images: '/og-image.png',
   // },
-}
+};
 const NewslatterForm = () => {
   return (
     <main className="min-h-[80vh]">
       <div className="flex flex-col gap-[32px] lg:gap-[64px]">
         <div>
           <TopBannerCard
-            image={`/assets/hero-image.png`}
+            image={`/assets/heroImage-2.jpeg
+`}
             titleSpan={""}
             title={"Newslatter Form"}
             subTitle={`Student Hub > Request Form > Newslatter Form`}

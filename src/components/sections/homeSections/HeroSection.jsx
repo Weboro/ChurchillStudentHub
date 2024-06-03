@@ -5,10 +5,10 @@ const HeroSection = () => {
   return (
     <div>
       <TopBannerCard
-        image={`/assets/hero-image.png`}
-        titleSpan={'Student'}
-        title={"Hub"}       
-        subTitle={"We are here to help you with your Query!"}
+        image={`/assets/heroImage-2.jpeg`}
+        titleSpan={"Student"}
+        title={"Hub"}
+        subTitle={"⁠Your Ultimate Resource for Academic Success!"}
       />
     </div>
   );

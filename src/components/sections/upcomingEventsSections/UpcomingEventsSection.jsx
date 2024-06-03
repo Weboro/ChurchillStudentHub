@@ -22,7 +22,8 @@ const UpcomingEventsSection = () => {
     <div className="flex flex-col gap-[32px] lg:gap-[64px]">
       <div>
         <TopBannerCard
-          image={`/assets/hero-image.png`}
+          image={`/assets/heroImage-2.jpeg
+`}
           titleSpan={""}
           title={"Upcoming Key Dates"}
           subTitle={`Student Hub > Request Form > Upcoming Key Dates`}

@@ -21,35 +21,41 @@ const Footer = () => {
       >
         <div className="mx-auto container px-5">
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col lg:flex-row justify-between gap-4">
+            <div className="flex flex-col items-center lg:flex-row justify-between gap-4">
               <Link href="/">
                 <Image
-                  src={"/assets/footer-logo.png"}
+                  src={"/assets/logo.svg"}
                   width={400}
                   height={400}
                   alt="Footer Logo"
-                  className="object-contain w-[200px] h-auto"
+                  className="object-contain w-[300px] lg:w-[650px] h-auto brightness-0 invert"
                   priority
                 />
               </Link>
               <div className="text-white flex flex-col gap-2">
-                <h3 className="text-[16px]">
+                <h3 className="text-[16px] text-white">
                   <strong>Churchill Institute of Higher Education</strong>
                 </h3>
 
-                <Link href={""} className="flex gap-2 items-center text-[14px]">
+                <Link
+                  href={""}
+                  className="flex gap-2 text-white items-center text-[14px]"
+                >
                   <span>
                     <FaPhoneAlt />
                   </span>
                   +61 (02) 8856 2997
                 </Link>
-                <Link href={""} className="flex gap-2 items-center text-[14px]">
+                <Link
+                  href={""}
+                  className="flex gap-2 text-white items-center text-[14px]"
+                >
                   <span>
                     <MdEmail />
                   </span>
                   info@churchill.nsw.edu.au
                 </Link>
-                <p className="flex gap-2 items-center text-[14px]">
+                <p className="flex gap-2 text-white items-center text-[14px]">
                   <span>
                     <FaLocationDot />
                   </span>
@@ -57,7 +63,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row justify-between gap-5 text-white">
+            {/* <div className="flex flex-col lg:flex-row justify-between gap-5 text-white">
               <div>
                 <h3 className="text-[16px] pb-4">
                   <strong>Quick Links</strong>
@@ -177,8 +183,8 @@ const Footer = () => {
                     <Link href={""}>Student Portal</Link>
                   </li>
                 </ul>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
@@ -186,7 +192,7 @@ const Footer = () => {
         <div className="container mx-auto px-5">
           <div className="flex flex-col lg:flex-row  justify-between gap-5 pb-[54px]">
             <div className="lg:w-[60%] flex flex-col lg:flex-row gap-4 lg:items-center">
-              <div className="flex gap-1">
+              <div className="flex gap-1 items-center justify-center md:justify-start">
                 <Image
                   src={"/assets/flag-a.png"}
                   width={400}
@@ -204,14 +210,14 @@ const Footer = () => {
                   priority
                 />
               </div>
-              <p className="w-[90%]">
+              <p className="w-[90%] text-center md:text-left">
                 CIHE acknowledges Aboriginal and Torres Strait Islander people
                 as the Traditional Custodians of the land and acknowledges and
                 pays respect to their elders, past and present
               </p>
             </div>
             <div className="">
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 text-center md:text-left">
                 <h3 className="text-[16px]">
                   <strong>Churchill Institute of Higher Education</strong>
                 </h3>
