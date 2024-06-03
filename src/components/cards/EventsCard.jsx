@@ -4,20 +4,21 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 
 const EventsCard = ({ title, subTitle, day, date, displayMonth, year }) => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const isSmallSize = width < 768;
+  // const [width, setWidth] = useState(window.innerWidth);
+  // const isSmallSize = width < 768 ? true : false;
+  const isSmallSize = false;
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setWidth(window.innerWidth);
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <>
