@@ -317,9 +317,13 @@ tr:nth-child(even) {
   margin-bottom: 8px;
   line-height: 24px;
 }
+
 .rich-text-container ul {
-  list-style-type: disc;
+  /* list-style-type: disc; */
+  /* text-decoration: none; */
+  /* list-style-type: lower-alpha; */
 }
+
 .rich-text-container ul > li,
 .rich-text-container ol > li {
   padding-left: 8px;
@@ -349,7 +353,7 @@ tr:nth-child(even) {
 /*  */
 
 /* < policy page > */
-.policy-page {
+/* .policy-page {
   max-width: 82ch;
   margin-inline: auto;
 }
@@ -431,5 +435,5 @@ tr:nth-child(even) {
 
 .policy-page tr:nth-child(even) {
   background-color: #f9f9f9;
-}
+} */
 /* </ policy page > */
