@@ -4,7 +4,7 @@ const TopBannerCard = ({ image, title, subTitle, titleSpan }) => {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(rgb(7 7 7 / 55%), rgb(7 7 7 / 55%) 100%), url(${image})`,
+        backgroundImage: `linear-gradient(rgb(7 7 7 / 55%), rgb(7 7 7 / 55%) 100%), url(https://ik.imagekit.io/99aui81cz/diversity-teenagers-friends-friendship-team-concept.jpg?updatedAt=1717533378778)`,
         backgroundRepeat: "no-repeat",
         objectFit: "cover",
         width: "100%",
