@@ -1,9 +1,9 @@
 import { NewsSection, RequestFormCard, TopBannerCard } from "@/components";
 import React from "react";
-import { navItems } from "@/constDatas/navItems";
+import { requestList } from "@/constDatas/requestList";
 
 export const metadata = {
-  title: "Abhinay",
+  title: "Request Form",
   // description: 'abcd',
   // metadataBase: new URL('https://sdsd.com.np'),
   // keywords: ['Next.js', 'React', 'JavaScript'],
@@ -11,9 +11,8 @@ export const metadata = {
   //   images: '/og-image.png',
   // },
 };
-const RequestFormPage = () => {
-  const requestLists = navItems[3]?.Catagories;
 
+const RequestFormPage = () => {
   return (
     <main className="min-h-[80vh]">
       <div className="flex flex-col gap-[32px] lg:gap-[64px]">
@@ -22,25 +21,26 @@ const RequestFormPage = () => {
             image={`/assets/heroImage-2.jpeg`}
             titleSpan={""}
             title={"How to Guide."}
-            subTitle={`Student Hub > Request Form > How to Guide`}
+            subTitle={`Student Hub > Request Form`}
           />
         </div>
         <div className="container mx-auto px-5">
           <div className="flex flex-col gap-[44px]">
-            <h2 className="font-bold text-[36px] text-custom-text-black">
+            <h2 className="font-bold text-[36px] text-matte-purple">
               Request Form
             </h2>
             <div className="">
               <div className="flex flex-col gap-5">
-                {requestLists?.map((item, index) => (
+                {requestList?.map((item, index) => (
                   <RequestFormCard
                     key={index}
-                    icon={item?.icon}
                     menuTitle={item?.menuTitle}
-                    link={item?.link}
                     subTitle={item?.subTitle}
-                    btnTitle={"Apply"}
-                    target={"_blank"}
+                    link={item?.link}
+                    slug={item?.slug}
+                    btnTitle={item?.btnTitle}
+                    target={item?.target}
+                    iconStyles={item?.iconStyles}
                   />
                 ))}
               </div>

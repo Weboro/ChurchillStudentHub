@@ -13,7 +13,7 @@ import TopBannerCard from "./cards/TopBannerCard";
 import UsefulLinksCard from "./cards/UsefulLinksCard";
 import HelpCard from "./cards/HelpCard";
 import GuideCard from "./cards/GuideCard";
-import EventsCard from "./cards/EventsCard";
+import KeyDatesCard from "./cards/KeyDatesCard";
 import RequestFormCard from "./cards/RequestFormCard";
 import HeroSection from "./sections/homeSections/HeroSection";
 import UsefulLinkSection from "./sections/homeSections/UsefulLinkSection";
@@ -45,7 +45,7 @@ export {
   UsefulLinksCard,
   HelpCard,
   GuideCard,
-  EventsCard,
+  KeyDatesCard,
   RequestFormCard,
   HeroSection,
   UsefulLinkSection,

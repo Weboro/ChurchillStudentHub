@@ -2,7 +2,7 @@ import { NewsLatterForm, TopBannerCard } from "@/components";
 import React from "react";
 
 export const metadata = {
-  title: "Abhinay",
+  // title: "",
   // description: 'abcd',
   // metadataBase: new URL('https://sdsd.com.np'),
   // keywords: ['Next.js', 'React', 'JavaScript'],

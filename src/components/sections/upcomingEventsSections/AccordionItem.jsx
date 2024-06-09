@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { EventsCard } from "@/components";
+import { KeyDatesCard } from "@/components";
 import { FaPlus } from "react-icons/fa";
 
 const AccordionItem = ({ month, events }) => {
@@ -14,8 +14,8 @@ const AccordionItem = ({ month, events }) => {
             onClick={() => setIsOpen(!isOpen)}
             className={`w-full flex justify-between rounded-[14px] px-4 py-2  transition-all ${
               isOpen
-                ? "bg-custom-orange text-white shadow-sm"
-                : "bg-custom-pink text-black"
+                ? "bg-primary-orange text-white shadow-sm"
+                : "bg-light-grey text-black"
             }`}
           >
             <p className="font-extrabold lg:text-xl select-none">{month}</p>
@@ -34,11 +34,12 @@ const AccordionItem = ({ month, events }) => {
               </span>
             </div>
           </div>
+
           {isOpen && (
             <div className="flex flex-col gap-6 mt-4 mb-6">
               {events.map((event) => (
                 <div key={event.id}>
-                  <EventsCard
+                  <KeyDatesCard
                     title={event.title}
                     subTitle={event.subTitle}
                     day={event.day}

@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const HelpCard = ({ title, description, image }) => {
   return (
-    <div className="bg-custom-pink rounded-[32px] px-8 pt-[32px] lg:pb-0 pb-[32px] flex flex-col gap-5">
-      <h2 className="font-bold text-[36px] text-custom-text-black">{title}</h2>
+    <div className="bg-light-grey rounded-[32px] px-8 pt-[32px] lg:pb-0 pb-[32px] flex flex-col gap-5">
+      <h2 className="font-bold text-[36px] text-matte-purple">{title}</h2>
       <p>{description}</p>
       <div>
         <Link
@@ -19,7 +19,6 @@ const HelpCard = ({ title, description, image }) => {
           <Button
             btnName={"Fill Enquiry Form"}
             icon={<FaArrowRight />}
-            styleA={"flex items-center gap-1"}
             isPrimary={true}
           />
         </Link>

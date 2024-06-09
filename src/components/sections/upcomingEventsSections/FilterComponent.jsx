@@ -14,10 +14,10 @@ export const FilterComponent = () => {
   };
 
   return (
-    <div className="p-4 rounded-xl bg-custom-pink lg:w-[21rem] h-fit">
+    <div className="p-4 rounded-xl bg-light-grey lg:w-[21rem] h-fit">
       <h1
         className="font-extrabold text-xl lg:text-2xl pb-2 w-fit
-      relative before:absolute before:bottom-0 before:left-0 before:w-1/3 before:h-1 before:bg-custom-orange before:transition-all
+      relative before:absolute before:bottom-0 before:left-0 before:w-1/3 before:h-1 before:bg-primary-orange before:transition-all
       "
       >
         Filter Dates
@@ -54,7 +54,7 @@ export const FilterComponent = () => {
 
       <button
         type="submit"
-        className="px-6 py-2 bg-custom-orange mt-4 rounded-full font-bold text-white hover:shadow-md "
+        className="px-6 py-2 bg-primary-orange mt-4 rounded-full font-bold text-white hover:shadow-md "
       >
         Filter
       </button>

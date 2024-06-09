@@ -12,7 +12,7 @@ const HelpSection = () => {
   return (
     <div className="container mx-auto px-5">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-[32px]">
-        <div className="bg-custom-pink rounded-[32px]">
+        <div className="bg-light-grey rounded-md">
           <HelpCard
             image={"/assets/help.png"}
             title={"Have a question? We're here to help."}
@@ -21,13 +21,15 @@ const HelpSection = () => {
             }
           />
         </div>
-        <div className="bg-custom-pink rounded-[32px] flex flex-col">
+
+        <div className="bg-light-grey rounded-md flex flex-col">
           <div className=" px-8 py-[32px] flex flex-col gap-5">
             <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
-              <h2 className="font-bold text-[36px] text-custom-text-black">
+              <h2 className="font-bold text-[36px] text-matte-purple">
                 How to Guide?
               </h2>
             </div>
+
             {guideLists?.slice(0, 4)?.map((item, index) => (
               <GuideCard
                 key={index}
@@ -42,8 +44,7 @@ const HelpSection = () => {
                 <Button
                   btnName={"Load More Links"}
                   icon={<FaArrowRight />}
-                  isPrimary={false}
-                  styleA={"flex items-center gap-1"}
+                  styleType="secondary"
                 />
               </Link>
             </div>
