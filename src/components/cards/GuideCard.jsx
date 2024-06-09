@@ -7,8 +7,8 @@ const GuideCard = ({ menuTitle, slug, isSearchActive }) => {
     <div>
       <ul className="flex flex-col gap-3">
         <Link href={`/how-to-guide/${slug}`}>
-          <li className="px-4 py-3 hover:text-custom-orange bg-white rounded-[12px] flex justify-between gap-2 items-center">
-            {menuTitle}
+          <li className="px-4 py-3 hover:text-primary-orange bg-white rounded-md flex justify-between gap-2 items-center">
+            <p className="text-lg ">{menuTitle}</p>
             <span>
               <FaArrowRight />
             </span>

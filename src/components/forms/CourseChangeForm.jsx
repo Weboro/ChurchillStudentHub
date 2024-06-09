@@ -64,11 +64,7 @@ const CourseChangeForm = () => {
           </div>
         </div>
         <div className="flex justify-start">
-          <Button
-            btnName={"Apply"}
-            icon={<FaArrowRight />}
-            styleA={"flex items-center gap-1"}
-          />
+          <Button btnName={"Apply"} icon={<FaArrowRight />} />
         </div>
       </form>
     </div>

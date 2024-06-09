@@ -43,7 +43,7 @@ const UpcomingEventsSection = () => {
                 <div key={year}>
                   <h2
                     className="text-2xl font-extrabold w-fit relative 
-                  before:absolute before:bottom-[-5px] before:left-0 before:w-2/3 before:h-1 before:bg-custom-orange before:transition-all"
+                  before:absolute before:bottom-[-5px] before:left-0 before:w-2/3 before:h-1 before:bg-primary-orange before:transition-all"
                   >
                     {year}
                   </h2>

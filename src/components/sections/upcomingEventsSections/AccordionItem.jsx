@@ -14,8 +14,8 @@ const AccordionItem = ({ month, events }) => {
             onClick={() => setIsOpen(!isOpen)}
             className={`w-full flex justify-between rounded-[14px] px-4 py-2  transition-all ${
               isOpen
-                ? "bg-custom-orange text-white shadow-sm"
-                : "bg-custom-pink text-black"
+                ? "bg-primary-orange text-white shadow-sm"
+                : "bg-light-grey text-black"
             }`}
           >
             <p className="font-extrabold lg:text-xl select-none">{month}</p>

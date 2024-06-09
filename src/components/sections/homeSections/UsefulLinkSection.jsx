@@ -11,11 +11,11 @@ const UsefulLinkSection = () => {
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[44px]">
         <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
-          <h2 className="font-bold text-[36px] text-custom-text-black">
+          <h2 className="font-bold text-[36px] text-matte-purple">
             Useful Links
           </h2>
         </div>
-        <div className="grid grid-cols-1 h-full lg:grid-cols-4 gap-[34px] lg:gap-[34px]">
+        <div className="grid grid-cols-1 h-full lg:grid-cols-4 gap-6">
           {usefulLinksData?.slice(0, 4)?.map((item, index) => (
             <UsefulLinksCard
               icon={`${item?.icon}`}
@@ -32,8 +32,7 @@ const UsefulLinkSection = () => {
               <Button
                 btnName={"Load More Links"}
                 icon={<FaArrowRight />}
-                isPrimary={false}
-                styleA={"flex items-center gap-1"}
+                styleType="secondary"
               />
             </Link>
           </div>

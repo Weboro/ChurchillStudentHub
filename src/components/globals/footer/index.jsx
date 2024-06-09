@@ -188,7 +188,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-custom-orange pt-[64px]">
+      <div className="bg-primary-orange pt-[64px]">
         <div className="container mx-auto px-5">
           <div className="flex flex-col lg:flex-row  justify-between gap-5 pb-[54px]">
             <div className="lg:w-[60%] flex flex-col lg:flex-row gap-4 lg:items-center">

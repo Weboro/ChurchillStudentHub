@@ -108,7 +108,7 @@ const NavList = ({
                               handleOnclick();
                             }}
                           >
-                            <li className="border-b hover:bg-[#F5F5F5] px-4 py-3 uppercase text-custom-text-black text-center">
+                            <li className="border-b hover:bg-[#F5F5F5] px-4 py-3 uppercase text-matte-purple text-center">
                               View All ...
                             </li>
                           </Link>

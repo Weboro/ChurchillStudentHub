@@ -757,23 +757,6 @@ export const navItems = [
       },
     ],
   },
-  // {
-  //   title: "Enrollment",
-  //   link: "",
-  //   slug: "contact-us",
-  //   Catagories: [
-  //     {
-  //       menuTitle: "-New Students ",
-  //       slug: "new-students",
-  //       link: "",
-  //     },
-  //     {
-  //       menuTitle: "-Onoing Students",
-  //       slug: "onoing-students",
-  //       link: "",
-  //     },
-  //   ],
-  // },
   {
     title: "Request Form",
     link: "",

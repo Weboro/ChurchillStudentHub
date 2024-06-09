@@ -22,7 +22,7 @@ const Home = () => {
           <HelpSection />
         </div>
         <div>
-          <RequestFormSection isButtonActive={true} />
+          <RequestFormSection />
         </div>
         <div>
           <UpcomingKeyDatesSection />
