@@ -22,8 +22,7 @@ const UpcomingEventsSection = () => {
     <div className="flex flex-col gap-[32px] lg:gap-[64px]">
       <div>
         <TopBannerCard
-          image={`/assets/heroImage-2.jpeg
-`}
+          image={`/assets/heroImage-2.jpeg`}
           titleSpan={""}
           title={"Upcoming Key Dates"}
           subTitle={`Student Hub > Request Form > Upcoming Key Dates`}
@@ -37,7 +36,7 @@ const UpcomingEventsSection = () => {
           />
 
           <div className="flex-1 flex flex-col gap-5">
-            {Object.keys(UpcomingKeyData)
+            {/* {Object.keys(UpcomingKeyData)
               .sort((a, b) => b - a) // sorting by year descending order so latest year comes in front
               .map((year) => (
                 <div key={year}>
@@ -57,7 +56,7 @@ const UpcomingEventsSection = () => {
                     />
                   ))}
                 </div>
-              ))}
+              ))} */}
           </div>
         </div>
       </div>
