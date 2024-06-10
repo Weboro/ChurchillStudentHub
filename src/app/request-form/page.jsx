@@ -1,6 +1,7 @@
 import { NewsSection, RequestFormCard, TopBannerCard } from "@/components";
 import React from "react";
-import { requestList } from "@/constDatas/requestList";
+import { navItems } from "@/constDatas/navItems";
+import Link from "next/link";
 
 export const metadata = {
   title: "Request Form",
@@ -13,6 +14,8 @@ export const metadata = {
 };
 
 const RequestFormPage = () => {
+  const requestLists = navItems[3].Catagories;
+
   return (
     <main className="min-h-[80vh]">
       <div className="flex flex-col gap-[32px] lg:gap-[64px]">
@@ -20,8 +23,15 @@ const RequestFormPage = () => {
           <TopBannerCard
             image={`/assets/heroImage-2.jpeg`}
             titleSpan={""}
-            title={"How to Guide."}
-            subTitle={`Student Hub > Request Form`}
+            title={"Request Form"}
+            subTitle={
+              <p className="text-white">
+                <Link href="/" className="text-white">
+                  Student Hub
+                </Link>
+                <span> / Request Form</span>
+              </p>
+            }
           />
         </div>
         <div className="container mx-auto px-5">
@@ -31,7 +41,7 @@ const RequestFormPage = () => {
             </h2>
             <div className="">
               <div className="flex flex-col gap-5">
-                {requestList?.map((item, index) => (
+                {requestLists?.map((item, index) => (
                   <RequestFormCard
                     key={index}
                     menuTitle={item?.menuTitle}

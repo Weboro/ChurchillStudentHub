@@ -7,17 +7,7 @@ import {
   AccordionItem,
 } from "@/components";
 
-// const filters = {
-//   query,
-//   audiences: [],
-//   categories: [],
-// };
-
 const UpcomingEventsSection = () => {
-  // const [searchFilters, setSearchFilters] = useState(filters);
-  // const [searchQuery, setSearchQuery] = useState("");
-  // const query = searchQuery.trim().toLowerCase();
-
   return (
     <div className="flex flex-col gap-[32px] lg:gap-[64px]">
       <div>
@@ -30,10 +20,7 @@ const UpcomingEventsSection = () => {
       </div>
       <div className="container mx-auto px-5">
         <div className="flex flex-col lg:flex-row gap-4">
-          <FilterComponent
-          // searchFilters={searchFilters}
-          // setSearchFilters={setSearchFilters}
-          />
+          <FilterComponent />
 
           <div className="flex-1 flex flex-col gap-5">
             {/* {Object.keys(UpcomingKeyData)

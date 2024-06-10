@@ -17,8 +17,6 @@ const UpcomingKeyDatesSection = () => {
     return eventDate >= currentDate;
   });
 
-  const NEXT_PUBLIC_CHURCHILL_URL = process.env.NEXT_PUBLIC_CHURCHILL_URL;
-
   return (
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[32px] lg:gap-[44px]">
@@ -42,10 +40,7 @@ const UpcomingKeyDatesSection = () => {
         </div>
         <div>
           <div className="flex justify-center">
-            <Link
-              href={`${NEXT_PUBLIC_CHURCHILL_URL}/upcoming-key-dates`}
-              className="w-max"
-            >
+            <Link href={`/upcoming-key-dates`} className="w-fit">
               <Button
                 btnName={"Load More"}
                 icon={<FaArrowRight />}

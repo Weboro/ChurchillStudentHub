@@ -1,6 +1,7 @@
 import { GuideCard, NewsSection, TopBannerCard } from "@/components";
 import React from "react";
 import { navItems } from "@/constDatas/navItems";
+import Link from "next/link";
 
 export const metadata = {
   title: "How To Guide",
@@ -21,8 +22,15 @@ const HowToGuidePage = () => {
           <TopBannerCard
             image={`/assets/heroImage-2.jpeg`}
             titleSpan={""}
-            title={"How to Guide."}
-            subTitle={`Student Hub > How to Guide`}
+            title={"How to Guide"}
+            subTitle={
+              <p className="text-white">
+                <Link href="/" className="text-white">
+                  Student Hub
+                </Link>
+                <span> / How to Guide</span>
+              </p>
+            }
           />
         </div>
         <div className="container mx-auto px-5">

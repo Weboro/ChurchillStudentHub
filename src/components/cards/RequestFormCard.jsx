@@ -20,7 +20,6 @@ const RequestFormCard = ({
           <i
             className={`text-2xl text-primary-orange translate-y-[2px] ${iconStyles}`}
           />
-          {/* <span className="text-[24px]">{icon}</span> */}
         </div>
         <div className="flex flex-col gap-1">
           <span className="font-bold">{menuTitle}</span>

@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Image from "next/image";
 
 const FloaterComponent = () => {
   const [isShown, setIsShown] = useState(false);
@@ -15,7 +16,9 @@ const FloaterComponent = () => {
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
         >
-          <img
+          <Image
+            width={500}
+            height={500}
             src="/assets/messages-question.svg"
             alt="messages question icon"
             className="w-6"
