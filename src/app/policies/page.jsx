@@ -2,6 +2,7 @@ import { NewsSection, RequestFormCard, TopBannerCard } from "@/components";
 import React from "react";
 import { navItems } from "@/constDatas/navItems";
 import { requestList } from "@/constDatas/requestList";
+import Link from "next/link";
 
 export const metadata = {
   title: "Policies",
@@ -21,7 +22,14 @@ const PoliciesList = () => {
             image={`/assets/heroImage-2.jpeg`}
             titleSpan={""}
             title={"Policies and Procedures"}
-            subTitle={`Student Hub > Request Form > Policies and Procedures`}
+            subTitle={
+              <p className="text-white">
+                <Link href="/" className="text-white">
+                  Student Hub
+                </Link>
+                <span> / Policies and Procedures</span>
+              </p>
+            }
           />
         </div>
 

@@ -15,12 +15,12 @@ const TopBannerCard = ({ image, title, subTitle, titleSpan }) => {
     >
       <div className="container mx-auto px-5">
         <div className="flex flex-col gap-2 items-center">
-          <h2 className="text-[32px] font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-white">
             <span className="text-[#eb9320]">{titleSpan}</span> {title}
           </h2>
-          <p className="font-semibold text-white text-center mx-auto">
+          <div className="font-semibold text-white text-center mx-auto">
             {subTitle}
-          </p>
+          </div>
         </div>
       </div>
     </div>

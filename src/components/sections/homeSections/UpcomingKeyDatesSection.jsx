@@ -17,8 +17,6 @@ const UpcomingKeyDatesSection = () => {
     return eventDate >= currentDate;
   });
 
-  const NEXT_PUBLIC_CHURCHILL_URL = process.env.NEXT_PUBLIC_CHURCHILL_URL;
-
   return (
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[32px] lg:gap-[44px]">

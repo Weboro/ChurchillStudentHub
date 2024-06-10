@@ -5,6 +5,8 @@ import { MdQuestionAnswer } from "react-icons/md";
 import Link from "next/link";
 
 const TopInfo = () => {
+  const NEXT_PUBLIC_CHURCHILL_URL = process.env.NEXT_PUBLIC_CHURCHILL_URL;
+
   return (
     <div className="">
       <ul className="flex gap-4 text-[14px] font-semibold text-[#424242]">
@@ -24,15 +26,11 @@ const TopInfo = () => {
             </span>
           </li>
         </Link>
-        <Link target="blank" href="https://churchill.nsw.edu.au/">
-          <li className="flex gap-1 items-center cursor-pointer">
-            <p>Churchil</p>
-            <span>
-              <MdQuestionAnswer />
-            </span>
-          </li>
-        </Link>
-        <Link target="blank" href="https://churchill.nsw.edu.au/contact-us">
+        <Link
+          target="blank"
+          href={`${NEXT_PUBLIC_CHURCHILL_URL}/contact-us`}
+          // href="https://churchill.nsw.edu.au/contact-us"
+        >
           <li className="flex gap-1 items-center cursor-pointer">
             <p>Contact Us</p>
             <span>

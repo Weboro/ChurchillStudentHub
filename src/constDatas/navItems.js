@@ -763,7 +763,8 @@ export const navItems = [
     slug: "request-form",
     Catagories: [
       {
-        icon: <RiExchangeDollarFill />,
+        // icon: <RiExchangeDollarFill />,
+        iconStyles: "fi fi-rr-refund-alt",
         menuTitle: "Refund Request",
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "refund-request",
@@ -771,7 +772,8 @@ export const navItems = [
         image: "/assets/heroimage-2.jpeg",
       },
       {
-        icon: <RiRefund2Fill />,
+        // icon: <RiRefund2Fill />,
+        iconStyles: "fi fi-rr-fingerprint",
         menuTitle: "Absence Approve",
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "absence-approve",
@@ -779,7 +781,8 @@ export const navItems = [
         image: "/assets/heroimage-2.jpeg",
       },
       {
-        icon: <PiCourtBasketballBold />,
+        // icon: <PiCourtBasketballBold />,
+        iconStyles: "fi fi-rr-fee-receipt",
         menuTitle: "Student Payment Schedule",
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "student-payment-schedule",
@@ -787,7 +790,8 @@ export const navItems = [
         image: "/assets/heroimage-2.jpeg",
       },
       {
-        icon: <RiExchangeDollarFill />,
+        // icon: <RiExchangeDollarFill />,
+        iconStyles: "fi fi-rr-replace",
         menuTitle: "Change Of Course",
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "change-of-course",
@@ -795,7 +799,8 @@ export const navItems = [
         image: "/assets/heroimage-2.jpeg",
       },
       {
-        icon: <RiExchangeDollarFill />,
+        // icon: <RiExchangeDollarFill />,
+        iconStyles: "fi fi-rr-time-past",
         menuTitle: "Deferral",
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "deferral",
@@ -803,7 +808,8 @@ export const navItems = [
         image: "/assets/heroimage-2.jpeg",
       },
       {
-        icon: <PiGenderIntersexBold />,
+        // icon: <PiGenderIntersexBold />,
+        iconStyles: "fi fi-rr-venus",
         menuTitle: "Sexual Harrasment Report",
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "sexual-harrasment-report",
@@ -811,7 +817,8 @@ export const navItems = [
         image: "/assets/heroimage-2.jpeg",
       },
       {
-        icon: <TbCreditCardRefund />,
+        // icon: <TbCreditCardRefund />,
+        iconStyles: "fi fi-rr-credit-card",
         menuTitle: "Application For Credit",
         subTitle: "Access your timetable, results, trimester invoices.",
         slug: "application-for-credit",
