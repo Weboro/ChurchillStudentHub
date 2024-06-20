@@ -16,183 +16,46 @@ export const navItems = [
     Catagories: [
       {
         menuTitle:
-          "1. How to install Office 365 Apps in Personal laptop using student Account?",
+          "How to install Office 365 Apps in Personal laptop using student Account?",
         slug: "how-to-install-Office-365-apps-in-personal-laptop-using-student-account",
         link: "",
         CatagoriesItem: {
           title:
             "How to install Office 365 Apps in Personal laptop using student Account?",
           image: "/assets/heroimage-2.jpeg",
-          description: ` <h1>For MacBook</h1>
-          <h2>1. Visit Office 365 Portal:</h2>
-          <ul>
-              <li>Go to <a href="https://portal.office.com">portal.office.com</a>.</li>
-              <li>Log in with your student email and password.</li>
-          </ul>
-          <img src="https://ik.imagekit.io/d5sscrgud/aus/login.png?updatedAt=1717421384037"/>
-          <h2>2. Access the Office Apps:</h2>
-          <ul>
-              <li>Click on "Install Office" and then select "Office 365 apps."</li>
-          </ul>
-          <h2>3. Download and Install:</h2>
-          <ul>
-              <li>Download the installer package.</li>
-              <li>Open the downloaded file and follow the installation instructions.</li>
-          </ul>
-          <h2>4. Activation:</h2>
-          <ul>
-              <li>Open any Office app.</li>
-              <li>Sign in with your student account to activate Office 365.</li>
-          </ul>
-          <h2>Creating a USI (Unique Student Identifier) ID</h2>
-          <h3>1. Visit the USI Website:</h3>
-          <ul>
-              <li>Go to <a href="https://www.usi.gov.au">usi.gov.au</a>.</li>
-          </ul>
-          <h3>2. Start the USI Creation Process:</h3>
-          <ul>
-              <li>Click on "Create your USI" and then select "Get Started."</li>
-          </ul>
-          <h3>3. Provide Personal Details:</h3>
-          <ul>
-              <li>Fill in your personal information, including name, date of birth, and contact details.</li>
-          </ul>
-          <h3>4. Identity Verification:</h3>
-          <ul>
-              <li>Use one of the accepted forms of ID (e.g., passport, driver’s license, Medicare card) to verify your identity.</li>
-          </ul>
-          <h3>5. Create a USI:</h3>
-          <ul>
-              <li>Follow the prompts to complete the registration.</li>
-              <li>Your USI will be generated and displayed.</li>
-          </ul>
-      
-          <h2>Logging in to Canvas and Basic Functions</h2>
-          <h3>1. Visit the Canvas Login Page:</h3>
-          <ul>
-              <li>Go to your institution’s Canvas login page or <a href="https://canvas.instructure.com">canvas.instructure.com</a>.</li>
-          </ul>
-          <h3>2. Log In:</h3>
-          <ul>
-              <li>Enter your student email and password.</li>
-          </ul>
-          <h3>3. Basic Navigation:</h3>
-          <ul>
-              <li><strong>Dashboard:</strong> Shows all your courses.</li>
-              <li><strong>Courses:</strong> Access individual courses.</li>
-              <li><strong>Calendar:</strong> View assignments and due dates.</li>
-              <li><strong>Inbox:</strong> Communicate with instructors and classmates.</li>
-              <li><strong>Assignments:</strong> Submit assignments and view grades.</li>
-          </ul>
-      
-          <h2>Conclusion</h2>
-          <p>By following these guides, you can efficiently install Office 365 on your personal devices, create a USI, and navigate Canvas. These steps ensure you leverage the resources available to you as a student, enhancing your educational experience.</p>`,
+          description: `<h2>How to Install Office 365 Apps on a Personal Laptop Using a Student Account</h2>    <ol>        <li><strong>Access Office 365:</strong>            <ul>                <li>Open your web browser and go to <a href="https://www.office.com" target="_blank">office.com</a>.</li>                <li>Click on "Sign In" and enter your student email address and password.</li>            </ul>        </li>        <li><strong>Navigate to Install:</strong>            <ul>                <li>Once logged in, click on the "Install Office" button on the top right corner of the page.</li>                <li>Select "Office 365 apps" from the dropdown menu.</li>            </ul>        </li>        <li><strong>Download the Installer:</strong>            <ul>                <li>The download will begin automatically. Once it's finished, open the installer file.</li>            </ul>        </li>        <li><strong>Run the Installer:</strong>            <ul>                <li>Follow the on-screen instructions to complete the installation process.</li>                <li>This process includes accepting the license agreement and selecting the install location.</li>            </ul>        </li>        <li><strong>Activate Office:</strong>            <ul>                <li>After the installation is complete, open any Office app (e.g., Word or Excel).</li>                <li>Sign in with your student email address and password to activate your Office 365 subscription.</li>            </ul>        </li>    </ol>`,
         },
       },
       {
         menuTitle:
-          "2. How to install Office 365 Apps in macbook using student Account?",
+          "How to install Office 365 Apps in macbook using student Account?",
         slug: "how-to-install-Office-365-apps-in-macbook-using-student-account",
         link: "",
         CatagoriesItem: {
           title:
             "How to install Office 365 Apps in macbook using student Account?",
           image: "/assets/heroimage-2.jpeg",
-          description: ` <h1>For MacBook</h1>
-          <h2>1. Visit Office 365 Portal:</h2>
-          <ul>
-              <li>Go to <a href="https://portal.office.com">portal.office.com</a>.</li>
-              <li>Log in with your student email and password.</li>
-          </ul>
-          <img src="https://ik.imagekit.io/d5sscrgud/aus/login.png?updatedAt=1717421384037"/>
-          <h2>2. Access the Office Apps:</h2>
-          <ul>
-              <li>Click on "Install Office" and then select "Office 365 apps."</li>
-          </ul>
-          <h2>3. Download and Install:</h2>
-          <ul>
-              <li>Download the installer package.</li>
-              <li>Open the downloaded file and follow the installation instructions.</li>
-          </ul>
-          <h2>4. Activation:</h2>
-          <ul>
-              <li>Open any Office app.</li>
-              <li>Sign in with your student account to activate Office 365.</li>
-          </ul>
-      
-          <h2>Creating a USI (Unique Student Identifier) ID</h2>
-          <h3>1. Visit the USI Website:</h3>
-          <ul>
-              <li>Go to <a href="https://www.usi.gov.au">usi.gov.au</a>.</li>
-          </ul>
-          <h3>2. Start the USI Creation Process:</h3>
-          <ul>
-              <li>Click on "Create your USI" and then select "Get Started."</li>
-          </ul>
-          <h3>3. Provide Personal Details:</h3>
-          <ul>
-              <li>Fill in your personal information, including name, date of birth, and contact details.</li>
-          </ul>
-          <h3>4. Identity Verification:</h3>
-          <ul>
-              <li>Use one of the accepted forms of ID (e.g., passport, driver’s license, Medicare card) to verify your identity.</li>
-          </ul>
-          <h3>5. Create a USI:</h3>
-          <ul>
-              <li>Follow the prompts to complete the registration.</li>
-              <li>Your USI will be generated and displayed.</li>
-          </ul>
-      
-          <h2>Logging in to Canvas and Basic Functions</h2>
-          <h3>1. Visit the Canvas Login Page:</h3>
-          <ul>
-              <li>Go to your institution’s Canvas login page or <a href="https://canvas.instructure.com">canvas.instructure.com</a>.</li>
-          </ul>
-          <h3>2. Log In:</h3>
-          <ul>
-              <li>Enter your student email and password.</li>
-          </ul>
-          <h3>3. Basic Navigation:</h3>
-          <ul>
-              <li><strong>Dashboard:</strong> Shows all your courses.</li>
-              <li><strong>Courses:</strong> Access individual courses.</li>
-              <li><strong>Calendar:</strong> View assignments and due dates.</li>
-              <li><strong>Inbox:</strong> Communicate with instructors and classmates.</li>
-              <li><strong>Assignments:</strong> Submit assignments and view grades.</li>
-          </ul>
-      
-          <h2>Conclusion</h2>
-          <p>By following these guides, you can efficiently install Office 365 on your personal devices, create a USI, and navigate Canvas. These steps ensure you leverage the resources available to you as a student, enhancing your educational experience.</p>`,
+          description: `<h1>How to Install Office 365 Apps on a MacBook Using a Student Account</h1><ol><li><strong>Access Office 365:</strong><ul><li>Open your web browser and go to <a href="https://www.office.com" target="_blank">office.com</a>.</li><li>Click on "Sign In" and enter your student email address and password.</li></ul></li><li><strong>Navigate to Install:</strong><ul><li>Once logged in, click on the "Install Office" button on the top right corner of the page.</li><li>Select "Office 365 apps" from the dropdown menu.</li></ul></li><li><strong>Download the Installer:</strong><ul><li>The download will begin automatically. Once it's finished, open the installer package file (usually found in the Downloads folder).</li></ul></li><li><strong>Run the Installer:</strong><ul><li>Follow the on-screen instructions to complete the installation process.</li><li>You may need to enter your Mac's administrator password to allow the installation.</li></ul></li><li><strong>Activate Office:</strong><ul><li>After the installation is complete, open any Office app (e.g., Word or Excel).</li><li>Sign in with your student email address and password to activate your Office 365 subscription.</li></ul></li></ol>`,
         },
       },
       {
-        menuTitle: "3. How to Create USI (Unique Student Identifier) ID ?",
+        menuTitle: "How to Create USI (Unique Student Identifier) ID ?",
         slug: "how-to-create-USI-ID",
         link: "",
         CatagoriesItem: {
           title: "How to Create USI (Unique Student Identifier) ID ?",
           image: "/assets/heroimage-2.jpeg",
-          description: `<h1>ForMacBook</h1><h2>1.VisitOffice365Portal:</h2><ul><li>Goto<ahref="https://portal.office.com">portal.office.com</a>.</li><li>Loginwithyourstudentemailandpassword.</li></ul><imgsrc="https://ik.imagekit.io/d5sscrgud/aus/login.png?updatedAt=1717421384037"/><h2>2.AccesstheOfficeApps:</h2><ul><li>Clickon"InstallOffice"andthenselect"Office365apps."</li></ul><h2>3.DownloadandInstall:</h2><ul><li>Downloadtheinstallerpackage.</li><li>Openthedownloadedfileandfollowtheinstallationinstructions.</li></ul><h2>4.Activation:</h2><ul><li>OpenanyOfficeapp.</li><li>SigninwithyourstudentaccounttoactivateOffice365.</li></ul><h2>CreatingaUSI(UniqueStudentIdentifier)ID</h2><h3>1.VisittheUSIWebsite:</h3><ul><li>Goto<ahref="https://www.usi.gov.au">usi.gov.au</a>.</li></ul><h3>2.StarttheUSICreationProcess:</h3><ul><li>Clickon"CreateyourUSI"andthenselect"GetStarted."</li></ul><h3>3.ProvidePersonalDetails:</h3><ul><li>Fillinyourpersonalinformation,includingname,dateofbirth,andcontactdetails.</li></ul><h3>4.IdentityVerification:</h3><ul><li>UseoneoftheacceptedformsofID(e.g.,passport,driver’slicense,Medicarecard)toverifyyouridentity.</li></ul><h3>5.CreateaUSI:</h3><ul><li>Followthepromptstocompletetheregistration.</li><li>YourUSIwillbegeneratedanddisplayed.</li></ul><h2>LoggingintoCanvasandBasicFunctions</h2><h3>1.VisittheCanvasLoginPage:</h3><ul><li>Gotoyourinstitution’sCanvasloginpageor<ahref="https://canvas.instructure.com">canvas.instructure.com</a>.</li></ul><h3>2.LogIn:</h3><ul><li>Enteryourstudentemailandpassword.</li></ul><h3>3.BasicNavigation:</h3><ul><li><strong>Dashboard:</strong>Showsallyourcourses.</li><li><strong>Courses:</strong>Accessindividualcourses.</li><li><strong>Calendar:</strong>Viewassignmentsandduedates.</li><li><strong>Inbox:</strong>Communicatewithinstructorsandclassmates.</li><li><strong>Assignments:</strong>Submitassignmentsandviewgrades.</li></ul><h2>Conclusion</h2><p>Byfollowingtheseguides,youcanefficientlyinstallOffice365onyourpersonaldevices,createaUSI,andnavigateCanvas.Thesestepsensureyouleveragetheresourcesavailabletoyouasastudent,enhancingyoureducationalexperience.</p>`,
+          description: `<h1>How to Create a USI (Unique Student Identifier) ID</h1><ol><li><strong>Access the USI Website:</strong><ul><li>Open your web browser and go to<a href="https://www.usi.gov.au" target="_blank">usi.gov.au</a>.</li></ul></li><li><strong>Start the USI Creation Process:</strong><ul><li>Click on "Create a USI" at the top of the page.</li><li>Read and agree to the terms and conditions, then click on "Next".</li></ul></li><li><strong>Verify Your Identity:</strong><ul><li>Select the type of identification you will use (e.g., driver's license, passport, etc.).</li><li>Enter your personal details exactly as they appear on your chosen identification document.</li></ul></li><li><strong>Provide Contact Details:</strong><ul><li>Enter your contact information, including your email address and phone number.</li><li>You will need to verify your email address through a verification code sent to your email.</li></ul></li><li><strong>Complete the Application:</strong><ul><li>Review all the information you have entered to ensure it is correct.</li><li>Submit your application. You will receive your USI instantly upon successful completion.</li></ul></li><li><strong>Record Your USI:</strong><ul><li>Make sure to write down or save your USI for future use. You will need it for your studies and training.</li></ul></li></ol>`,
         },
       },
       {
-        menuTitle: "4.  How to Login to Canvas and Basic functions?",
+        menuTitle: "How to Login to Canvas and Basic functions?",
         slug: "how-to-login-to-canvas-and-basic-functions",
         link: "",
         CatagoriesItem: {
           title: "How to Login to Canvas and Basic functions?",
           image: "/assets/heroimage-2.jpeg",
-          description: `<h1>ForMacBook</h1><h2>1.VisitOffice365Portal:</h2><ul><li>Goto<ahref="https://portal.office.com">portal.office.com</a>.</li><li>Loginwithyourstudentemailandpassword.</li></ul><imgsrc="https://ik.imagekit.io/d5sscrgud/aus/login.png?updatedAt=1717421384037"/><h2>2.AccesstheOfficeApps:</h2><ul><li>Clickon"InstallOffice"andthenselect"Office365apps."</li></ul><h2>3.DownloadandInstall:</h2><ul><li>Downloadtheinstallerpackage.</li><li>Openthedownloadedfileandfollowtheinstallationinstructions.</li></ul><h2>4.Activation:</h2><ul><li>OpenanyOfficeapp.</li><li>SigninwithyourstudentaccounttoactivateOffice365.</li></ul><h2>CreatingaUSI(UniqueStudentIdentifier)ID</h2><h3>1.VisittheUSIWebsite:</h3><ul><li>Goto<ahref="https://www.usi.gov.au">usi.gov.au</a>.</li></ul><h3>2.StarttheUSICreationProcess:</h3><ul><li>Clickon"CreateyourUSI"andthenselect"GetStarted."</li></ul><h3>3.ProvidePersonalDetails:</h3><ul><li>Fillinyourpersonalinformation,includingname,dateofbirth,andcontactdetails.</li></ul><h3>4.IdentityVerification:</h3><ul><li>UseoneoftheacceptedformsofID(e.g.,passport,driver’slicense,Medicarecard)toverifyyouridentity.</li></ul><h3>5.CreateaUSI:</h3><ul><li>Followthepromptstocompletetheregistration.</li><li>YourUSIwillbegeneratedanddisplayed.</li></ul><h2>LoggingintoCanvasandBasicFunctions</h2><h3>1.VisittheCanvasLoginPage:</h3><ul><li>Gotoyourinstitution’sCanvasloginpageor<ahref="https://canvas.instructure.com">canvas.instructure.com</a>.</li></ul><h3>2.LogIn:</h3><ul><li>Enteryourstudentemailandpassword.</li></ul><h3>3.BasicNavigation:</h3><ul><li><strong>Dashboard:</strong>Showsallyourcourses.</li><li><strong>Courses:</strong>Accessindividualcourses.</li><li><strong>Calendar:</strong>Viewassignmentsandduedates.</li><li><strong>Inbox:</strong>Communicatewithinstructorsandclassmates.</li><li><strong>Assignments:</strong>Submitassignmentsandviewgrades.</li></ul><h2>Conclusion</h2><p>Byfollowingtheseguides,youcanefficientlyinstallOffice365onyourpersonaldevices,createaUSI,andnavigateCanvas.Thesestepsensureyouleveragetheresourcesavailabletoyouasastudent,enhancingyoureducationalexperience.</p>`,
-        },
-      },
-      {
-        menuTitle: "5. More Guides",
-        slug: "more-guides",
-        link: "",
-        CatagoriesItem: {
-          title: "More Guides",
-          image: "/assets/heroimage-2.jpeg",
-          description: `<h1>ForMacBook</h1><h2>1.VisitOffice365Portal:</h2><ul><li>Goto<ahref="https://portal.office.com">portal.office.com</a>.</li><li>Loginwithyourstudentemailandpassword.</li></ul><imgsrc="https://ik.imagekit.io/d5sscrgud/aus/login.png?updatedAt=1717421384037"/><h2>2.AccesstheOfficeApps:</h2><ul><li>Clickon"InstallOffice"andthenselect"Office365apps."</li></ul><h2>3.DownloadandInstall:</h2><ul><li>Downloadtheinstallerpackage.</li><li>Openthedownloadedfileandfollowtheinstallationinstructions.</li></ul><h2>4.Activation:</h2><ul><li>OpenanyOfficeapp.</li><li>SigninwithyourstudentaccounttoactivateOffice365.</li></ul><h2>CreatingaUSI(UniqueStudentIdentifier)ID</h2><h3>1.VisittheUSIWebsite:</h3><ul><li>Goto<ahref="https://www.usi.gov.au">usi.gov.au</a>.</li></ul><h3>2.StarttheUSICreationProcess:</h3><ul><li>Clickon"CreateyourUSI"andthenselect"GetStarted."</li></ul><h3>3.ProvidePersonalDetails:</h3><ul><li>Fillinyourpersonalinformation,includingname,dateofbirth,andcontactdetails.</li></ul><h3>4.IdentityVerification:</h3><ul><li>UseoneoftheacceptedformsofID(e.g.,passport,driver’slicense,Medicarecard)toverifyyouridentity.</li></ul><h3>5.CreateaUSI:</h3><ul><li>Followthepromptstocompletetheregistration.</li><li>YourUSIwillbegeneratedanddisplayed.</li></ul><h2>LoggingintoCanvasandBasicFunctions</h2><h3>1.VisittheCanvasLoginPage:</h3><ul><li>Gotoyourinstitution’sCanvasloginpageor<ahref="https://canvas.instructure.com">canvas.instructure.com</a>.</li></ul><h3>2.LogIn:</h3><ul><li>Enteryourstudentemailandpassword.</li></ul><h3>3.BasicNavigation:</h3><ul><li><strong>Dashboard:</strong>Showsallyourcourses.</li><li><strong>Courses:</strong>Accessindividualcourses.</li><li><strong>Calendar:</strong>Viewassignmentsandduedates.</li><li><strong>Inbox:</strong>Communicatewithinstructorsandclassmates.</li><li><strong>Assignments:</strong>Submitassignmentsandviewgrades.</li></ul><h2>Conclusion</h2><p>Byfollowingtheseguides,youcanefficientlyinstallOffice365onyourpersonaldevices,createaUSI,andnavigateCanvas.Thesestepsensureyouleveragetheresourcesavailabletoyouasastudent,enhancingyoureducationalexperience.</p>`,
+          description: `<h1>How to Login to Canvas and Basic Functions</h1><ol><li><strong>Access Canvas:</strong><ul><li>Open your web browser and go to your institution's Canvas login page (e.g., <a href=https://canvas.yourinstitution.edu target=_blank>canvas.yourinstitution.edu</a>).<li>Alternatively, go to <a href=https://canvas.instructure.com target=_blank>canvas.instructure.com</a> and log in with your credentials.</ul><li><strong>Login to Canvas:</strong><ul><li>Enter your student email address and password.<li>Click on "Log In"</ul><li><strong>Navigate the Dashboard:</strong><ul><li>After logging in, you will see the Dashboard, which shows an overview of your courses.<li>Click on a course to enter its home page.</ul><li><strong>Basic Functions:</strong><ul><li><strong>View Course Content:</strong><ul><li>Use the left-hand sidebar to navigate to different sections such as "Modules," "Assignments," "Grades," and "Discussions."</ul><li><strong>Submit Assignments:</strong><ul><li>Go to the "Assignments" section, click on the assignment you want to submit, and follow the instructions for submission.</ul><li><strong>Participate in Discussions:</strong><ul><li>Click on "Discussions" to view and participate in course discussions.</ul><li><strong>Check Grades:</strong><ul><li>Click on "Grades" to view your grades for assignments and quizzes.</ul><li><strong>Access Announcements:</strong><ul><li>Click on "Announcements" to read important messages from your instructor.</ul></ul></ol>`,
         },
       },
     ],

@@ -19,6 +19,22 @@ body {
   color: var(--matte-purple);
 }
 
+.header-animated {
+  /* fixed top-0 w-full bg-white flex transition-all */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  animation: slide-down 300ms ease forwards;
+}
+@keyframes slide-down {
+  0% {
+    transform: translatey(-100%);
+  }
+}
+
 .transparent-background {
   background: #00000000 !important;
 }
@@ -257,12 +273,12 @@ tr:nth-child(even) {
 .rich-text-container {
   max-width: 110ch;
   margin-inline: auto;
-  background-color: #88888811;
+  /* background-color: #88888811; */
   padding: 12px;
   font-size: 16px;
   line-height: 24px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px 3px #00000010;
+  /* border-radius: 12px; */
+  /* box-shadow: 0 0 12px 3px #00000010; */
   font-family: sans-serif;
 }
 
@@ -276,11 +292,16 @@ tr:nth-child(even) {
 .rich-text-container h4,
 .rich-text-container h5,
 .rich-text-container h6 {
-  margin-top: 42px;
-  /* margin-top: 16px; */
-  margin-bottom: 8px;
-  line-height: 24px;
+  /* margin-top: 42px; */
+  margin-bottom: 16px;
   color: #2c2b4b;
+}
+.rich-text-container a {
+  font-weight: 600;
+}
+.rich-text-container a:hover {
+  color: #345d3e;
+  transition: 200ms ease;
 }
 .rich-text-container img {
   margin-inline: auto;
@@ -288,27 +309,31 @@ tr:nth-child(even) {
 
 .rich-text-container h1 {
   font-size: 36px;
+  line-height: 38px;
   font-weight: 700;
-  text-align: center !important;
 }
 
 .rich-text-container h2 {
   font-size: 28px;
+  line-height: 30px;
   font-weight: 700;
 }
 
 .rich-text-container h3 {
   font-size: 24px;
+  line-height: 26px;
   font-weight: 700;
 }
 
 .rich-text-container h4 {
   font-size: 20px;
+  line-height: 22px;
   font-weight: 700;
 }
 
 .rich-text-container h5 {
   font-size: 18px;
+  line-height: 20px;
   font-weight: 700;
 }
 
@@ -316,6 +341,7 @@ tr:nth-child(even) {
   margin-top: 8px;
   margin-bottom: 16px;
   font-size: 16px;
+  line-height: 16px;
   line-height: 24px;
 }
 
