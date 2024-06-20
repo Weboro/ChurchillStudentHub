@@ -36,7 +36,7 @@ const GuideDetails = ({ slug }) => {
                 image={`${data?.image}`}
                 titleSpan={``}
                 title={`${data?.title}`}
-                subTitle={`Student Hub > Request Form > ${data?.title}`}
+                subTitle={`Student Hub > How to Guide > ${data?.title}`}
               />
             </div>
             <div>
