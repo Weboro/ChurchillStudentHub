@@ -10,18 +10,18 @@ import {
 import { useEffect, useState } from "react";
 
 const monthsList = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
+  "January",
+  "February",
+  "March",
+  "April",
   "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 const UpcomingEventsSection = () => {
@@ -90,64 +90,64 @@ const UpcomingEventsSection = () => {
         />
       </div>
       <div className="container mx-auto px-5">
-        <div className="flex flex-col lg:flex-row gap-8">
-          <FilterComponent
+        {/* <div className="flex flex-col lg:flex-row gap-8"> */}
+        {/* <FilterComponent
             searchText={searchText}
             onSearchText={setSearchText}
-          />
+          /> */}
 
-          <div className="flex-1 flex flex-col gap-8">
-            {Object.keys(data).map((year) => (
-              <div key={year} className="flex flex-col gap-4">
-                <h2
-                  className="text-2xl font-bold w-fit pb-[4px] relative 
+        <div className="flex-1 flex flex-col gap-12">
+          {Object.keys(data).map((year) => (
+            <div key={year} className="flex flex-col gap-4">
+              <h2
+                className="text-2xl font-bold w-fit pb-[4px] relative 
                   before:absolute before:h-[3px] before:bottom-0 before:left-0 before:w-[40%] before:bg-primary-orange"
-                >
-                  {year}
-                </h2>
+              >
+                {year}
+              </h2>
 
-                {Object.keys(data[year]).map((month) => (
-                  <div key={month} className="flex flex-col gap-4">
-                    <div
-                      className={`flex items-center justify-between border px-5 py-3 rounded-md font-semibold cursor-pointer transition-all ${
-                        expandedMonth[year] === month
-                          ? " bg-primary-orange text-white border-transparent"
-                          : "border-primary-orange shadow-md shadow-primary-orange/10"
-                      }`}
-                      onClick={() => toggleMonth(year, month)}
-                    >
-                      <span>{month}</span>
-                      <i
-                        className={`fi fi-br-${
-                          expandedMonth[year] === month ? "minus" : "plus"
-                        } flex`}
-                      ></i>
-                    </div>
-
-                    {expandedMonth[year] === month && (
-                      <div className="flex flex-col gap-5">
-                        {data[year][month].map((item) => (
-                          <span key={item.date}>
-                            <KeyDatesCard
-                              date={item.date}
-                              endDate={item.endDate}
-                              startTime={item.startTime}
-                              endTime={item.endTime}
-                              eventName={item.eventName}
-                              description={item.description}
-                              audience={item.audience}
-                              category={item.category}
-                            />
-                          </span>
-                        ))}
-                      </div>
-                    )}
+              {Object.keys(data[year]).map((month) => (
+                <div key={month} className="flex flex-col gap-4">
+                  <div
+                    className={`flex items-center justify-between border px-5 py-3 rounded-md font-semibold cursor-pointer transition-all ${
+                      expandedMonth[year] === month
+                        ? " bg-primary-orange text-white border-transparent"
+                        : "border-primary-orange shadow-md shadow-primary-orange/10"
+                    }`}
+                    onClick={() => toggleMonth(year, month)}
+                  >
+                    <span>{month}</span>
+                    <i
+                      className={`fi fi-br-${
+                        expandedMonth[year] === month ? "minus" : "plus"
+                      } flex`}
+                    ></i>
                   </div>
-                ))}
-              </div>
-            ))}
-          </div>
+
+                  {expandedMonth[year] === month && (
+                    <div className="flex flex-col gap-5">
+                      {data[year][month].map((item) => (
+                        <span key={item.date}>
+                          <KeyDatesCard
+                            date={item.date}
+                            endDate={item.endDate}
+                            startTime={item.startTime}
+                            endTime={item.endTime}
+                            eventName={item.eventName}
+                            description={item.description}
+                            audience={item.audience}
+                            category={item.category}
+                          />
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
+        {/* </div> */}
       </div>
       <NewsSection />
     </div>
