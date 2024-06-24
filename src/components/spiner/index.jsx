@@ -11,13 +11,13 @@ const Spiner = () => {
           className=""
         /> */}
         <Image
-              src={"/assets/logo.svg"}
-              width={400}
-              height={400}
-              alt="spinner"
-              className="spinner_logo"
-              priority
-            />
+          src={"/assets/logo.svg"}
+          width={400}
+          height={400}
+          alt="spinner"
+          className="spinner_logo"
+          priority
+        />
       </div>
     </div>
   );

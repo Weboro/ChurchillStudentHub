@@ -278,16 +278,6 @@ export const UpcomingKeyData = [
     category: ["Days of Interest"],
   },
   {
-    date: "2024-12-26",
-    endDate: null,
-    startTime: null,
-    endTime: null,
-    eventName: "Boxing Day",
-    description: "",
-    audience: ["Staff", "Student", "Undergraduate", "Postgraduate"],
-    category: ["Days of Interest"],
-  },
-  {
     date: "2025-01-06",
     endDate: "2025-02-16",
     startTime: null,
