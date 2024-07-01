@@ -17,10 +17,10 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {cardsData.map((item, index) => (
               <div
-                className="flex flex-col lg:flex-row gap-4 w-full px-4 py-3 rounded-md bg-neutral-100 shadow-md shadow-neutral-200/50 items-center"
+                className="flex flex-col lg:flex-row gap-4 w-full px-4 py-3 rounded-md bg-white shadow-md shadow-neutral-200/50 items-center"
                 key={index}
               >
-                <div className="w-16 h-16 rounded-full bg-white text-primary-orange shadow grid place-items-center">
+                <div className="w-16 h-16 rounded-full bg-primary-orange/25 shadow grid place-items-center">
                   <i className={`${item.icon} flex text-3xl`}></i>
                 </div>
 
