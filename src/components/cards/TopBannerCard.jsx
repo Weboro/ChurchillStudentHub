@@ -1,6 +1,12 @@
 import React from "react";
 
-const TopBannerCard = ({ image, title, subTitle, titleSpan }) => {
+const TopBannerCard = ({
+  image,
+  title,
+  subTitle,
+  titleSpan,
+  showSearch = false,
+}) => {
   return (
     <div
       style={{
@@ -21,6 +27,19 @@ const TopBannerCard = ({ image, title, subTitle, titleSpan }) => {
           <div className="font-semibold text-white text-center mx-auto">
             {subTitle}
           </div>
+
+          {showSearch && (
+            <div className="relative bg-neutral-50 rounded-full overflow-hidden md:w-[24rem]">
+              <input
+                type="text"
+                placeholder="Search"
+                className="transparent-background outline-none px-6 py-3"
+              />
+              <div className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-0 h-12 aspect-square bg-primary-orange rounded-full grid place-items-center">
+                <i class="fi fi-br-search flex text-white"></i>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
