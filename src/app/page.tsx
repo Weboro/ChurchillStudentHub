@@ -1,10 +1,12 @@
 import {
+  AIHelpSection,
   HelpSection,
   HeroSection,
   NewsSection,
   RequestFormSection,
   UpcomingKeyDatesSection,
   UsefulLinkSection,
+  YouTubeLinksSection,
 } from "@/components";
 import React from "react";
 
@@ -12,24 +14,21 @@ const Home = () => {
   return (
     <main className="">
       <div className="flex flex-col gap-[32px] lg:gap-[64px]">
-        <div className="">
-          <HeroSection />
-        </div>
-        <div>
-          <UsefulLinkSection />
-        </div>
-        <div>
-          <HelpSection />
-        </div>
-        <div>
-          <RequestFormSection />
-        </div>
-        <div>
-          <UpcomingKeyDatesSection />
-        </div>
-        <div>
-          <NewsSection />
-        </div>
+        <HeroSection />
+
+        <UsefulLinkSection />
+
+        <AIHelpSection />
+
+        <YouTubeLinksSection />
+
+        <HelpSection />
+
+        <RequestFormSection />
+
+        <UpcomingKeyDatesSection />
+
+        <NewsSection />
       </div>
     </main>
   );

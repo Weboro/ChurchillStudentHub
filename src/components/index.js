@@ -28,6 +28,10 @@ import UpcomingEventsSection from "./sections/upcomingEventsSections/UpcomingEve
 import FilterComponent from "./sections/upcomingEventsSections/FilterComponent";
 import AccordionItem from "./sections/upcomingEventsSections/AccordionItem";
 import FloaterComponent from "./floater/Floater";
+import AIHelpSection from "./sections/commonSections/AIHelpSection";
+import YouTubeLinksSection from "./sections/commonSections/YouTubeLinksSection";
+import YoutubeSlider from "./sliders/YoutubeSlider";
+import YoutubeSliderCard from "./cards/YoutubeSliderCard";
 
 export {
   Button,
@@ -60,4 +64,8 @@ export {
   FilterComponent,
   AccordionItem,
   FloaterComponent,
+  AIHelpSection,
+  YouTubeLinksSection,
+  YoutubeSlider,
+  YoutubeSliderCard,
 };
