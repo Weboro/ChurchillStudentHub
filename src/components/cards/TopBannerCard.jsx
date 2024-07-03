@@ -36,7 +36,7 @@ const TopBannerCard = ({
                 className="transparent-background outline-none px-6 py-3"
               />
               <div className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-0 h-12 aspect-square bg-primary-orange rounded-full grid place-items-center">
-                <i class="fi fi-br-search flex text-white"></i>
+                <i className="fi fi-br-search flex text-white"></i>
               </div>
             </div>
           )}

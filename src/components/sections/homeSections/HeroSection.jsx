@@ -32,7 +32,7 @@ const HeroSection = () => {
                   <div>
                     {item.email && (
                       <a href={`mailto:${item.email}`} className="block w-fit">
-                        <span className="font-semibold text-wrap block overflow-ellipsis overflow-hidden w-[26ch] lg:w-fit">
+                        <span className="font-semibold block overflow-ellipsis overflow-hidden w-[28ch] break-words text-wrap">
                           {item.email}
                         </span>
                       </a>

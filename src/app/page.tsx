@@ -4,6 +4,8 @@ import {
   HeroSection,
   NewsSection,
   RequestFormSection,
+  StudentProspectusSection,
+  SupportSection,
   UpcomingKeyDatesSection,
   UsefulLinkSection,
   YouTubeLinksSection,
@@ -23,6 +25,10 @@ const Home = () => {
         <YouTubeLinksSection />
 
         <HelpSection />
+
+        <StudentProspectusSection />
+
+        <SupportSection />
 
         <RequestFormSection />
 
