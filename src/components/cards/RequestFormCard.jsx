@@ -27,12 +27,7 @@ const RequestFormCard = ({
         </div>
       </div>
       <Link target={link ? "_blank" : target} href={`${link ? link : slug}`}>
-        <Button
-          // btnName={<span className="hidden md:block">Learn More</span>}
-          btnName="Learn More"
-          icon={<FaArrowRight />}
-          styleA={"flex items-center gap-1"}
-        />
+        <Button btnName="Learn More" styleA={"flex items-center gap-1"} />
       </Link>
     </li>
   );

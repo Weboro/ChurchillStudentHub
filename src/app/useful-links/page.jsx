@@ -14,13 +14,14 @@ export const metadata = {
   // },
 };
 const UsefuLinks = () => {
+  const data = usefulLinksData.sort((a, b) => a.order - b.order);
+
   return (
     <main className="min-h-[80vh]">
       <div className="flex flex-col gap-[32px] lg:gap-[64px]">
         <div>
           <TopBannerCard
-            image={`/assets/heroImage-2.jpeg
-`}
+            image={`/assets/heroImage-2.jpeg`}
             titleSpan={"Useful"}
             title={"Links"}
             subTitle={`Student Hub > Request Form > Useful Links`}
@@ -34,13 +35,13 @@ const UsefuLinks = () => {
               </h2>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-[34px] lg:gap-[34px]">
-              {usefulLinksData?.map((item, index) => (
+              {data?.map((item, index) => (
                 <UsefulLinksCard
-                  icon={`${item?.icon}`}
+                  image={`${item?.image}`}
                   subTitle={item?.subTitle}
                   title={item?.title}
                   url={`${item?.url}`}
-                  key={index}
+                  key={item?.order}
                 />
               ))}
             </div>

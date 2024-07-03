@@ -19,6 +19,25 @@ body {
   color: var(--matte-purple);
 }
 
+.highlight {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  padding-bottom: 4px;
+}
+.highlight::after {
+  content: "";
+  display: inline-block;
+  height: 25%;
+  background-color: var(--primary-orange);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 5px;
+  z-index: -1;
+  animation: expandBackground 1s ease-out forwards;
+}
+
 .header-animated {
   /* fixed top-0 w-full bg-white flex transition-all */
   position: fixed;

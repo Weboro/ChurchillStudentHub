@@ -19,7 +19,7 @@ export const FilterComponent = ({ searchText, onSearchText }) => {
           />
 
           <div className="absolute top-1/2 -translate-y-1/2 right-4 text-lg ">
-            <i class="fi fi-br-search flex"></i>
+            <i className="fi fi-br-search flex"></i>
           </div>
         </div>
         <button

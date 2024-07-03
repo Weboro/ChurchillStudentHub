@@ -32,6 +32,9 @@ import AIHelpSection from "./sections/commonSections/AIHelpSection";
 import YouTubeLinksSection from "./sections/commonSections/YouTubeLinksSection";
 import YoutubeSlider from "./sliders/YoutubeSlider";
 import YoutubeSliderCard from "./cards/YoutubeSliderCard";
+import StudentProspectusSection from "./sections/commonSections/StudentProspectusSection";
+import PatternBannerCard from "./cards/PatternBannerCard";
+import SupportSection from "./sections/SupportSection/SupportSection";
 
 export {
   Button,
@@ -68,4 +71,7 @@ export {
   YouTubeLinksSection,
   YoutubeSlider,
   YoutubeSliderCard,
+  StudentProspectusSection,
+  PatternBannerCard,
+  SupportSection,
 };

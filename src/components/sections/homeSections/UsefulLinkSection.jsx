@@ -15,10 +15,11 @@ const UsefulLinkSection = () => {
             Useful Links
           </h2>
         </div>
+
         <div className="grid grid-cols-1 h-full lg:grid-cols-4 gap-6">
-          {usefulLinksData?.slice(0, 4)?.map((item, index) => (
+          {usefulLinksData?.slice(0, 12)?.map((item, index) => (
             <UsefulLinksCard
-              icon={`${item?.icon}`}
+              image={`${item?.image}`}
               subTitle={item?.subTitle}
               title={item?.title}
               url={item?.url}
@@ -26,7 +27,8 @@ const UsefulLinkSection = () => {
             />
           ))}
         </div>
-        <div>
+
+        {usefulLinksData.length > 12 && (
           <div className="flex justify-center">
             <Link href={"/useful-links"}>
               <Button
@@ -36,7 +38,7 @@ const UsefulLinkSection = () => {
               />
             </Link>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
