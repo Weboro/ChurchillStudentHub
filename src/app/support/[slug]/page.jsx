@@ -52,7 +52,7 @@ const SupportPage = ({ params }) => {
                   <a target="_blank" href={ctaRedirect}>
                     <p className="capitalize font-bold">{ctaTitle}</p>
                     <div className="flex items-center gap-2 font-semibold rounded-md ">
-                      <i class="fi fi-rr-calendar flex"></i>
+                      <i className="fi fi-rr-calendar flex"></i>
                       <span>{ctaButtonTitle}</span>
                     </div>
                   </a>
@@ -64,7 +64,7 @@ const SupportPage = ({ params }) => {
                   <a href={`mailto:${email}`}>
                     <p className="capitalize font-bold">{emailTitle}</p>
                     <div className="flex items-center gap-2  font-semibold rounded-md ">
-                      <i class="fi fi-rr-envelope flex"></i>{" "}
+                      <i className="fi fi-rr-envelope flex"></i>{" "}
                       <span>{email}</span>
                     </div>
                   </a>
@@ -76,7 +76,7 @@ const SupportPage = ({ params }) => {
                   <a href={`mailto:${phone}`}>
                     <p className="capitalize font-bold">{phoneTitle}</p>
                     <div className="flex items-center gap-2 rounded-md ">
-                      <i class="fi fi-rr-phone-call flex"></i>{" "}
+                      <i className="fi fi-rr-phone-call flex"></i>{" "}
                       <span>{phone}</span>
                     </div>
                   </a>
