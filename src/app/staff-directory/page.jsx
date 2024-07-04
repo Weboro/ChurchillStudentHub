@@ -12,34 +12,37 @@ const page = () => {
         {AgentData.map((item, index) => (
           <div
             key={index}
-            className="flex items-center bg-neutral-50  hover:shadow border border-transparent hover:border-neutral-800/10 rounded-md px-4"
+            className="flex p-2 gap-2 items-center bg-neutral-50  hover:shadow border border-transparent hover:border-neutral-800/10 rounded-md px-4"
           >
-            <div className="w-[75px] h-[75px] grid place-items-center">
+            <div className="w-[80px] h-[80px] grid place-items-center ">
               <Image
                 src={item.image}
                 alt={item.title}
-                width={75}
-                height={75}
-                className="w-[75px] h-[75px] object-cover rounded-full bg-red-900"
+                width={80}
+                height={80}
+                className="w-[80px] h-[80px] object-cover rounded-full bg-red-900"
               />
             </div>
 
-            <div className="text-wrap break-words py-1 ml-2 pl-1 flex-1">
-              <p className="capitalize text-xl font-bold">{item.title}</p>
-              <p className="capitalize">{item.position}</p>
-              <a
-                className="block leading-5 w-fit font-semibold"
-                href={`tel:${item.number}`}
-              >
-                {item.number}
-              </a>
-              <a
-                className="block leading-5 font-semibold max-w-[16ch] xl:max-w-fit break-words text-wrap"
-                href={`tel:${item.number}`}
-              >
-                {item.email}
-              </a>
-              <p className="capitalize">{item.department}</p>
+            <div className="text-wrap break-words flex-1 pt-1">
+              <p className="capitalize text-xl font-bold pb-1`">{item.title}</p>
+              <p className="capitalize">
+                {item.department} | {item.position}
+              </p>
+              <p className="flex items-center gap-3 text-xl mt-1 text-matte-purple">
+                <a
+                  className="block leading-5 w-fit font-semibold hover:text-primary-orange"
+                  href={`tel:${item.number}`}
+                >
+                  <i class="fi fi-sr-phone-call"></i>
+                </a>
+                <a
+                  className="block leading-5 w-fit font-semibold hover:text-primary-orange"
+                  href={`tel:${item.number}`}
+                >
+                  <i class="fi fi-sr-envelope"></i>
+                </a>
+              </p>
             </div>
           </div>
         ))}
