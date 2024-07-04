@@ -3,7 +3,7 @@ export const usefulLinksData = [
     order: 1,
     image: "/assets/icons/staff-directory.svg",
     title: "Staff Directory",
-    url: "",
+    url: "/staff-directory",
     subTitle: "Find Contact Details of Key Contacts",
   },
   {

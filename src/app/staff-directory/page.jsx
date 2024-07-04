@@ -38,7 +38,7 @@ const page = () => {
                 </a>
                 <a
                   className="block leading-5 w-fit font-semibold hover:text-primary-orange"
-                  href={`tel:${item.number}`}
+                  href={`mailto:${item.email}`}
                 >
                   <i className="fi fi-sr-envelope"></i>
                 </a>
