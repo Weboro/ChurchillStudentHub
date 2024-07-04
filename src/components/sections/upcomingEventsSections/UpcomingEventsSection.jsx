@@ -86,7 +86,7 @@ const UpcomingEventsSection = () => {
           image={`/assets/heroImage-2.jpeg`}
           titleSpan={""}
           title={"Upcoming Key Dates"}
-          subTitle={`Student Hub > Request Form > Upcoming Key Dates`}
+          subTitle={`Student Support > Request Form > Upcoming Key Dates`}
         />
       </div>
       <div className="container mx-auto px-5">

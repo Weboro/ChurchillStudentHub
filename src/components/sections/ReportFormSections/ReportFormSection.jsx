@@ -43,7 +43,7 @@ const ReportFormSection = ({ slug }) => {
                 image={`${data?.image}`}
                 titleSpan={"Refund"}
                 title={"Form"}
-                subTitle={`Student Hub > Request Form > ${data?.menuTitle}`}
+                subTitle={`Student Support > Request Form > ${data?.menuTitle}`}
               />
             </div>
 

@@ -29,7 +29,7 @@ const RequestFormPage = () => {
             subTitle={
               <p className="text-white">
                 <Link href="/" className="text-white">
-                  Student Hub
+                  Student Support
                 </Link>
                 <span> / Request Form</span>
               </p>
