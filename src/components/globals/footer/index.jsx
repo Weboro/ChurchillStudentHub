@@ -171,7 +171,7 @@ const Footer = () => {
                 </h3>
                 <ul className="flex flex-col gap-1 text-[14px]">
                   <li>
-                    <Link href={""}>Student Hub</Link>
+                    <Link href={""}>Student Support</Link>
                   </li>
                   <li>
                     <Link href={""}>Staff Login</Link>

@@ -5,15 +5,11 @@ import Link from "next/link";
 import { CgMenuRight } from "react-icons/cg";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import Image from "next/image";
+import { TopInfo } from "@/components";
 
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [isDropdownActive, setIsDropdownActive] = useState(false);
-
-  // width: 100vw; /* viewport width */
-  // height: 100vh; /* viewport height */
-  // overflow-y: scroll;
-  // overflow-x: hidden;
 
   return (
     <div className="">
@@ -75,7 +71,7 @@ const MobileNav = () => {
                 <IoMdCloseCircleOutline />
               </div>
             </Link>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-8 justify-between h-full pb-12">
               <NavList
                 style={`flex flex-col gap-2`}
                 handleOnclick={() => {
@@ -84,6 +80,7 @@ const MobileNav = () => {
                 handleOnclickA={() => setIsDropdownActive((prev) => !prev)}
                 isDropdownActive={isDropdownActive}
               />
+              <TopInfo />
             </div>
           </div>
         </div>

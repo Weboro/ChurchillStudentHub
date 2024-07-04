@@ -24,7 +24,7 @@ const UsefuLinks = () => {
             image={`/assets/heroImage-2.jpeg`}
             titleSpan={"Useful"}
             title={"Links"}
-            subTitle={`Student Hub > Request Form > Useful Links`}
+            subTitle={`Student Support > Request Form > Useful Links`}
           />
         </div>
         <div className="container mx-auto px-5">

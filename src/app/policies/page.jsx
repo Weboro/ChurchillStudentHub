@@ -25,7 +25,7 @@ const PoliciesList = () => {
             subTitle={
               <p className="text-white">
                 <Link href="/" className="text-white">
-                  Student Hub
+                  Student Support
                 </Link>
                 <span> / Policies and Procedures</span>
               </p>

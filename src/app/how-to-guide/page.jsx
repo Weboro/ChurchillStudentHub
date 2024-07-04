@@ -26,7 +26,7 @@ const HowToGuidePage = () => {
             subTitle={
               <p className="text-white">
                 <Link href="/" className="text-white">
-                  Student Hub
+                  Student Support
                 </Link>
                 <span> / How to Guide</span>
               </p>

@@ -35,6 +35,7 @@ import YoutubeSliderCard from "./cards/YoutubeSliderCard";
 import StudentProspectusSection from "./sections/commonSections/StudentProspectusSection";
 import PatternBannerCard from "./cards/PatternBannerCard";
 import SupportSection from "./sections/SupportSection/SupportSection";
+import TopInfo from "./globals/header/TopInfo";
 
 export {
   Button,
@@ -74,4 +75,5 @@ export {
   StudentProspectusSection,
   PatternBannerCard,
   SupportSection,
+  TopInfo,
 };

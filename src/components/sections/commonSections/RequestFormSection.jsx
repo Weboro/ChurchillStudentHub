@@ -1,7 +1,7 @@
 import React from "react";
 import RequestFormCard from "@/components/cards/RequestFormCard";
 import Button from "@/components/button";
-import { FaArrowRight, FaSearch } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import { requestList } from "@/constDatas/requestList";
 

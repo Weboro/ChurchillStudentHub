@@ -13,8 +13,10 @@ export const metadata = {
   // },
 };
 
+import { requestList } from "@/constDatas/requestList";
+
 const RequestFormPage = () => {
-  const requestLists = navItems[3].Catagories;
+  // const requestLists = navItems[3].Catagories;
 
   return (
     <main className="min-h-[80vh]">
@@ -27,7 +29,7 @@ const RequestFormPage = () => {
             subTitle={
               <p className="text-white">
                 <Link href="/" className="text-white">
-                  Student Hub
+                  Student Support
                 </Link>
                 <span> / Request Form</span>
               </p>
@@ -41,7 +43,7 @@ const RequestFormPage = () => {
             </h2>
             <div className="">
               <div className="flex flex-col gap-5">
-                {requestLists?.map((item, index) => (
+                {requestList?.map((item, index) => (
                   <RequestFormCard
                     key={index}
                     menuTitle={item?.menuTitle}

@@ -17,7 +17,7 @@ const PoliciesDetails = ({ slug }) => {
             image={`${data?.CatagoriesItem?.image}`}
             titleSpan={``}
             title={`${data?.menuTitle}`}
-            subTitle={`Student Hub > Request Form > ${data?.menuTitle}`}
+            subTitle={`Student Support > Request Form > ${data?.menuTitle}`}
           />
         </div>
 

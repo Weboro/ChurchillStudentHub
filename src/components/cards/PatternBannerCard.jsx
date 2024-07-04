@@ -22,33 +22,36 @@ const PatternBannerCard = ({
       className="h-[45vh] flex items-center"
     >
       <div className="container mx-auto px-5">
-        <div className="flex flex-col gap-8 ">
+        <div className="flex flex-col items-center justify-center gap-8 ">
           <h2 className="text-3xl md:text-5xl font-bold text-center text-[#eb9320]">
             {title}
           </h2>
 
-          <p className="w-fit text-center mx-auto">{description}</p>
-
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
-            {BtnAText && (
-              <a href={BtnALink}>
-                <Button
-                  btnName={BtnAText}
-                  icon={<FaArrowRight />}
-                  styleA={"flex items-center gap-1"}
-                />
-              </a>
-            )}
-            {BtnBText && (
-              <a href={BtnBLink}>
-                <Button
-                  btnName={BtnBText}
-                  icon={<FaArrowRight />}
-                  styleA={"flex items-center gap-1"}
-                />
-              </a>
-            )}
-          </div>
+          {description && (
+            <p className="w-fit text-center mx-auto">{description}</p>
+          )}
+          {(BtnAText || BtnBText) && (
+            <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+              {BtnAText && (
+                <a href={BtnALink}>
+                  <Button
+                    btnName={BtnAText}
+                    icon={<FaArrowRight />}
+                    styleA={"flex items-center gap-1"}
+                  />
+                </a>
+              )}
+              {BtnBText && (
+                <a href={BtnBLink}>
+                  <Button
+                    btnName={BtnBText}
+                    icon={<FaArrowRight />}
+                    styleA={"flex items-center gap-1"}
+                  />
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
