@@ -1,4 +1,4 @@
-export const AgentData = [
+export const staffDirectoryData = [
   {
     order: 1,
     title: "Michael Seamer",
