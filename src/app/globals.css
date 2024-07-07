@@ -10,7 +10,9 @@
   --normal-grey: #e9e9e9;
   --light-grey: #f3e4e4;
 }
-
+* {
+  outline: 1px solid red;
+}
 body {
   overflow-x: hidden;
   background: #fff;
