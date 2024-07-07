@@ -65,7 +65,7 @@ export const usefulLinksData = [
     order: 9,
     image: "/assets/icons/student-handbook.svg",
     title: "Student Handbook",
-    url: "",
+    url: "/assets/docs/student-prospectus.pdf",
     subTitle: "Download our student handbook",
   },
   // {
