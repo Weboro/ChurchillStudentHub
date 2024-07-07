@@ -9,8 +9,8 @@ const SupportSection = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {SupportData.map((item, i) => (
-          <div className="p-3 py-6 rounded-md flex flex-col gap-2" key={i}>
+        {SupportData.map((item, index) => (
+          <div className="p-3 py-6 rounded-md flex flex-col gap-2" key={index}>
             <div className="w-36 mb-6 bg-light-grey shadow p-6 aspect-square rounded-full mx-auto grid place-items-center">
               <Image
                 src={item.icon}

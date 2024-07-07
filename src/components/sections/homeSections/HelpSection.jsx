@@ -23,7 +23,7 @@ const HelpSection = () => {
         </div>
 
         <div className="bg-light-grey rounded-md flex flex-col">
-          <div className=" px-8 py-[32px] flex flex-col gap-5">
+          <div className="p-4 flex flex-col gap-3">
             <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
               <h2 className="font-bold text-[36px] text-matte-purple">
                 How to Guide?

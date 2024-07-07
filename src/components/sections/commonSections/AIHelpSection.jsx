@@ -86,9 +86,12 @@ const AIHelpSection = () => {
             target="_blank"
           >
             <Button
-              btnName={"Learn more about support policy"}
-              icon={<FaArrowRight />}
-              styleA={"flex items-center gap-1"}
+              btnName={
+                <span className="text-left">
+                  Learn more <br className="block md:hidden" />
+                  about support policy
+                </span>
+              }
             />
           </Link>
         </div>

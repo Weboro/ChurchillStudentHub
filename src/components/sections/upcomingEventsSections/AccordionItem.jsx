@@ -37,7 +37,7 @@ const AccordionItem = ({ month, events }) => {
 
           {isOpen && (
             <div className="flex flex-col gap-6 mt-4 mb-6">
-              {events.map((event) => (
+              {events.map((event, index) => (
                 <div key={event.id}>
                   <KeyDatesCard
                     title={event.title}

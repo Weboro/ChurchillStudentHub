@@ -14,12 +14,11 @@ const StudentProspectusSection = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="container mx-auto px-5 relative z-10 py-10 flex flex-col md:flex-row items-center justify-between">
+      <div className="container mx-auto px-5 relative z-10 py-10 flex flex-col gap-6 md:flex-row items-center justify-between">
         <div>
-          <h3 className="relative leading-10 font-bold text-[36px] text-[#2C2B4B]">
+          <h3 className="relative text-center md:text-start font-bold text-[36px] leading-[37px] text-[#2C2B4B]">
             Download Our Student Prospectus
           </h3>
-          {/* <p></p> */}
         </div>
 
         <Link
