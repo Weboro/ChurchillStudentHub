@@ -54,21 +54,20 @@ const MobileNav = () => {
               animation: "sidebarAnimate linear 0.2s",
             }}
           >
-            <Link
-              href={"/"}
-              className="flex justify-between gap-8 items-center"
-            >
-              <Image
-                src={"/assets/logo.svg"}
-                width={400}
-                height={400}
-                alt="Main Logo"
-                className="object-contain w-[200px]"
-                onClick={() => {
-                  setOpenMenu(false);
-                }}
-                priority
-              />
+            <div className="flex justify-between gap-8 items-center">
+              <Link href={"/"} className=" w-fit">
+                <Image
+                  src={"/assets/logo.svg"}
+                  width={400}
+                  height={400}
+                  alt="Main Logo"
+                  className="object-contain w-[200px]"
+                  onClick={() => {
+                    setOpenMenu(false);
+                  }}
+                  priority
+                />
+              </Link>
               <div
                 className="pr-8 text-[32px] text-[#000]/[72%]"
                 onClick={() => {
@@ -77,7 +76,7 @@ const MobileNav = () => {
               >
                 <IoMdCloseCircleOutline />
               </div>
-            </Link>
+            </div>
             <div className="flex flex-col gap-8 justify-between h-full pb-12">
               <NavList
                 style={`flex flex-col gap-2`}
