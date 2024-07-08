@@ -1,5 +1,6 @@
 import {
   AIHelpSection,
+  ApplyPaymentForm,
   HelpSection,
   HeroSection,
   NewsSection,
@@ -27,13 +28,13 @@ const Home = () => {
 
         <HelpSection />
 
-        <StudentProspectusSection />
-
         <SupportSection />
 
         {/* <RequestFormSection /> */}
 
         <UpcomingKeyDatesSection />
+
+        <StudentProspectusSection />
 
         <NewsSection />
       </div>

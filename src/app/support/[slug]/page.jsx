@@ -1,4 +1,4 @@
-import { PatternBannerCard, HelpSection, NewsSection } from "@/components";
+import { PatternBannerCard, ITSupportForm, NewsSection } from "@/components";
 import { SupportData } from "@/constDatas/SupportData";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -6,6 +6,10 @@ import Image from "next/image";
 const SupportPage = ({ params }) => {
   const { slug } = params;
   const item = SupportData.find((item) => slug === item.slug);
+
+  if (!item) {
+    notFound();
+  }
 
   const {
     title,
@@ -21,10 +25,6 @@ const SupportPage = ({ params }) => {
     description,
     richText,
   } = item;
-
-  if (!item) {
-    notFound();
-  }
 
   return (
     <>
@@ -83,6 +83,15 @@ const SupportPage = ({ params }) => {
                 </div>
               )}
             </div>
+
+            {slug === "student-it-support" && (
+              <div className=" mt-[48px]">
+                <h2 className="capitalize font-bold text-xl  mb-3">
+                  Fill up this form for Other IT related queries
+                </h2>
+                <ITSupportForm />
+              </div>
+            )}
           </article>
 
           <aside className="lg:col-span-2 w-full h-fit sticky top-28 left-0 flex flex-col gap-10">
