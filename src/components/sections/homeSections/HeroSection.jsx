@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <div>
       <TopBannerCard
-        image={`/assets/heroImage-2.jpeg`}
+        image={`/assets/HeroImage-2.webp`}
         titleSpan={"Student"}
         title={"Support"}
         subTitle="Your Ultimate Resource for Academic Success!"

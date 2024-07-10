@@ -1,11 +1,40 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FaArrowRight, FaIdCard } from "react-icons/fa";
 import Button from "../button";
 
 const ITSupportForm = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    description: '',
+  });
+
+
+  const handleFormChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await fetch('/api/create-ticket', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    console.log(data);
+  };
+
   return (
     <div>
-      <form className="flex flex-col gap-8">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex flex-col gap-2">
             <label className="font-semibold">
@@ -15,7 +44,11 @@ const ITSupportForm = () => {
               <span className="absolute right-5 top-3">
                 <FaIdCard />
               </span>
-              <input className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md" />
+              <input
+                name="firstName"
+                onChange={handleFormChange}
+                className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -26,7 +59,11 @@ const ITSupportForm = () => {
               <span className="absolute right-5 top-3">
                 <FaIdCard />
               </span>
-              <input className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md" />
+              <input
+                name="lastName"
+                onChange={handleFormChange}
+                className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -37,7 +74,11 @@ const ITSupportForm = () => {
               <span className="absolute right-5 top-3">
                 <FaIdCard />
               </span>
-              <input className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md" />
+              <input
+                name="email"
+                onChange={handleFormChange}
+                className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -48,7 +89,11 @@ const ITSupportForm = () => {
               <span className="absolute right-5 top-3">
                 <FaIdCard />
               </span>
-              <input className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md" />
+              <input
+                name="subject"
+                onChange={handleFormChange}
+                className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -59,12 +104,16 @@ const ITSupportForm = () => {
               <span className="absolute right-5 top-3">
                 <FaIdCard />
               </span>
-              <input className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md" />
+              <input
+                name="description"
+                onChange={handleFormChange}
+                className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
+              />
             </div>
           </div>
         </div>
         <div className="flex justify-start">
-          <Button btnName={"Submit"} icon={<FaArrowRight />} />
+          <Button type={"submit"} btnName={"Submit"} icon={<FaArrowRight />} />
         </div>
       </form>
     </div>
