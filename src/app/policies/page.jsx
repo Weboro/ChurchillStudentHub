@@ -1,6 +1,5 @@
 import { NewsSection, RequestFormCard, TopBannerCard } from "@/components";
 import React from "react";
-import { navItems } from "@/constDatas/navItems";
 import { requestList } from "@/constDatas/requestList";
 import Link from "next/link";
 

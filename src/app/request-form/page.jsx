@@ -13,10 +13,8 @@ export const metadata = {
   // },
 };
 
-import { requestList } from "@/constDatas/requestList";
-
 const RequestFormPage = () => {
-  // const requestLists = navItems[3].Catagories;
+  const requestFormData = navItems[3].Catagories;
 
   return (
     <main className="min-h-[80vh]">
@@ -43,7 +41,7 @@ const RequestFormPage = () => {
             </h2>
             <div className="">
               <div className="flex flex-col gap-5">
-                {requestList?.map((item, index) => (
+                {requestFormData?.map((item, index) => (
                   <RequestFormCard
                     key={index}
                     menuTitle={item?.menuTitle}
@@ -52,7 +50,7 @@ const RequestFormPage = () => {
                     slug={item?.slug}
                     btnTitle={item?.btnTitle}
                     target={item?.target}
-                    iconStyles={item?.iconStyles}
+                    iconStyles={item?.icon}
                   />
                 ))}
               </div>

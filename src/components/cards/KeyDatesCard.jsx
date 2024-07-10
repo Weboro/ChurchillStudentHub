@@ -46,7 +46,7 @@ const KeyDatesCard = ({
           </h2>
         </div>
 
-        <div className="flex gap-2 items-center flex-wrap text-sm">
+        {/* <div className="flex gap-2 items-center flex-wrap text-sm">
           {audience.map((item, index) => (
             <p
               className="bg-primary-orange/20 text-neutral-950/75 px-3 py-1 rounded-full whitespace-nowrap"
@@ -63,7 +63,7 @@ const KeyDatesCard = ({
               {item}
             </p>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );

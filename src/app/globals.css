@@ -190,56 +190,6 @@ li {
   }
 }
 
-.list-decor li {
-  list-style: none;
-  background-image: url("/assets/thunder-list-style.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 15px 25px;
-  padding-left: 30px;
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  width: 5px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888;
-}
-.dynamicTextDesign h2 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #091f40;
-  padding-bottom: 10px;
-}
-.dynamicTextDesign h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #091f40;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.dynamicTextDesign ul {
-  list-style-type: disc;
-  margin-bottom: 20px;
-}
-
-.dynamicTextDesign li {
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-.dynamicTextDesign a {
-  color: #8d5900;
-  text-decoration: underline;
-}
-
 .m-5 {
   margin: 1rem;
 }
@@ -388,7 +338,7 @@ tr:nth-child(even) {
   line-height: 24px;
 }
 .rich-text-container ul {
-  list-style-type: disc;
+  list-style-image: url("/assets/bullet-point.svg");
 }
 .rich-text-container ul > li,
 .rich-text-container ol > li {

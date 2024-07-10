@@ -3,7 +3,6 @@ import {
   HelpSection,
   HeroSection,
   NewsSection,
-  RequestFormSection,
   StudentProspectusSection,
   SupportSection,
   UpcomingKeyDatesSection,
@@ -15,9 +14,10 @@ import React from "react";
 const Home = () => {
   return (
     <main className="">
-      <div className="flex flex-col gap-[32px] lg:gap-[64px]">
-        <HeroSection />
+      <HeroSection />
+      <div className="md:hidden mt-[32px]"></div>
 
+      <div className="flex flex-col gap-[32px] lg:gap-[64px]">
         <UsefulLinkSection />
 
         <AIHelpSection />
@@ -26,13 +26,13 @@ const Home = () => {
 
         <HelpSection />
 
-        <StudentProspectusSection />
-
         <SupportSection />
 
         {/* <RequestFormSection /> */}
 
         <UpcomingKeyDatesSection />
+
+        <StudentProspectusSection />
 
         <NewsSection />
       </div>

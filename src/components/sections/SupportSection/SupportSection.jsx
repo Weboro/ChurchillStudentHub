@@ -5,7 +5,7 @@ const SupportSection = () => {
   return (
     <div className="container mx-auto px-5 flex flex-col gap-[32px] lg:gap-[64px]">
       <h2 className="text-4xl mt-10 font-bold w-fit mx-auto text-center">
-        Support
+        Other Additional Support
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

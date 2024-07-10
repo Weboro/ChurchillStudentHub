@@ -17,9 +17,10 @@ export const usefulLinksData = [
     order: 3,
     image: "/assets/icons/enquiries.svg",
     title: "General Enquiries",
-    url: "",
+    url: "https://forms.zohopublic.com.au/CIHE/form/StudentHubEnquiry/formperma/XilFJje5kQ-h7f4saQYbSV4kJ-kAMiG7p1QNfWEvDXs",
     subTitle: "Reach out with any general questions or concerns",
   },
+
   // {
   //   order: 4,
   //   image: "/assets/icons/digital-form.svg",
@@ -31,7 +32,7 @@ export const usefulLinksData = [
     order: 5,
     image: "/assets/icons/it-support.svg",
     title: "IT Support",
-    url: "",
+    url: "/support/student-it-support",
     subTitle: "Quickly fill this form if you need IT support",
   },
   {
@@ -59,6 +60,13 @@ export const usefulLinksData = [
     url: "https://passwordreset.microsoftonline.com/passwordreset#!/",
     subTitle:
       "Reset process to regain access to applications like Word, Excel, PowerPoint, and Outlook",
+  },
+  {
+    order: 9,
+    image: "/assets/icons/student-handbook.svg",
+    title: "Student Handbook",
+    url: "/assets/docs/student-prospectus.pdf",
+    subTitle: "Download our student handbook",
   },
   // {
   //   order: 9,
