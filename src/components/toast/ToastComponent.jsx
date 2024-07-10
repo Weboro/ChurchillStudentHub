@@ -19,15 +19,13 @@ const colors = {
   error: "#E10500",
 };
 
-const ToastComponent = (
-  { timeout = 2000, type = "information", customFaviconIconStyle },
-  ref
-) => {
+const ToastComponent = ({ timeout = 2000 }, ref) => {
   const [isShown, setIsShown] = useState(false);
 
   const [toastInfo, setToastInfo] = useState({
     message: "",
     type: "",
+    customFavicon: "",
   });
 
   useImperativeHandle(ref, () => ({
@@ -86,8 +84,8 @@ const ToastComponent = (
                 ease: [0.6, -0.28, 0.735, 0.045],
               }}
               className={`${
-                customFaviconIconStyle
-                  ? customFaviconIconStyle
+                toastInfo.customFavicon
+                  ? toastInfo.customFavicon
                   : icons[toastInfo.type]
               } flex text-2xl`}
             />
