@@ -27,6 +27,7 @@ import PatternBannerCard from "./cards/PatternBannerCard";
 import SupportSection from "./sections/SupportSection/SupportSection";
 import TopInfo from "./globals/header/TopInfo";
 import ITSupportForm from "./forms/ITSupportForm";
+import RequestFormCard from "./cards/RequestFormCard";
 
 export {
   Button,
@@ -58,4 +59,5 @@ export {
   SupportSection,
   TopInfo,
   ITSupportForm,
+  RequestFormCard,
 };

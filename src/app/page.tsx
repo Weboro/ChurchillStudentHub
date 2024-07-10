@@ -1,10 +1,8 @@
 import {
   AIHelpSection,
-  ApplyPaymentForm,
   HelpSection,
   HeroSection,
   NewsSection,
-  RequestFormSection,
   StudentProspectusSection,
   SupportSection,
   UpcomingKeyDatesSection,

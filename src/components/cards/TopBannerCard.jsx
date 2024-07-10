@@ -11,7 +11,7 @@ const TopBannerCard = ({
     // https://ik.imagekit.io/99aui81cz/diversity-teenagers-friends-friendship-team-concept.jpg?updatedAt=1717533378778
     <div
       style={{
-        backgroundImage: `linear-gradient(rgb(7 7 7 / 55%), rgb(7 7 7 / 55%) 100%), url('/assets/HeroImage-2.webp')`,
+        backgroundImage: `linear-gradient(rgb(7 7 7 / 55%), rgb(7 7 7 / 55%) 100%), url('${image}')`,
         backgroundRepeat: "no-repeat",
         objectFit: "cover",
         width: "100%",
