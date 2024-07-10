@@ -4,19 +4,15 @@ import { FaArrowRight, FaIdCard } from "react-icons/fa";
 import Button from "../button";
 import { ToastComponent } from "@/components";
 
-const ITSupportForm = () => {
-  const [toastInfo, setToastInfo] = useState({
-    toastMessage: "An error Occoured",
-    toastType: "error",
-  });
+const defaultFormState = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  subject: "",
+  description: "",
+};
 
-  const defaultFormState = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    description: "",
-  };
+const ITSupportForm = () => {
   const [formData, setFormData] = useState(defaultFormState);
 
   const handleFormChange = (e) => {
@@ -39,21 +35,12 @@ const ITSupportForm = () => {
 
       if (data.errorCode) {
         throw error();
-      } else {
-        setToastInfo({
-          toastMessage: "Form Submitted successfully!",
-          toastType: "success",
-        });
-        toastRef.current.showToast();
-
-        setFormData(defaultFormState);
       }
+
+      setFormData(defaultFormState);
+      toastRef.current.showToast("Form Submitted successfully!", "success");
     } catch (error) {
-      setToastInfo({
-        toastMessage: "An error Occoured!",
-        toastType: "error",
-      });
-      toastRef.current.showToast();
+      toastRef.current.showToast("An error Occoured", "error");
     }
   };
 
@@ -61,11 +48,7 @@ const ITSupportForm = () => {
 
   return (
     <>
-      <ToastComponent
-        toastMessage={toastInfo.toastMessage}
-        toastType={toastInfo.toastType}
-        ref={toastRef}
-      />
+      <ToastComponent ref={toastRef} />
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -81,6 +64,7 @@ const ITSupportForm = () => {
                 required
                 name="firstName"
                 onChange={handleFormChange}
+                value={formData.firstName}
                 className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
               />
             </div>
@@ -96,6 +80,7 @@ const ITSupportForm = () => {
               <input
                 required
                 name="lastName"
+                value={formData.lastName}
                 onChange={handleFormChange}
                 className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
               />
@@ -112,6 +97,7 @@ const ITSupportForm = () => {
               <input
                 required
                 name="email"
+                value={formData.email}
                 onChange={handleFormChange}
                 type="email"
                 className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
@@ -129,6 +115,7 @@ const ITSupportForm = () => {
               <input
                 required
                 name="subject"
+                value={formData.subject}
                 onChange={handleFormChange}
                 className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
               />
@@ -145,6 +132,7 @@ const ITSupportForm = () => {
               <input
                 required
                 name="description"
+                value={formData.description}
                 onChange={handleFormChange}
                 className="w-full h-auto font-inter text-[12px] text-[#021327] bg-transparent border border-[#ABABAB] outline-0 pl-8 pr-3 py-3 rounded-md"
               />

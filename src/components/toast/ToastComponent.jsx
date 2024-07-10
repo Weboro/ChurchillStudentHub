@@ -20,18 +20,22 @@ const colors = {
 };
 
 const ToastComponent = (
-  {
-    timeout = 2000,
-    toastMessage,
-    toastType = "information",
-    customFaviconIconStyle,
-  },
+  { timeout = 2000, type = "information", customFaviconIconStyle },
   ref
 ) => {
   const [isShown, setIsShown] = useState(false);
 
+  const [toastInfo, setToastInfo] = useState({
+    message: "",
+    type: "",
+  });
+
   useImperativeHandle(ref, () => ({
-    showToast() {
+    showToast(message, type) {
+      setToastInfo({
+        message,
+        type,
+      });
       setIsShown(true);
 
       setTimeout(() => {
@@ -65,7 +69,7 @@ const ToastComponent = (
           duration: 0.5,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        style={{ border: `${colors[toastType]} 2px solid` }}
+        style={{ border: `${colors[toastInfo.type]} 2px solid` }}
         onClick={() => setIsShown(false)}
         className={`bg-primary-orange border shadow-xl shadow-primary-orange/10 rounded-md overflow-hidden cursor-pointer`}
       >
@@ -84,13 +88,13 @@ const ToastComponent = (
               className={`${
                 customFaviconIconStyle
                   ? customFaviconIconStyle
-                  : icons[toastType]
+                  : icons[toastInfo.type]
               } flex text-2xl`}
             />
           </div>
 
           <span className="font-semibold text-white w-[20rem]">
-            {toastMessage}
+            {toastInfo.message}
           </span>
         </div>
       </motion.div>
