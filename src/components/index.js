@@ -28,6 +28,7 @@ import SupportSection from "./sections/SupportSection/SupportSection";
 import TopInfo from "./globals/header/TopInfo";
 import ITSupportForm from "./forms/ITSupportForm";
 import RequestFormCard from "./cards/RequestFormCard";
+import ToastComponent from "./toast/ToastComponent";
 
 export {
   Button,
@@ -60,4 +61,5 @@ export {
   TopInfo,
   ITSupportForm,
   RequestFormCard,
+  ToastComponent,
 };
