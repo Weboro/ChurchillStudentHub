@@ -1,59 +1,40 @@
-import axios from "axios";
-import fs from "fs";
-import path from "path";
+import axios from 'axios';
 
-let currentAccessToken = null;
+let accessTokenStore = { token: null };
 
-// Function to read access token from a file
+// Function to read access token from the in-memory object
 function readAccessToken() {
-  // const filePath = path.resolve(process.cwd(), "access_token.txt");
-  // if (fs.existsSync(filePath)) {
-  //   return fs.readFileSync(filePath, "utf-8");
-  // }
-  // return null;
-  const token = process.env.ACCESS_TOKEN;
-  return token;
+  return accessTokenStore.token;
 }
 
-// Function to write access token to a file
+// Function to write access token to the in-memory object
 function writeAccessToken(token) {
-  // const filePath = path.resolve(process.cwd(), "access_token.txt");
-  // fs.writeFileSync(filePath, token, "utf-8");
-  process.env.ACCESS_TOKEN = token;
-  currentAccessToken = token;
+  accessTokenStore.token = token;
 }
-
-// Initialize access token from the file (or set to null if file doesn't exist)
-currentAccessToken = readAccessToken();
 
 export async function POST(request) {
-  const { firstName, lastName, email, subject, description } =
-    await request.json();
+  const { firstName, lastName, email, subject, description } = await request.json();
 
   async function getNewAccessToken() {
-    const response = await axios.post(
-      "https://accounts.zoho.com.au/oauth/v2/token",
-      null,
-      {
-        params: {
-          refresh_token: process.env.REFRESH_TOKEN,
-          client_id: process.env.CLIENT_ID,
-          client_secret: process.env.CLIENT_SECRET,
-          grant_type: "refresh_token",
-          redirect_uri: process.env.REDIRECT_URI,
-          scope: "Desk.tickets.ALL",
-        },
-      }
-    );
+    const response = await axios.post('https://accounts.zoho.com.au/oauth/v2/token', null, {
+      params: {
+        refresh_token: process.env.REFRESH_TOKEN,
+        client_id: process.env.CLIENT_ID,
+        client_secret: process.env.CLIENT_SECRET,
+        grant_type: 'refresh_token',
+        redirect_uri: process.env.REDIRECT_URI,
+        scope: 'Desk.tickets.ALL',
+      },
+    });
     const newAccessToken = response.data.access_token;
-    writeAccessToken(newAccessToken);
+    writeAccessToken(newAccessToken); // Update the access token in the in-memory object
     return newAccessToken;
   }
 
   async function createTicket(accessToken) {
     try {
       const response = await axios.post(
-        "https://desk.zoho.com.au/api/v1/tickets",
+        'https://desk.zoho.com.au/api/v1/tickets',
         {
           departmentId: process.env.DEPARTMENT_ID,
           contact: {
@@ -62,12 +43,12 @@ export async function POST(request) {
             email: email,
           },
           subject: subject,
-          status: "Open",
+          status: 'Open',
           description: description,
         },
         {
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
             orgId: process.env.ORG_ID,
             Authorization: `Zoho-oauthtoken ${accessToken}`,
           },
@@ -75,17 +56,17 @@ export async function POST(request) {
       );
       return new Response(JSON.stringify(response.data), { status: 200 });
     } catch (error) {
-      if (error.response && error.response.data.errorCode === "INVALID_OAUTH") {
+      if (error.response && error.response.data.errorCode === 'INVALID_OAUTH') {
         const newAccessToken = await getNewAccessToken();
         return await createTicket(newAccessToken);
       } else {
-        return new Response(JSON.stringify(error.response.data), {
-          status: error.response.status,
-        });
+        return new Response(JSON.stringify(error.response.data), { status: error.response.status });
       }
     }
   }
 
+  // Check if the access token is set; if not, fetch a new one
+  let currentAccessToken = readAccessToken();
   if (!currentAccessToken) {
     currentAccessToken = await getNewAccessToken();
   }
