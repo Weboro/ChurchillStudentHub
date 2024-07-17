@@ -6,17 +6,20 @@ let currentAccessToken = null;
 
 // Function to read access token from a file
 function readAccessToken() {
-  const filePath = path.resolve(process.cwd(), "access_token.txt");
-  if (fs.existsSync(filePath)) {
-    return fs.readFileSync(filePath, "utf-8");
-  }
-  return null;
+  // const filePath = path.resolve(process.cwd(), "access_token.txt");
+  // if (fs.existsSync(filePath)) {
+  //   return fs.readFileSync(filePath, "utf-8");
+  // }
+  // return null;
+  const token = process.env.ACCESS_TOKEN;
+  return token;
 }
 
 // Function to write access token to a file
 function writeAccessToken(token) {
-  const filePath = path.resolve(process.cwd(), "access_token.txt");
-  fs.writeFileSync(filePath, token, "utf-8");
+  // const filePath = path.resolve(process.cwd(), "access_token.txt");
+  // fs.writeFileSync(filePath, token, "utf-8");
+  process.env.ACCESS_TOKEN = token;
   currentAccessToken = token;
 }
 
