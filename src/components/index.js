@@ -14,9 +14,9 @@ import UpcomingKeyDatesSection from "./sections/homeSections/UpcomingKeyDatesSec
 import NewsSection from "./sections/commonSections/NewsSection";
 import PoliciesDetails from "./sections/policiesSections/PoliciesDetails";
 import GuideDetails from "./sections/guideSections/GuideDetails";
-import UpcomingEventsSection from "./sections/upcomingEventsSections/UpcomingEventsSection";
-import FilterComponent from "./sections/upcomingEventsSections/FilterComponent";
-import AccordionItem from "./sections/upcomingEventsSections/AccordionItem";
+import UpcomingKeyDatesPage from "./sections/UpcomingKeyDatesPage/UpcomingKeyDatesPage";
+import FilterComponent from "./sections/UpcomingKeyDatesPage/FilterComponent";
+import AccordionItem from "./sections/UpcomingKeyDatesPage/AccordionItem";
 import FloaterComponent from "./floater/Floater";
 import AIHelpSection from "./sections/commonSections/AIHelpSection";
 import YouTubeLinksSection from "./sections/commonSections/YouTubeLinksSection";
@@ -29,6 +29,9 @@ import TopInfo from "./globals/header/TopInfo";
 import ITSupportForm from "./forms/ITSupportForm";
 import RequestFormCard from "./cards/RequestFormCard";
 import ToastComponent from "./toast/ToastComponent";
+import HowToGuidePage from "./sections/HowToGuideSections/HowToGuidePage";
+import PoliciesPage from "./sections/policiesSections/PoliciesPage";
+import RequestFormPage from "./sections/RequestFormSections/RequestFormPage";
 
 export {
   Button,
@@ -47,7 +50,7 @@ export {
   NewsSection,
   PoliciesDetails,
   GuideDetails,
-  UpcomingEventsSection,
+  UpcomingKeyDatesPage,
   FilterComponent,
   AccordionItem,
   FloaterComponent,
@@ -62,4 +65,7 @@ export {
   ITSupportForm,
   RequestFormCard,
   ToastComponent,
+  HowToGuidePage,
+  PoliciesPage,
+  RequestFormPage,
 };

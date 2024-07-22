@@ -16,18 +16,16 @@ const monthArray = [
   "Dec",
 ];
 const KeyDatesCard = ({
-  date,
-  endDate,
-  startTime,
-  endTime,
-  eventName,
+  title,
   description,
-  audience,
+  start_date,
+  end_date,
   category,
+  audience,
 }) => {
-  const month = parseInt(date.split("-")[1]) - 1;
-  const day = parseInt(date.split("-")[2]);
-  const displayMonth = monthArray[month];
+  const dateObj = new Date(start_date);
+
+  const formattedDate = `${dateObj.getDay()} ${monthArray[dateObj.getMonth()]}`;
 
   return (
     <>
@@ -35,14 +33,10 @@ const KeyDatesCard = ({
         <div className="flex flex-col sm:flex-row sm:items-center gap-2">
           <div className="text-white bg-primary-orange w-32 py-2 px-3 rounded-md flex items-center gap-2 font-bold">
             <i className="fi fi-rr-calendar-day flex text-2xl"></i>
-            <span>
-              {day}
-              {day === 1 ? "st" : day === 2 ? "nd" : day === 3 ? "rd" : "th"}
-            </span>
-            <span>{displayMonth}</span>
+            <span>{formattedDate}</span>
           </div>
           <h2 className="font-bold text-[22px] text-[#2C2B4B] leading-6">
-            {eventName}
+            {title}
           </h2>
         </div>
 

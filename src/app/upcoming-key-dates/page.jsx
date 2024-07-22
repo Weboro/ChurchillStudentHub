@@ -1,4 +1,4 @@
-import { UpcomingEventsSection } from "@/components";
+import { UpcomingKeyDatesPage } from "@/components";
 import React from "react";
 
 export const metadata = {
@@ -14,7 +14,7 @@ export const metadata = {
 const UpcomingEvents = () => {
   return (
     <main className="min-h-[80vh]">
-      <UpcomingEventsSection />
+      <UpcomingKeyDatesPage />
     </main>
   );
 };
