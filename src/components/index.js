@@ -32,6 +32,7 @@ import ToastComponent from "./toast/ToastComponent";
 import HowToGuidePage from "./sections/HowToGuideSections/HowToGuidePage";
 import PoliciesPage from "./sections/policiesSections/PoliciesPage";
 import RequestFormPage from "./sections/RequestFormSections/RequestFormPage";
+import DataNotFound from "./globals/DataNotFound/DataNotFound";
 
 export {
   Button,
@@ -68,4 +69,5 @@ export {
   HowToGuidePage,
   PoliciesPage,
   RequestFormPage,
+  DataNotFound,
 };
