@@ -62,8 +62,6 @@ const UpcomingKeyDatesPage = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  if (isLoading) return <Spiner />;
-
   const toggleMonth = (year, month) => {
     const key = `${year}-${month}`;
     setExpandedMonth((prev) => (prev === key ? null : key));
@@ -80,19 +78,19 @@ const UpcomingKeyDatesPage = () => {
               image={`/assets/HeroImage-2.webp`}
               titleSpan={""}
               title={"Upcoming Key Dates"}
-              subTitle={`Student Support > Request Form > Upcoming Key Dates`}
+              subTitle={`Student Support > Upcoming Key Dates`}
             />
           </div>
           <div className="container mx-auto px-5">
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-43">
               <div className="flex flex-col gap-8">
                 {Object.keys(data).map((year) => (
                   <div key={year} className="flex flex-col gap-4">
-                    <h2 className="text-xl font-bold pb-2 cursor-pointer w-fit relative before:absolute before:bg-primary-orange before:h-2 before:w-full  before:bottom-0 before:left-0 ">
+                    <h2 className="text-2xl font-bold pb-1 w-fit relative before:absolute before:bg-primary-orange before:h-1 before:w-full before:bottom-0 before:left-0 ">
                       {year}
                     </h2>
 
-                    <div className="flex flex-col gap-8 w-full">
+                    <div className="flex flex-col gap-4 w-full">
                       {Object.keys(data[year]).map((month) => {
                         const isActive = expandedMonth === `${year}-${month}`;
 
@@ -124,6 +122,7 @@ const UpcomingKeyDatesPage = () => {
                                     end_date={item?.end_date}
                                     category={item?.category}
                                     audience={item?.audience}
+                                    isFullwidth={true}
                                   />
                                 ))}
                               </div>
