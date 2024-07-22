@@ -103,10 +103,8 @@ const UpcomingKeyDatesPage = () => {
             />
           </div>
           {noDataFound ? (
-            <div className="container mx-auto px-5">
-              <div className="md:w-2/3 md:mx-auto">
-                <DataNotFound />
-              </div>
+            <div className="md:w-2/3 md:mx-auto">
+              <DataNotFound />
             </div>
           ) : (
             <div className="container mx-auto px-5">

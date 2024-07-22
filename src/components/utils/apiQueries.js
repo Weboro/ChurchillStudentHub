@@ -23,6 +23,11 @@ export const FetchUpcomingKeyDate = () => {
   return data;
 };
 
+export const FetchUsefulLinks = () => {
+  const data = axiosBaseURL.get(`/api/v1/cms/useful-link`);
+  return data;
+};
+
 // export const FetchExampleDatas= () => {
 //   const data = axiosBaseURL.get(`/api/v1/example`);
 //   return data;

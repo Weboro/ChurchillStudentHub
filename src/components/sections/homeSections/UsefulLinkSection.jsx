@@ -1,12 +1,38 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import UsefulLinksCard from "@/components/cards/UsefulLinksCard";
-import { usefulLinksData } from "@/constDatas/usefulLinksData";
-// import Search from "@/components/Search";
 import Button from "@/components/button";
-import { FaArrowRight, FaSearch } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import { FetchUsefulLinks } from "@/components/utils/apiQueries";
 
 const UsefulLinkSection = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState([]);
+  const [noDataFound, setNoDataFound] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    FetchUsefulLinks()
+      .then((res) => {
+        if (!res.data || res.data.length === 0) {
+          setData(null);
+          setIsLoading(false);
+          setNoDataFound(true);
+          return;
+        }
+
+        setData(res.data.sort((prev, next) => prev.order - next.order));
+        setIsLoading(false);
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
+  if (isLoading || noDataFound) {
+    return null;
+  }
+
   return (
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-[44px]">
@@ -17,18 +43,18 @@ const UsefulLinkSection = () => {
         </div>
 
         <div className="grid grid-cols-1 h-full lg:grid-cols-4 gap-6">
-          {usefulLinksData?.slice(0, 12)?.map((item, index) => (
+          {data?.slice(0, 12)?.map((item, index) => (
             <UsefulLinksCard
-              image={`${item?.image}`}
-              subTitle={item?.subTitle}
+              image={item?.logo ? "/assets/canvas.png" : ""}
+              subTitle={item?.description}
               title={item?.title}
-              url={item?.url}
+              url={item?.external_link}
               key={index}
             />
           ))}
         </div>
 
-        {usefulLinksData.length > 12 && (
+        {data.length > 12 && (
           <div className="flex justify-center">
             <Link href={"/useful-links"}>
               <Button

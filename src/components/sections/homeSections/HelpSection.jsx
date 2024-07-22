@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { GuideCard, HelpCard, Button } from "@/components";
+import { GuideCard, HelpCard, Button, DataNotFound } from "@/components";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FetchHowToGuide } from "@/components/utils/apiQueries";
@@ -42,19 +42,26 @@ const HelpSection = () => {
                   How to Guide?
                 </h2>
               </div>
-
-              {isLoading ? (
-                <p>Loading ... </p>
+              {!data.length >= 0 ? (
+                <div className="flex mix-blend-multiply">
+                  <DataNotFound />
+                </div>
               ) : (
                 <>
-                  {data?.slice(0, 3)?.map((item, index) => (
-                    <GuideCard
-                      key={index}
-                      title={item?.title}
-                      rich_text={item?.rich_text}
-                      slug={item?.slug}
-                    />
-                  ))}
+                  {isLoading ? (
+                    <p>Loading ... </p>
+                  ) : (
+                    <>
+                      {data?.slice(0, 3)?.map((item, index) => (
+                        <GuideCard
+                          key={index}
+                          title={item?.title}
+                          rich_text={item?.rich_text}
+                          slug={item?.slug}
+                        />
+                      ))}
+                    </>
+                  )}
                 </>
               )}
             </div>

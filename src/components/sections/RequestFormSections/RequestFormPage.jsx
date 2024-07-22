@@ -1,5 +1,6 @@
 "use client";
 import {
+  DataNotFound,
   NewsSection,
   RequestFormCard,
   Spiner,
@@ -11,16 +12,22 @@ import Link from "next/link";
 import { FetchRequestForms } from "@/components/utils/apiQueries";
 
 const RequestFormPage = () => {
-  // const requestFormData = navItems[3].Catagories;
-
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
+  const [noDataFound, setNoDataFound] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
 
     FetchRequestForms()
       .then((res) => {
+        if (!res.data || res.data.length === 0) {
+          setData(null);
+          setIsLoading(false);
+          setNoDataFound(true);
+          return;
+        }
+
         setData(res.data);
         setIsLoading(false);
       })
@@ -46,24 +53,30 @@ const RequestFormPage = () => {
               </p>
             }
           />
-
-          <div className="container mx-auto px-5 flex flex-col gap-[44px]">
-            <h2 className="font-bold text-[36px] text-matte-purple">
-              Request Form
-            </h2>
-
-            <div className="flex flex-col gap-5">
-              {data?.map((item, index) => (
-                <RequestFormCard
-                  key={index}
-                  title={item.title}
-                  icon={item.icon}
-                  description={item.description}
-                  external_link={item.external_link}
-                />
-              ))}
+          {noDataFound ? (
+            <div className="md:w-2/3 md:mx-auto">
+              <DataNotFound />
             </div>
-          </div>
+          ) : (
+            <div className="container mx-auto px-5 flex flex-col gap-[44px]">
+              <h2 className="font-bold text-[36px] text-matte-purple">
+                Request Form
+              </h2>
+
+              <div className="flex flex-col gap-5">
+                {data?.map((item, index) => (
+                  <RequestFormCard
+                    key={index}
+                    title={item.title}
+                    icon={item.icon}
+                    description={item.description}
+                    external_link={item.external_link}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
           <NewsSection />
         </main>
       )}
