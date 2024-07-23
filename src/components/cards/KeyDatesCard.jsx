@@ -56,7 +56,7 @@ const KeyDatesCard = ({
         </div>
         {isFullwidth && (
           <div className="flex flex-col gap-4">
-            <p dangerouslySetInnerHTML={{ __html: description }}></p>
+            {/* <p dangerouslySetInnerHTML={{ __html: description }}></p> */}
 
             <div className="flex items-center gap-3">
               {[category, audience].map((item, index) => (
