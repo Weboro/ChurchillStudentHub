@@ -138,7 +138,7 @@ const UpcomingKeyDatesPage = () => {
                                 ></i>
                               </div>
                               {isActive && (
-                                <div>
+                                <div className="flex flex-col gap-4">
                                   {data[year][month].map((item) => (
                                     <KeyDatesCard
                                       key={item.id}
