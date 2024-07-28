@@ -30,7 +30,7 @@ const HeroSection = () => {
         showSearch={true}
       />
 
-      <div className="w-full mt-[32px] xl:mt-0 xl:-translate-y-1/2 ">
+      <div className="w-full mt-[32px] xl:mt-0 xl:-translate-y-1/2  mb-[32px] xl:mb-0">
         <div className="container mx-auto px-5">
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
             {cardsData.map((item, index) => (

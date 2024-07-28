@@ -20,14 +20,6 @@ export const usefulLinksData = [
     url: "https://forms.zohopublic.com.au/CIHE/form/StudentHubEnquiry/formperma/XilFJje5kQ-h7f4saQYbSV4kJ-kAMiG7p1QNfWEvDXs",
     subTitle: "Reach out with any general questions or concerns",
   },
-
-  // {
-  //   order: 4,
-  //   image: "/assets/icons/digital-form.svg",
-  //   title: "Digital Request Forms",
-  //   url: "/request-form",
-  //   subTitle: "Submit digital requests and applications",
-  // },
   {
     order: 5,
     image: "/assets/icons/it-support.svg",

@@ -14,6 +14,7 @@ const defaultFormState = {
 
 const ITSupportForm = () => {
   const [formData, setFormData] = useState(defaultFormState);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleFormChange = (e) => {
     const { name, value } = e.target;
@@ -23,6 +24,8 @@ const ITSupportForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setIsLoading(true);
+
       const response = await fetch("/api/create-ticket", {
         method: "POST",
         headers: {
@@ -41,6 +44,8 @@ const ITSupportForm = () => {
       toastRef.current.showToast("Form Submitted successfully!", "success");
     } catch (error) {
       toastRef.current.showToast("An error Occoured", "error");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -140,7 +145,11 @@ const ITSupportForm = () => {
           </div>
         </div>
         <div className="flex justify-start">
-          <Button type={"submit"} btnName={"Submit"} icon={<FaArrowRight />} />
+          <Button
+            type={"submit"}
+            btnName={isLoading ? "Loading..." : "Submit"}
+            icon={<FaArrowRight />}
+          />
         </div>
       </form>
     </>

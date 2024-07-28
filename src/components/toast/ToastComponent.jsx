@@ -55,7 +55,7 @@ const ToastComponent = ({ timeout = 2000 }, ref) => {
   if (!isShown) return null;
 
   return (
-    <div className="fixed z-[100] w-full bottom-0 left-0 md:w-fit md:bottom-4 md:left-4 overflow-hidden">
+    <div className="fixed z-[9999999999] w-full bottom-0 left-0 md:w-fit md:bottom-4 md:left-4 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, translateY: "100%" }}
         animate={

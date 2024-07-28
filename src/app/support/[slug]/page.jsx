@@ -48,7 +48,7 @@ const SupportPage = ({ params }) => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
               {ctaTitle && (
-                <div className="bg-primary-orange py-4 px-6 rounded-md font-semibold hover:-translate-y-2 hover:scale-105 transition-all">
+                <div className="bg-primary-orange py-2 px-5 rounded-md font-semibold hover:-translate-y-2 transition-all">
                   <a target="_blank" href={ctaRedirect}>
                     <p className="capitalize font-bold">{ctaTitle}</p>
                     <div className="flex items-center gap-2 font-semibold rounded-md ">
@@ -60,7 +60,7 @@ const SupportPage = ({ params }) => {
               )}
 
               {emailTitle && (
-                <div className="outline outline-primary-orange py-4 px-6 rounded-md font-semibold hover:-translate-y-2 hover:scale-105 transition-all">
+                <div className="overflow-hidden outline outline-primary-orange py-2 px-5 rounded-md font-semibold hover:-translate-y-2 transition-all">
                   <a href={`mailto:${email}`}>
                     <p className="capitalize font-bold">{emailTitle}</p>
                     <div className="flex items-center gap-2  font-semibold rounded-md ">
@@ -72,7 +72,7 @@ const SupportPage = ({ params }) => {
               )}
 
               {phoneTitle && (
-                <div className="bg-primary-orange py-4 px-6 rounded-md font-semibold hover:-translate-y-2 hover:scale-105 transition-all">
+                <div className="bg-primary-orange py-2 px-5 rounded-md font-semibold hover:-translate-y-2 transition-all">
                   <a href={`mailto:${phone}`}>
                     <p className="capitalize font-bold">{phoneTitle}</p>
                     <div className="flex items-center gap-2 rounded-md ">

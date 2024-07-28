@@ -7,7 +7,6 @@ import { requestList } from "@/constDatas/requestList";
 
 const PoliciesDetails = ({ slug }) => {
   const data = requestList?.find((item) => item?.slug === slug);
-  console.log(data);
 
   return (
     <>
