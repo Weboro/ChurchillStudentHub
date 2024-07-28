@@ -37,8 +37,6 @@ const UpcomingKeyDates = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-5">
               {data?.slice(0, 6)?.map((item, index) => {
-                console.log(item);
-
                 return (
                   <KeyDatesCard
                     key={index}
