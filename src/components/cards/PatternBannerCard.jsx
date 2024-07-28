@@ -6,8 +6,11 @@ const PatternBannerCard = ({
   description,
   BtnALink,
   BtnAText,
+  BtnAClick,
   BtnBLink,
   BtnBText,
+  BtnBClick,
+  children,
 }) => {
   return (
     <div
@@ -34,7 +37,7 @@ const PatternBannerCard = ({
           {(BtnAText || BtnBText) && (
             <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
               {BtnAText && (
-                <a href={BtnALink}>
+                <a href={BtnALink} onClick={BtnAClick}>
                   <Button
                     btnName={BtnAText}
                     icon={<FaArrowRight />}
@@ -42,8 +45,9 @@ const PatternBannerCard = ({
                   />
                 </a>
               )}
+
               {BtnBText && (
-                <a href={BtnBLink}>
+                <a href={BtnBLink} onClick={BtnBClick}>
                   <Button
                     btnName={BtnBText}
                     icon={<FaArrowRight />}
@@ -53,6 +57,8 @@ const PatternBannerCard = ({
               )}
             </div>
           )}
+
+          {children}
         </div>
       </div>
     </div>

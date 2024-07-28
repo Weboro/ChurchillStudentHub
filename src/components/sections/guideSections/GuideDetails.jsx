@@ -29,7 +29,7 @@ const GuideDetails = ({ slug }) => {
       ) : (
         <>
           <article className="flex flex-col gap-6 mt-[64px] px-5">
-            <div className="container-blog flex flex-col gap-5">
+            <div className="container-small flex flex-col gap-5">
               <nav className="font-semibold flex flex-wrap gap-1">
                 <Link
                   className="hover:text-primary-orange transition-all"
@@ -64,7 +64,7 @@ const GuideDetails = ({ slug }) => {
               />
             </div>
 
-            <div className="container-blog mx-auto">
+            <div className="container-small mx-auto">
               <div
                 className="rich-text-container"
                 dangerouslySetInnerHTML={{ __html: data?.rich_text }}
