@@ -53,6 +53,7 @@ const HowToGuidePage = () => {
               </p>
             }
           />
+
           {noDataFound ? (
             <div className="md:w-2/3 md:mx-auto">
               <DataNotFound />

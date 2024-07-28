@@ -42,7 +42,7 @@ const HelpSection = () => {
                   How to Guide?
                 </h2>
               </div>
-              {!data.length >= 0 ? (
+              {data.length === 0 ? (
                 <div className="flex mix-blend-multiply">
                   <DataNotFound />
                 </div>
