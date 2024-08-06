@@ -74,7 +74,7 @@ const Page = () => {
 
     try {
       const res = await axios.get(
-        `/api/fetchTimetables?studentID=${studentID}`
+        `/api/fetchTimetables?studentID=${studentID.toUpperCase()}`
       );
 
       if (!res.data.result || res.data.result.length === 0) {
@@ -152,7 +152,7 @@ const Page = () => {
                 }}
                 className="absolute top-4 left-4 text-4xl rotate-90 text-primary-orange cursor-pointer"
               >
-                <i class="fi fi-sr-times-hexagon"></i>
+                <i className="fi fi-sr-times-hexagon"></i>
               </div>
               <div className="w-[95vw] h-[80vh] overflow-y-scroll bg-neutral-50 px-6 py-6 rounded-md shadow-lg relative">
                 <Image
@@ -245,7 +245,7 @@ const Page = () => {
                                 {item.teacher_name}
                               </td>
                               <td className="border border-gray-300 p-2">
-                                {item.class_room}
+                                {item.class_room?.join(" & ")}
                               </td>
                             </tr>
                           ))}
