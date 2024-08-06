@@ -5,7 +5,6 @@ import Button from "@/components/button";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import { FetchUsefulLinks } from "@/components/utils/apiQueries";
-import { usefulLinksData } from "@/constDatas/usefulLinksData";
 
 const UsefulLinkSection = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,23 +14,19 @@ const UsefulLinkSection = () => {
   useEffect(() => {
     setIsLoading(true);
 
-    setData(usefulLinksData);
+    FetchUsefulLinks()
+      .then((res) => {
+        if (!res.data || res.data.length === 0) {
+          setData(null);
+          setIsLoading(false);
+          setNoDataFound(true);
+          return;
+        }
 
-    setIsLoading(false);
-
-    // FetchUsefulLinks()
-    //   .then((res) => {
-    //     if (!res.data || res.data.length === 0) {
-    //       setData(null);
-    //       setIsLoading(false);
-    //       setNoDataFound(true);
-    //       return;
-    //     }
-
-    //     setData(res.data.sort((prev, next) => prev.order - next.order));
-    //     setIsLoading(false);
-    //   })
-    //   .catch((err) => console.error(err));
+        setData(res.data.sort((prev, next) => prev.order - next.order));
+        setIsLoading(false);
+      })
+      .catch((err) => console.error(err));
   }, []);
 
   if (isLoading || noDataFound) {
@@ -50,17 +45,17 @@ const UsefulLinkSection = () => {
         <div className="grid grid-cols-1 h-full lg:grid-cols-4 gap-6">
           {data?.slice(0, 12)?.map((item, index) => (
             <UsefulLinksCard
-              // image={item?.logo}
-              // subTitle={item?.description}
-              // title={item?.title}
-              // url={item?.external_link}
-              // key={index}
-
-              key={index}
-              image={item?.image}
-              subTitle={item?.subTitle}
+              image={item?.logo}
+              subTitle={item?.description}
               title={item?.title}
-              url={item?.url}
+              url={item?.external_link}
+              key={index}
+
+              // key={index}
+              // image={item?.image}
+              // subTitle={item?.subTitle}
+              // title={item?.title}
+              // url={item?.url}
             />
           ))}
         </div>
