@@ -29,7 +29,7 @@ const TopBannerCard = ({
             {subTitle}
           </div>
 
-          {showSearch && (
+          {/* {showSearch && (
             <div className="relative bg-neutral-50 rounded-full overflow-hidden md:w-[24rem]">
               <input
                 type="text"
@@ -40,7 +40,7 @@ const TopBannerCard = ({
                 <i className="fi fi-br-search flex text-white"></i>
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
