@@ -18,11 +18,11 @@ const StudentProspectusSection = () => {
     >
       <div className="container mx-auto px-5 py-10 grid place-content-center text-center">
         <h3 className="relative leading-16 font-bold text-[36px] text-[#2C2B4B]">
-          Download Our Student Prospectus
+          Download Our Student handbook
         </h3>
         <p className="mb-5">Specially tailored to our International Student</p>
         <Link
-          href={`/assets/docs/student-prospectus.pdf`}
+          href={`/assets/docs/Student-Handbook2024.pdf`}
           target="_blank"
           className="w-fit mx-auto"
         >
