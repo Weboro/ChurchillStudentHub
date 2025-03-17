@@ -27,7 +27,11 @@ const PoliciesPage = () => {
           return;
         }
 
-        setData(res.data);
+        const sortedData = res.data.sort((a, b) =>
+          a.title.localeCompare(b.title)
+        );
+
+        setData(sortedData);
         setIsLoading(false);
       })
       .catch((err) => console.error(err));
@@ -58,7 +62,7 @@ const PoliciesPage = () => {
             </div>
           ) : (
             <div className="container mx-auto px-5 flex flex-col gap-[44px]">
-              <h2 className="font-bold text-[36px] text-custom-text-black">
+              <h2 className="font-bold text-[36px] text-custom-text-black text-center">
                 Policies
               </h2>
 
