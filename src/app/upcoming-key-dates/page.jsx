@@ -2,7 +2,7 @@ import { UpcomingKeyDatesPage } from "@/components";
 import React from "react";
 
 export const metadata = {
-  title: "Upcoming Key Dates",
+  title: "Key Dates",
   // description: 'abcd',
   // metadataBase: new URL('https://sdsd.com.np'),
   // keywords: ['Next.js', 'React', 'JavaScript'],

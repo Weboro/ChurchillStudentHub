@@ -43,13 +43,13 @@ const RequestFormPage = () => {
           <TopBannerCard
             image={`/assets/HeroImage-2.webp`}
             titleSpan={""}
-            title={"Request Form"}
+            title={"Current Students Online Application Requests"}
             subTitle={
               <p className="text-white">
                 <Link href="/" className="text-white">
-                  Student Support
+                  Current Students Support Hub
                 </Link>
-                <span> / Request Form</span>
+                <span> / Current Students Online Application Requests</span>
               </p>
             }
           />
@@ -60,7 +60,7 @@ const RequestFormPage = () => {
           ) : (
             <div className="container mx-auto px-5 flex flex-col gap-[44px]">
               <h2 className="font-bold text-[36px] text-matte-purple">
-                Request Form
+                Current Students Online Application Requests
               </h2>
 
               <div className="flex flex-col gap-5">

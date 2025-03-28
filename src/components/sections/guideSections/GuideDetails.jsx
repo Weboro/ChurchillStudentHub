@@ -28,7 +28,7 @@ const GuideDetails = ({ slug }) => {
         <Spiner />
       ) : (
         <>
-          <article className="flex flex-col gap-6 mt-[64px] px-5">
+          <article className="flex flex-col gap-6 mt-[64px] px-5 mb-10">
             <div className="container-small flex flex-col gap-5">
               <nav className="font-semibold flex flex-wrap gap-1">
                 <Link
@@ -41,7 +41,7 @@ const GuideDetails = ({ slug }) => {
                   className="hover:text-primary-orange transition-all"
                   href="/how-to-guide"
                 >
-                  How To Guide /
+                  Current Students Self-Help Guide /
                 </Link>
                 {data?.title}
               </nav>

@@ -3,7 +3,7 @@
 import { HowToGuidePage } from "@/components";
 
 export const metadata = {
-  title: "How To Guide",
+  title: "Current Students Self-Help Guide",
   // description: 'abcd',
   // metadataBase: new URL('https://sdsd.com.np'),
   // keywords: ['Next.js', 'React', 'JavaScript'],

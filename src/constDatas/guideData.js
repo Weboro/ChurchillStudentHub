@@ -1,5 +1,5 @@
 export const guideData = {
-  title: "How to Guide?",
+  title: "Current Students Self-Help Guide ",
   slug: "how-to-guide",
   linik: "",
   guideLists: [

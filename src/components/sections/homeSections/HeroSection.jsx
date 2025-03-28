@@ -24,8 +24,8 @@ const HeroSection = () => {
     <div>
       <TopBannerCard
         image={`/assets/HeroImage-2.webp`}
-        titleSpan={"Student"}
-        title={"Support"}
+        titleSpan={"Current Students"}
+        title={"Support Hub"}
         subTitle="Your Ultimate Resource for Academic Success!"
         showSearch={true}
       />

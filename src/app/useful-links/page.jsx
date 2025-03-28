@@ -24,7 +24,7 @@ const UsefuLinks = () => {
             image={`/assets/HeroImage-2.webp`}
             titleSpan={"Useful"}
             title={"Links"}
-            subTitle={`Student Support > Request Form > Useful Links`}
+            subTitle={`Current Students Support Hub > Current Students Online Application Requests > Useful Links`}
           />
         </div>
         <div className="container mx-auto px-5">

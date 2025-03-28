@@ -12,7 +12,7 @@ const RequestFormSection = () => {
         <div>
           <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
             <h2 className="text-4xl mb-6 mt-10 font-bold w-fit mx-auto text-center">
-              Request Form
+              Current Students Online Application Requests
             </h2>
           </div>
         </div>

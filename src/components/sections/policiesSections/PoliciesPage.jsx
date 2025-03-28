@@ -50,7 +50,7 @@ const PoliciesPage = () => {
             subTitle={
               <p className="text-white">
                 <Link href="/" className="text-white">
-                  Student Support
+                  Current Students Support Hub
                 </Link>
                 <span> / Policies and Procedures</span>
               </p>

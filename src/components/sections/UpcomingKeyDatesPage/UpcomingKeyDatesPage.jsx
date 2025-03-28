@@ -98,8 +98,8 @@ const UpcomingKeyDatesPage = () => {
             <TopBannerCard
               image={`/assets/HeroImage-2.webp`}
               titleSpan={""}
-              title={"Upcoming Key Dates"}
-              subTitle={`Student Support > Upcoming Key Dates`}
+              title={"Key Dates"}
+              subTitle={`Current Students Support Hub > Key Dates`}
             />
           </div>
           {noDataFound ? (
@@ -123,18 +123,16 @@ const UpcomingKeyDatesPage = () => {
                           return (
                             <div key={month} className="flex flex-col gap-4">
                               <div
-                                className={`w-full cursor-pointer px-4 py-2 rounded-md font-bold flex items-center justify-between border transition-all ${
-                                  isActive
-                                    ? "bg-primary-orange text-white"
-                                    : "border-primary-orange"
-                                }`}
+                                className={`w-full cursor-pointer px-4 py-2 rounded-md font-bold flex items-center justify-between border transition-all ${isActive
+                                  ? "bg-primary-orange text-white"
+                                  : "border-primary-orange"
+                                  }`}
                                 onClick={() => toggleMonth(year, month)}
                               >
                                 {monthsList[month]}
                                 <i
-                                  className={`flex fi fi-br-${
-                                    isActive ? "minus" : "plus"
-                                  } ml-2`}
+                                  className={`flex fi fi-br-${isActive ? "minus" : "plus"
+                                    } ml-2`}
                                 ></i>
                               </div>
                               {isActive && (

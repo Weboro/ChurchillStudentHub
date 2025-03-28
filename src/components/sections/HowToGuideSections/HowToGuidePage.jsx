@@ -43,13 +43,13 @@ const HowToGuidePage = () => {
           <TopBannerCard
             image={`/assets/hero-howto.jpg`}
             titleSpan={""}
-            title={"How to Guide"}
+            title={"Current Students Self-Help Guide"}
             subTitle={
               <p className="text-white">
                 <Link href="/" className="text-white">
-                  Student Support
+                  Current Students Support Hub
                 </Link>
-                <span> / How to Guide</span>
+                <span> / Current Students Self-Help Guide</span>
               </p>
             }
           />
@@ -61,7 +61,7 @@ const HowToGuidePage = () => {
           ) : (
             <div className="container mx-auto px-5 flex flex-col gap-[44px]">
               <h2 className="font-bold text-[36px] text-matte-purple">
-                How to Guide
+                Current Students Self-Help Guide
               </h2>
 
               <div className="bg-light-grey flex flex-col gap-5 p-5 rounded-md">

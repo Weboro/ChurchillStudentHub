@@ -39,7 +39,7 @@ const HelpSection = () => {
             <div className="p-4 flex flex-col gap-3">
               <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
                 <h2 className="font-bold text-[36px] text-matte-purple">
-                  How to Guide?
+                  Current Students Self-Help Guide
                 </h2>
               </div>
               {data.length === 0 ? (

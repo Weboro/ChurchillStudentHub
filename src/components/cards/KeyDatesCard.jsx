@@ -28,12 +28,10 @@ const KeyDatesCard = ({
   const startDate = new Date(start_date);
   const endDate = new Date(end_date);
 
-  const formattedStartDate = `${startDate.getDate()} ${
-    monthArray[startDate.getMonth()]
-  }`;
-  const formattedEndDate = `${endDate.getDate()} ${
-    monthArray[endDate.getMonth()]
-  }`;
+  const formattedStartDate = `${startDate.getDate()} ${monthArray[startDate.getMonth()]
+    }`;
+  const formattedEndDate = `${endDate.getDate()} ${monthArray[endDate.getMonth()]
+    }`;
 
   const showEndDate = isFullwidth && startDate.getTime() !== endDate.getTime();
 
@@ -54,6 +52,12 @@ const KeyDatesCard = ({
             {title}
           </h2>
         </div>
+        {description !== "..." && (
+          <div>
+            {description}
+          </div>
+        )}
+
         {isFullwidth && (
           <div className="flex flex-col gap-4">
             {/* <p dangerouslySetInnerHTML={{ __html: description }}></p> */}

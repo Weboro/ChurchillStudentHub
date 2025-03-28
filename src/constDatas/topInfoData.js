@@ -4,7 +4,7 @@ import { IoLibrary } from "react-icons/io5";
 
 export const topInfoData = [
   {
-    title: "Find Agent",
+    title: "Find an Education Agent",
     redirect: `${NEXT_PUBLIC_CHURCHILL_URL}/find-agent`,
     icon: <FaUser />,
   },

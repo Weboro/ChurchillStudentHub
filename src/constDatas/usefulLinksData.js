@@ -9,7 +9,7 @@ export const usefulLinksData = [
   {
     order: 2,
     image: "/assets/icons/how-to-guide.svg",
-    title: "How to Guide",
+    title: "Current Students Self-Help Guide",
     url: "/how-to-guide",
     subTitle: "Step-by-step instructions for common tasks",
   },

@@ -229,8 +229,7 @@ const Footer = () => {
           </div>
           <hr />
           <p className="text-center container mx-auto px-5 font-semibold text-[15px] py-4">
-            Copyright © 2024 Mpika Holdings Pty Ltd t/as Churchill Institute of
-            Higher Education. 
+            Copyright © 2025 Mpika Holdings Pty Ltd (ACN: 612 507 141) t/as Churchill Institute of Higher Education (ABN: 91 612 507 141).
           </p>
         </div>
       </div>
