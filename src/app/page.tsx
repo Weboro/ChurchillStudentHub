@@ -26,7 +26,7 @@ const Home = () => {
 
         <HelpSection />
 
-        <SupportSection />
+        {/* <SupportSection /> */}
 
         {/* <RequestFormSection /> */}
 

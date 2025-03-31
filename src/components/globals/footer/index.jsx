@@ -24,11 +24,11 @@ const Footer = () => {
             <div className="flex flex-col items-center lg:flex-row justify-between gap-4">
               <Link href="/">
                 <Image
-                  src={"/assets/logo.svg"}
+                  src={"/assets/logo-churchill.svg"}
                   width={400}
                   height={400}
                   alt="Footer Logo"
-                  className="object-contain w-[300px] lg:w-[650px] h-auto brightness-0 invert"
+                  className="object-contain w-[300px] lg:w-[400px] h-auto brightness-0 invert"
                   priority
                 />
               </Link>

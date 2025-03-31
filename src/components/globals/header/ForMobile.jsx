@@ -23,9 +23,9 @@ const MobileNav = () => {
     <div className="">
       <div className="flex justify-between gap-8 items-center px-[24px] py-2 shadow bg-white w-full">
         <div className="py-2">
-          <Link href={"/"}>
+          <Link href={"https://churchill.nsw.edu.au/"}>
             <Image
-              src={"/assets/logo.svg"}
+              src={"/assets/logo-churchill.svg"}
               width={400}
               height={400}
               alt="Main Logo"
@@ -55,9 +55,9 @@ const MobileNav = () => {
             }}
           >
             <div className="flex justify-between gap-8 items-center">
-              <Link href={"/"} className=" w-fit">
+              <Link href={"https://churchill.nsw.edu.au/"} className=" w-fit">
                 <Image
-                  src={"/assets/logo.svg"}
+                  src={"/assets/logo-churchill.svg"}
                   width={400}
                   height={400}
                   alt="Main Logo"

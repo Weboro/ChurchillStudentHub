@@ -95,6 +95,7 @@ const SupportPage = ({ params }) => {
           </article>
 
           <aside className="lg:col-span-2 w-full h-fit sticky top-28 left-0 flex flex-col gap-10">
+            {/* Existing Other Support section */}
             <div className="flex flex-col gap-5 bg-neutral-50 p-4 shadow rounded-md">
               <h4 className="text-xl font-bold highlight">Other Support</h4>
               <div className="flex flex-col gap-4">
@@ -116,6 +117,46 @@ const SupportPage = ({ params }) => {
                 })}
               </div>
             </div>
+
+            {/* New Quicklinks section - only show if quicklinks exist */}
+            {item.quicklinks && item.quicklinks.length > 0 && (
+              <div className="flex flex-col gap-5 bg-neutral-50 p-4 shadow rounded-md">
+                <h4 className="text-xl font-bold highlight">Quick Links</h4>
+                <div className="flex flex-col gap-4">
+                  {item.quicklinks
+                    .sort((a, b) => a.order - b.order) // Sort by order if needed
+                    .map((link, index) => (
+                      <a
+                        key={index}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full"
+                      >
+                        <div className="p-2 rounded-md hover:shadow transition-all flex items-start gap-3">
+                          {link.image && (
+                            <Image
+                              src={link.image}
+                              width={60}
+                              height={60}
+                              alt={link.title}
+                              className="mt-1"
+                            />
+                          )}
+                          <div>
+                            <h3 className="font-semibold line-clamp-2">{link.title}</h3>
+                            {link.subTitle && (
+                              <p className="text-sm text-gray-600 line-clamp-2">
+                                {link.subTitle}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </a>
+                    ))}
+                </div>
+              </div>
+            )}
           </aside>
         </div>
 

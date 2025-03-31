@@ -9,13 +9,13 @@ const DesktopNav = () => {
     <div className="container mx-auto px-5">
       <div className="flex justify-between items-center gap-4">
         <div className="">
-          <Link href="/">
+          <Link href="https://churchill.nsw.edu.au/">
             <Image
-              src={"/assets/logo.svg"}
+              src={"/assets/logo-churchill.svg"}
               width={400}
               height={400}
               alt="Main Logo"
-              className="object-contain w-[400px] h-auto"
+              className="object-contain w-[250px] h-auto"
               priority
             />
           </Link>

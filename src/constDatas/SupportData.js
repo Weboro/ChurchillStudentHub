@@ -47,7 +47,33 @@ export const SupportData = [
     phone: "+610292792511",
     description:
       "Get assistance with your tech needs, like software issues and troubleshooting issues.",
-    richText: `<h1>IT Support for Students</h1><p>At <strong>Churchill Institution</strong>, we understand that reliable technology and support are crucial to your academic success. Our dedicated IT Support team is here to ensure that all your technical needs are met swiftly and efficiently. Whether you are on campus or studying remotely, we provide comprehensive assistance to help you navigate and resolve any IT-related challenges.</p><h2>Services We Offer</h2><h3>1. 24/7 Technical Assistance</h3><p>Our IT Support team is available around the clock to assist you with any technical issues you might encounter. Whether it's a problem with your device, software installation, or connectivity issues, we're here to help.</p><h3>2. On-Campus Support Centers</h3><p>Visit our on-campus IT support centers for face-to-face assistance. Our friendly and knowledgeable staff can help you with hardware troubleshooting, software updates, and network connectivity issues.</p><h3>3. Remote Support</h3><p>Studying from home? No problem! Our remote support services include phone, email, and live chat options to ensure you receive timely help no matter where you are.</p><h3>4. Online Resources</h3><p>Access a wealth of online resources including FAQs, how-to guides, and troubleshooting tips on our IT support portal. These resources are designed to help you resolve common issues quickly and independently.</p><h3>5. Software Access</h3><p>As a student, you have access to various essential software tools and applications like Office365 at no additional cost. Our IT support team can guide you through the installation and setup processes to ensure you have everything you need for your coursework.</p><h3>6. Cybersecurity Awareness</h3><p>Your online safety is our priority. We provide training and resources to help you recognize and protect against cyber threats. Stay informed about the latest security practices to keep your personal and academic information secure.</p>`,
+    richText: `<h1>IT Support for Students</h1><p>At<strong>Churchill Institution</strong>, we understand that reliable technology and support are crucial to your academic success. Our dedicated IT Support team is here to ensure that all your technical needs are met swiftly and efficiently. Whether you are on campus or studying remotely, we provide comprehensive assistance to help you navigate and resolve any IT-related challenges.</p><h2>Services We Offer</h2><h3>1. Technical Assistance</h3><p>Our IT Support team is available to assist you with any technical issues you might encounter. Whether it's a problem with your device, software installation, or connectivity issues, we're here to help.</p><h3>2. On-Campus Support Centers</h3><p>Visit our on-campus IT support centers for face-to-face assistance. Our friendly and knowledgeable staff can help you with hardware troubleshooting, software updates, and network connectivity issues.</p><h3>4. Online Resources</h3><p>Access a wealth of online resources including FAQs, how-to guides, and troubleshooting tips on our IT support portal. These resources are designed to help you resolve common issues quickly and independently.</p><h3>5. Software Access</h3><p>As a student, you have access to various essential software tools and applications like Office365 at no additional cost. Our IT support team can guide you through the installation and setup processes to ensure you have everything you need for your coursework.</p>`,
+    quicklinks: [
+      {
+        order: 2,
+        image: "/assets/icons/how-to-guide.svg",
+        title: "Current Students Self-Help Guide",
+        url: "/how-to-guide",
+        subTitle: "Step-by-step instructions for common tasks",
+      },
+      {
+        order: 7,
+        image: "/assets/student-portal-icon.png",
+        title: "Student Email Login",
+        slug: "student-email-login",
+        url: "https://outlook.office.com",
+        subTitle:
+          "Utilize applications like Outlook, Word, Excel, PowerPoint, OneNote, and OneDrive",
+      }, {
+        order: 8,
+        image: "/assets/office-icon.png",
+        title: "Office365 Password Reset",
+        slug: "office365-password-reset",
+        url: "https://passwordreset.microsoftonline.com/passwordreset#!/",
+        subTitle:
+          "Reset process to regain access to applications like Word, Excel, PowerPoint, and Outlook",
+      },
+    ]
   },
   // {
   //   slug: "international-student-support",

@@ -34,30 +34,28 @@ const UsefulLinkSection = () => {
   }
 
   return (
-    <div className="container mx-auto px-5">
+    <div className="container mx-auto px-5 mt-10">
       <div className="flex flex-col gap-[44px]">
-        <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
+        {/* <div className="flex justify-between gap-4 flex-col lg:flex-row items-center">
           <h2 className="font-bold text-[36px] text-matte-purple">
             Useful Links
           </h2>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 h-full lg:grid-cols-4 gap-6">
-          {data?.slice(0, 12)?.map((item, index) => (
-            <UsefulLinksCard
-              image={item?.logo}
-              subTitle={item?.description}
-              title={item?.title}
-              url={item?.external_link}
-              key={index}
+          {data
+            ?.filter(item => !item?.is_archived)
+            ?.slice(0, 12)
+            ?.map((item, index) => (
+              <UsefulLinksCard
+                key={index}
+                image={item?.logo}
+                subTitle={item?.description}
+                title={item?.title}
+                url={item?.external_link}
+              />
+            ))}
 
-              // key={index}
-              // image={item?.image}
-              // subTitle={item?.subTitle}
-              // title={item?.title}
-              // url={item?.url}
-            />
-          ))}
         </div>
 
         {data.length > 12 && (

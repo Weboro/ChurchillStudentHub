@@ -7,7 +7,7 @@ const AIHelpSection = () => {
   const NEXT_PUBLIC_CHURCHILL_STUDENT_HUB_URL =
     process.env.NEXT_PUBLIC_CHURCHILL_STUDENT_HUB_URL;
   return (
-    <div className="container mx-auto px-5">
+    <div className="container mx-auto px-5 mt-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div className="row-span-2">
           <div className="bg-light-grey hover-shadow transition-all h-full rounded-md flex flex-col justify-between">

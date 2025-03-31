@@ -30,7 +30,7 @@ const HeroSection = () => {
         showSearch={true}
       />
 
-      <div className="w-full mt-[32px] xl:mt-0 xl:-translate-y-1/2  mb-[32px] xl:mb-0">
+      {/* <div className="w-full mt-[32px] xl:mt-0 xl:-translate-y-1/2  mb-[32px] xl:mb-0">
         <div className="container mx-auto px-5">
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
             {cardsData.map((item, index) => (
@@ -57,17 +57,17 @@ const HeroSection = () => {
                     </a>
                   )}
 
-                  {/* {item.phone && (
+                  {item.phone && (
                     <a href={`tel:${item.phone}`} className="block w-fit">
                       <span className="font-semibold">{item.phone}</span>
                     </a>
-                  )} */}
+                  )}
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
