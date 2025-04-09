@@ -42,7 +42,10 @@ const UsefulLinkSection = () => {
           </h2>
         </div> */}
 
-        <div className="grid grid-cols-1 h-full lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 h-full lg:grid-cols-3 gap-6">
+
+
+
           {data
             ?.filter(item => !item?.is_archived)
             ?.slice(0, 12)
