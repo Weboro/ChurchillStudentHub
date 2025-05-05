@@ -61,11 +61,7 @@ const UpcomingKeyDatesPage = () => {
           const month = eventDate.getMonth();
 
           if (!organizedData[year]) {
-            organizedData[year] = {};
-          }
-
-          if (!organizedData[year][month]) {
-            organizedData[year][month] = [];
+            organizedData[year] = Array.from({ length: 12 }, () => []);
           }
 
           organizedData[year][month].push(item);
@@ -73,14 +69,25 @@ const UpcomingKeyDatesPage = () => {
 
         setData(organizedData);
 
-        const firstYear = Object.keys(organizedData)[0];
-        const firstMonth = Object.keys(organizedData[firstYear])[0];
-        setExpandedMonth(`${firstYear}-${firstMonth}`);
+        // Set the first month with data as expanded
+        for (const year of Object.keys(organizedData)) {
+          for (let i = 0; i < 12; i++) {
+            if (organizedData[year][i]?.length > 0) {
+              setExpandedMonth(`${year}-${i}`);
+              break;
+            }
+          }
+          break;
+        }
 
         setIsLoading(false);
         setNoDataFound(Object.keys(organizedData).length === 0);
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        console.error(err);
+        setIsLoading(false);
+        setNoDataFound(true);
+      });
   }, []);
 
   const toggleMonth = (year, month) => {
@@ -117,15 +124,15 @@ const UpcomingKeyDatesPage = () => {
                       </h2>
 
                       <div className="flex flex-col gap-4 w-full">
-                        {Object.keys(data[year]).map((month) => {
+                        {[...Array(12).keys()].map((month) => {
                           const isActive = expandedMonth === `${year}-${month}`;
 
                           return (
                             <div key={month} className="flex flex-col gap-4">
                               <div
                                 className={`w-full cursor-pointer px-4 py-2 rounded-md font-bold flex items-center justify-between border transition-all ${isActive
-                                  ? "bg-primary-orange text-white"
-                                  : "border-primary-orange"
+                                    ? "bg-primary-orange text-white"
+                                    : "border-primary-orange"
                                   }`}
                                 onClick={() => toggleMonth(year, month)}
                               >
@@ -137,18 +144,24 @@ const UpcomingKeyDatesPage = () => {
                               </div>
                               {isActive && (
                                 <div className="flex flex-col gap-4">
-                                  {data[year][month].map((item) => (
-                                    <KeyDatesCard
-                                      key={item.id}
-                                      title={item?.title}
-                                      description={item?.description}
-                                      start_date={item?.start_date}
-                                      end_date={item?.end_date}
-                                      category={item?.category}
-                                      audience={item?.audience}
-                                      isFullwidth={true}
-                                    />
-                                  ))}
+                                  {data[year][month]?.length > 0 ? (
+                                    data[year][month].map((item) => (
+                                      <KeyDatesCard
+                                        key={item.id}
+                                        title={item?.title}
+                                        description={item?.description}
+                                        start_date={item?.start_date}
+                                        end_date={item?.end_date}
+                                        category={item?.category}
+                                        audience={item?.audience}
+                                        isFullwidth={true}
+                                      />
+                                    ))
+                                  ) : (
+                                    <p className="text-sm italic text-gray-500 pl-2">
+                                      No events in this month.
+                                    </p>
+                                  )}
                                 </div>
                               )}
                             </div>
