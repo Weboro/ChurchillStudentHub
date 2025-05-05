@@ -12,7 +12,7 @@
     "axios": "^1.7.2",
     "framer-motion": "^11.2.10",
     "lottie-react": "^2.4.0",
-    "next": "14.2.3",
+    "next": "14.2.26",
     "nodemailer": "^6.10.0",
     "react": "^18",
     "react-dom": "^18",
