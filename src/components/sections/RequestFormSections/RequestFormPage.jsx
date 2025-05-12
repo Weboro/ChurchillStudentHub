@@ -41,7 +41,7 @@ const RequestFormPage = () => {
       ) : (
         <main className="flex flex-col gap-[32px] lg:gap-[64px]">
           <TopBannerCard
-            image={`/assets/HeroImage-2.webp`}
+            image={`/assets/StudentHub.jpg`}
             titleSpan={""}
             title={"Current Students Online Application Requests"}
             subTitle={

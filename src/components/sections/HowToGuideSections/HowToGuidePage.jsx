@@ -41,7 +41,7 @@ const HowToGuidePage = () => {
       ) : (
         <div className="flex flex-col gap-[32px] lg:gap-[64px]">
           <TopBannerCard
-            image={`/assets/hero-howto.jpg`}
+            image={`/assets/StudentHub.jpg`}
             titleSpan={""}
             title={"Current Students Self-Help Guide"}
             subTitle={

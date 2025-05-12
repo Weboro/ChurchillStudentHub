@@ -21,7 +21,7 @@ const UsefuLinks = () => {
       <div className="flex flex-col gap-[32px] lg:gap-[64px]">
         <div>
           <TopBannerCard
-            image={`/assets/HeroImage-2.webp`}
+            image={`/assets/StudentHub.jpg`}
             titleSpan={"Useful"}
             title={"Links"}
             subTitle={`Current Students Support Hub > Current Students Online Application Requests > Useful Links`}

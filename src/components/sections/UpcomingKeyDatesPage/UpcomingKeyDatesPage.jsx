@@ -103,7 +103,7 @@ const UpcomingKeyDatesPage = () => {
         <div className="flex flex-col gap-[32px] lg:gap-[64px]">
           <div>
             <TopBannerCard
-              image={`/assets/HeroImage-2.webp`}
+              image={`/assets/StudentHub.jpg`}
               titleSpan={""}
               title={"Key Dates"}
               subTitle={`Current Students Support Hub > Key Dates`}
@@ -131,8 +131,8 @@ const UpcomingKeyDatesPage = () => {
                             <div key={month} className="flex flex-col gap-4">
                               <div
                                 className={`w-full cursor-pointer px-4 py-2 rounded-md font-bold flex items-center justify-between border transition-all ${isActive
-                                    ? "bg-primary-orange text-white"
-                                    : "border-primary-orange"
+                                  ? "bg-primary-orange text-white"
+                                  : "border-primary-orange"
                                   }`}
                                 onClick={() => toggleMonth(year, month)}
                               >
