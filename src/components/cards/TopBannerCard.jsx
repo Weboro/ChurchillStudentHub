@@ -16,7 +16,7 @@ const TopBannerCard = ({
         objectFit: "cover",
         width: "100%",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "top center",
       }}
       className="lg:h-[50vh] h-[44vh] flex items-center"
     >
