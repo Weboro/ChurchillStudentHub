@@ -14,11 +14,10 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="z-40 bg-white shadow-lg">
+    <div className="z-40 bg-white shadow-lg header">
       <div
-        className={`z-40 bg-white hidden lg:block shadow-lg ${
-          offset > 100 ? "header-animated" : ""
-        }`}
+        className={`z-40 bg-white hidden lg:block shadow-lg ${offset > 100 ? "header-animated" : ""
+          }`}
       >
         <div className="hidden lg:block">
           <DesktopNav />
