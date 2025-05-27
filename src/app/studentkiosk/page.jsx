@@ -34,6 +34,31 @@ const forms = [
         link: "https://zfrmz.com.au/L7XYZzwaAnKGCIt9Qfyb",
         icon: "https://cdn-icons-png.flaticon.com/128/3914/3914193.png",
     },
+    {
+        title: "Application for Credit",
+        link: "https://zfrmz.com.au/Yv1WJqg1kclkGVXSRyKU",
+        icon: "https://cdn-icons-png.flaticon.com/128/3916/3916663.png", // Icon for academic credit
+    },
+    {
+        title: "Deferral",
+        link: "https://zfrmz.com.au/h2AYLoMcDAZLXZ7OoUle",
+        icon: "https://cdn-icons-png.flaticon.com/128/3917/3917134.png", // Icon for postponement
+    },
+    {
+        title: "Leave of Absence",
+        link: "https://zfrmz.com.au/HpBjIJRs3cplcqIb4Ny1",
+        icon: "https://cdn-icons-png.flaticon.com/128/11659/11659893.png", // Icon for leave
+    },
+    {
+        title: "Refund",
+        link: "https://zfrmz.com.au/RXpN4XUu8RZhAhUoWzI3",
+        icon: "https://cdn-icons-png.flaticon.com/128/19005/19005088.png", // Icon for money return
+    },
+    {
+        title: "IT Support Form",
+        link: "https://forms.zoho.com.au/CIHE/form/ITSupportForm",
+        icon: "https://cdn-icons-png.flaticon.com/128/12442/12442387.png",
+    }
 ];
 
 const Page = () => {
@@ -57,7 +82,7 @@ const Page = () => {
 
     return (
         <div className="container mx-auto py-10">
-            <div className="grid grid-cols-2 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {forms.map((form, idx) => (
                     <a
                         key={idx}
@@ -71,7 +96,7 @@ const Page = () => {
                             alt={form.title}
                             width={48}
                             height={48}
-                            className="mx-auto mb-3"
+                            className="mx-auto mb-3 fill-aus"
                         />
                         <p className="text-sm font-semibold">{form.title}</p>
                     </a>

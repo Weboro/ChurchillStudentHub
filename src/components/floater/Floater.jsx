@@ -23,7 +23,7 @@ const FloaterComponent = () => {
             alt="messages question icon"
             className="w-6"
           />
-          Enquire Now
+          General Enquiry
         </button>
       </a>
       {isShown && (
