@@ -37,22 +37,22 @@ const forms = [
     {
         title: "Application for Credit",
         link: "https://zfrmz.com.au/Yv1WJqg1kclkGVXSRyKU",
-        icon: "https://cdn-icons-png.flaticon.com/128/3916/3916663.png", // Icon for academic credit
+        icon: "https://cdn-icons-png.flaticon.com/128/3916/3916663.png",
     },
     {
         title: "Deferral",
         link: "https://zfrmz.com.au/h2AYLoMcDAZLXZ7OoUle",
-        icon: "https://cdn-icons-png.flaticon.com/128/3917/3917134.png", // Icon for postponement
+        icon: "https://cdn-icons-png.flaticon.com/128/3917/3917134.png",
     },
     {
         title: "Leave of Absence",
         link: "https://zfrmz.com.au/HpBjIJRs3cplcqIb4Ny1",
-        icon: "https://cdn-icons-png.flaticon.com/128/11659/11659893.png", // Icon for leave
+        icon: "https://cdn-icons-png.flaticon.com/128/11659/11659893.png",
     },
     {
         title: "Refund",
         link: "https://zfrmz.com.au/RXpN4XUu8RZhAhUoWzI3",
-        icon: "https://cdn-icons-png.flaticon.com/128/19005/19005088.png", // Icon for money return
+        icon: "https://cdn-icons-png.flaticon.com/128/19005/19005088.png",
     },
     {
         title: "IT Support Form",
@@ -81,26 +81,40 @@ const Page = () => {
     }, [pathname]);
 
     return (
-        <div className="container mx-auto py-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                {forms.map((form, idx) => (
-                    <a
-                        key={idx}
-                        href={form.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white shadow-md rounded-xl p-4 text-center hover:shadow-lg transition"
-                    >
-                        <Image
-                            src={form.icon}
-                            alt={form.title}
-                            width={48}
-                            height={48}
-                            className="mx-auto mb-3 fill-aus"
-                        />
-                        <p className="text-sm font-semibold">{form.title}</p>
-                    </a>
-                ))}
+        <div>
+            <div className="container mx-auto">
+                <nav className="bg-white shadow-md rounded-xl p-4 mb-5 flex justify-between items-center">
+                    <Image
+                        src="/assets/logo-churchill.svg"
+                        width={400}
+                        height={400}
+                        alt="Main Logo"
+                        className="object-contain w-[250px] h-auto"
+                        priority
+                    />
+                    <h1 className="text-xl font-bold text-gray-800">Student Kiosk</h1>
+
+                </nav>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    {forms.map((form, idx) => (
+                        <a
+                            key={idx}
+                            href={form.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white shadow-md rounded-xl p-4 text-center hover:shadow-lg transition"
+                        >
+                            <Image
+                                src={form.icon}
+                                alt={form.title}
+                                width={48}
+                                height={48}
+                                className="mx-auto mb-3 fill-aus"
+                            />
+                            <p className="text-sm font-semibold">{form.title}</p>
+                        </a>
+                    ))}
+                </div>
             </div>
         </div>
     );
