@@ -27,14 +27,16 @@ export const SupportData = [
   // },
   {
     slug: "mental-health-wellbeing",
-    title: "Mental Health Wellbeing",
+    title: "Professional Counselling for students",
     icon: "/assets/icons/mental-health-wellbeing.svg",
     image: "/assets/mental-health-wellbeing.webp",
+    emailTitle: "email us",
+    email: "info@churchill.nsw.edu.au",
     phoneTitle: "phone us",
     phone: "+610292792511",
     description:
       "Receive support for your mental health through counseling, workshops, and wellness programs.",
-    richText: `<h2>Mental Health Support</h2><p>At Churchill Institute of Higher Education (CIHE), we aim to make it easier for you to access mental health support services. We have developed a new service called Mental Health Connect to help you find the support you need.</p><p>This means the way you access mental health support services at CIHE has changed. To help direct you to the right service, check out the links below:</p>`,
+    richText: `<p>Churchill has an agreement with the <strong>Brisbane Counselling Centre (BCC)</strong>, where students can access one-on-one, professional counselling sessions (by Zoom or telephone) with a psychologist or counsellor <strong>free of charge for the first two (2) sessions</strong>. The service is private and confidential.<p>Students may contact student support services at <a href=mailto:info@churchill.nsw.edu.au>info@churchill.nsw.edu.au</a> to arrange an appointment or make an appointment with BCC directly via their <a href=https://www.brisbanecounsellingcentre.com.au/contact/ rel="noopener noreferrer"target=_blank>Contact | Brisbane Counselling Centre</a>.`,
   },
   {
     slug: "student-it-support",
