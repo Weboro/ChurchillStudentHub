@@ -12,7 +12,6 @@ import UsefulLinkSection from "./sections/homeSections/UsefulLinkSection";
 import HelpSection from "./sections/homeSections/HelpSection";
 import UpcomingKeyDatesSection from "./sections/homeSections/UpcomingKeyDatesSection";
 import NewsSection from "./sections/commonSections/NewsSection";
-import PoliciesDetails from "./sections/policiesSections/PoliciesDetails";
 import GuideDetails from "./sections/guideSections/GuideDetails";
 import UpcomingKeyDatesPage from "./sections/UpcomingKeyDatesPage/UpcomingKeyDatesPage";
 import FilterComponent from "./sections/UpcomingKeyDatesPage/FilterComponent";
@@ -49,7 +48,6 @@ export {
   HelpSection,
   UpcomingKeyDatesSection,
   NewsSection,
-  PoliciesDetails,
   GuideDetails,
   UpcomingKeyDatesPage,
   FilterComponent,

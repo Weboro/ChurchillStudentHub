@@ -26,10 +26,6 @@ const Home = () => {
 
         <HelpSection />
 
-        {/* <SupportSection /> */}
-
-        {/* <RequestFormSection /> */}
-
         <UpcomingKeyDatesSection />
 
         <StudentProspectusSection />
