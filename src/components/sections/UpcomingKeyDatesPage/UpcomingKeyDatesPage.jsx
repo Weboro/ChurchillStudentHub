@@ -38,9 +38,15 @@ const UpcomingKeyDatesPage = () => {
           return;
         }
 
+        const today = new Date();
+        const filtered = res.data.filter((el) => {
+          const eventDate = new Date(el.start_date);
+          return eventDate.getFullYear() >= today.getFullYear();
+        });
+
         const organizedData = {};
 
-        res.data.forEach((item) => {
+        filtered.forEach((item) => {
           const eventDate = new Date(item.start_date);
           const year = eventDate.getFullYear();
           const month = eventDate.getMonth();
