@@ -424,6 +424,7 @@ tr:nth-child(even) {
 .gsc-control-cse.gsc-control-cse-en td.gsc-search-button {
   margin-left: 1rem;
 }
-.fill-aus{
-  filter: invert(72%) sepia(32%) saturate(2043%) hue-rotate(343deg) brightness(93%) contrast(92%);
+.fill-aus {
+  filter: invert(72%) sepia(32%) saturate(2043%) hue-rotate(343deg)
+    brightness(93%) contrast(92%);
 }
