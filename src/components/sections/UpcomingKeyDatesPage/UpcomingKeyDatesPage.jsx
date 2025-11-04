@@ -34,13 +34,13 @@ const UpcomingKeyDatesPage = () => {
   useEffect(() => {
     FetchUpcomingKeyDate()
       .then((res) => {
-        if (!res.data) {
+        if (!res.data || res.data.length === 0) {
           setNoDataFound(true);
           return;
         }
 
+        // organize data by year and month
         const organizedData = {};
-
         res.data.forEach((item) => {
           const eventDate = new Date(item.start_date);
           const year = eventDate.getFullYear();
@@ -56,36 +56,34 @@ const UpcomingKeyDatesPage = () => {
         setData(organizedData);
         setNoDataFound(Object.keys(organizedData).length === 0);
 
-        // Set current year and month as default
+        // determine default selection
         const now = new Date();
         const currentYear = now.getFullYear();
         const currentMonth = now.getMonth();
 
         if (organizedData[currentYear]) {
-          setSelectedYear(currentYear);
+          setSelectedYear(String(currentYear));
 
-          // Set current month if it has events
           if (organizedData[currentYear][currentMonth]?.length > 0) {
             setExpandedMonth(`${currentYear}-${currentMonth}`);
           } else {
-            // Otherwise, pick the first month with events
-            for (let i = 0; i < 12; i++) {
-              if (organizedData[currentYear][i]?.length > 0) {
-                setExpandedMonth(`${currentYear}-${i}`);
-                break;
-              }
+            const firstMonthWithData = organizedData[currentYear].findIndex(
+              (m) => m.length > 0
+            );
+            if (firstMonthWithData !== -1) {
+              setExpandedMonth(`${currentYear}-${firstMonthWithData}`);
             }
           }
         } else {
-          // Fallback: first available year
           const availableYears = Object.keys(organizedData);
           if (availableYears.length > 0) {
-            setSelectedYear(availableYears[0]);
-            for (let i = 0; i < 12; i++) {
-              if (organizedData[availableYears[0]][i]?.length > 0) {
-                setExpandedMonth(`${availableYears[0]}-${i}`);
-                break;
-              }
+            const firstYear = availableYears[0];
+            setSelectedYear(firstYear);
+            const firstMonthWithData = organizedData[firstYear].findIndex(
+              (m) => m.length > 0
+            );
+            if (firstMonthWithData !== -1) {
+              setExpandedMonth(`${firstYear}-${firstMonthWithData}`);
             }
           }
         }
@@ -108,14 +106,12 @@ const UpcomingKeyDatesPage = () => {
 
   return (
     <div className="flex flex-col gap-[32px] lg:gap-[64px]">
-      <div>
-        <TopBannerCard
-          image={`/assets/StudentHub.jpg`}
-          titleSpan={""}
-          title={"Key Dates"}
-          subTitle={`Current Students Support Hub > Key Dates`}
-        />
-      </div>
+      <TopBannerCard
+        image={`/assets/StudentHub.jpg`}
+        titleSpan=""
+        title="Key Dates"
+        subTitle="Current Students Support Hub > Key Dates"
+      />
 
       {noDataFound ? (
         <div className="md:w-2/3 md:mx-auto">
@@ -145,6 +141,7 @@ const UpcomingKeyDatesPage = () => {
             <div className="flex flex-col gap-4">
               {[...Array(12).keys()].map((month) => {
                 const isActive = expandedMonth === `${selectedYear}-${month}`;
+                const monthEvents = data[selectedYear][month] || [];
 
                 return (
                   <div key={month} className="flex flex-col gap-2">
@@ -163,10 +160,11 @@ const UpcomingKeyDatesPage = () => {
                         } ml-2`}
                       ></i>
                     </div>
+
                     {isActive && (
                       <div className="flex flex-col gap-4">
-                        {data[selectedYear][month]?.length > 0 ? (
-                          data[selectedYear][month].map((item) => (
+                        {monthEvents.length > 0 ? (
+                          monthEvents.map((item) => (
                             <KeyDatesCard
                               key={item.id}
                               title={item?.title}
