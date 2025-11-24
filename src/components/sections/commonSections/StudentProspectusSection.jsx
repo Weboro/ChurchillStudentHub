@@ -22,7 +22,7 @@ const StudentProspectusSection = () => {
         </h3>
         <p className="mb-5">Specially tailored to our International Student</p>
         <Link
-          href={`/assets/docs/Student-Handbook2024.pdf`}
+          href={`/assets/docs/Student-Handbook.pdf`}
           target="_blank"
           className="w-fit mx-auto"
         >
