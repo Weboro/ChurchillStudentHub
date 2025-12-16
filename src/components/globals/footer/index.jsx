@@ -88,7 +88,7 @@ const Footer = () => {
                     <Link href={""}> Accreditation</Link>
                   </li>
                   <li>
-                    <Link href={""}> Approved Agents</Link>
+                    <Link href={""}> Education Agents</Link>
                   </li>
                 </ul>
               </div>
